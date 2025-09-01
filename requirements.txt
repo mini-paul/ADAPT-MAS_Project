@@ -1,0 +1,11 @@
+langgraph
+langchain
+langchain_openai
+python-dotenv
+numpy
+pandas
+networkx
+scikit-learn
+matplotlib
+ipykernel # for notebooks
+jupyter
