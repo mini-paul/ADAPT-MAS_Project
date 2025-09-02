@@ -12,7 +12,7 @@ AGENT_MODEL = "deepseek-chat"    # 普通智能体使用的模型
 
 # --- Experiment Hyperparameters ---
 NUM_AGENTS = 5                  # 智能体总数
-NUM_ROUNDS = 20                 # 每个实验场景运行的回合数
+NUM_ROUNDS = 6                 # 每个实验场景运行的回合数
 MAX_TOKENS = 2048
 TEMPERATURE = 0.7
 

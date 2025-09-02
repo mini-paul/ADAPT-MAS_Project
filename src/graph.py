@@ -61,19 +61,18 @@ def peer_review(state: TeamState) -> TeamState:
     for reviewer in state['agents']:
         # 每个智能体评审其他所有人的贡献
         review_context = f"""
-        Your task is to act as an impartial reviewer. Evaluate the contributions from your peers based on
-        Clarity, Correctness, and Helpfulness. Provide a numeric score from -1.0 (very bad) to 1.0 (very good) for each.
-        Your output MUST be a JSON object mapping agent_id to a score.
-
-        The main task is: {state['task'].description}
-
-        Here are the contributions to review:
+        你的任务是作为一名公正的审阅者。根据清晰度、正确性和实用性评估你的同事的贡献。请为每项贡献提供一个从 -1.0（非常差）到 1.0（非常好）的数字分数。
+        你的输出必须是将 agent_id 映射到分数的 JSON 对象。
+        
+        主要任务是：{state['task'].description}
+        
+        以下是需要审阅的贡献：
         {state['contributions']}
-
-        Your own ID is: {reviewer.id}. Do not review yourself.
+        
+        你的 ID 是：{reviewer.id}。请勿自行审阅。
         """
         parser = JsonOutputParser()
-        prompt = ChatPromptTemplate.from_template("You are a reviewer. {context}. \n{format_instructions}")
+        prompt = ChatPromptTemplate.from_template("您是审阅者。{context}。\n{format_instructions}")
         chain = prompt | judge_llm | parser  # 使用Judge模型保证评审质量和格式
 
         try:
@@ -114,14 +113,14 @@ def aggregate_and_judge(state: TeamState) -> TeamState:
     if isinstance(framework, BaselineCrS):
         # 基线模型需要Judge计算贡献分数CSc
         csc_prompt = f"""
-        Based on the team's contributions and the final (incorrect) answer,
-        estimate the contribution score (CSc) of each agent towards the outcome.
-        A higher score means more influence on the final answer. The scores should sum to 1.0.
-        Return a JSON object mapping agent_id to a float CSc.
-
-        Task: {state['task'].description}
-        Contributions: {state['contributions']}
-        Final Selected Answer: {final_answer}
+        根据团队的贡献和最终（错误）答案，
+        估算每个代理对结果的贡献分数 (CSc)。
+        分数越高，对最终答案的影响越大。分数总和应为 1.0。
+        返回一个 JSON 对象，将 agent_id 映射到浮点型 CSc。
+        
+        任务：{state['task'].description}
+        贡献：{state['contributions']}
+        最终选定答案：{final_answer}
         """
         parser = JsonOutputParser()
         chain = ChatPromptTemplate.from_template("{prompt}\n{format_instructions}") | judge_llm | parser
