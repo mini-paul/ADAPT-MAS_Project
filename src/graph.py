@@ -128,7 +128,11 @@ def aggregate_and_judge(state: TeamState) -> TeamState:
     print(f"--- Judgment ---")
     print(f"Reward: {reward}")
     if isinstance(framework, ADAPT_MAS):
-        updated_scores = {k: round(v.get(task_category, 0.5), 3) for k, v in framework.scores.items()}
+        # 检查v是否为字典：是则用get获取指定key的值，否则直接使用v（适用于float等数值类型）
+        updated_scores = {
+            k: round(v.get(task_category, 0.5) if isinstance(v, dict) else v, 3)
+            for k, v in framework.scores.items()
+        }
     else:
         updated_scores = {k: round(v, 3) for k, v in framework.scores.items()}
     print(f"Updated scores (context: {task_category}): {updated_scores}")

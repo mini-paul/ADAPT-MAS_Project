@@ -50,7 +50,7 @@ class SecurityFramework:
             weights = np.full_like(agent_scores, 1.0 / len(agent_scores))
         else:
             weights = exp_scores / sum_exp_scores
-        return {agent.id: weight for agent, weight in zip(self.agents, weights)}
+        return {agent: weight for agent, weight in zip(self.agents, weights)}
 
 class BaselineCrS(SecurityFramework):
     """
@@ -91,13 +91,13 @@ class ADAPT_MAS(SecurityFramework):
         super().__init__(agents)
         # 将信任分数建模为字典，支持按任务情境扩展
         # Model trust scores as a dictionary to support context-specific scores
-        self.scores = {agent.id: {'default': TRUST_INITIAL} for agent in agents}
+        self.scores = {agent: {'default': TRUST_INITIAL} for agent in agents}
         self.agents = agents
         self.social_graph = nx.DiGraph() # 有向图记录评价关系
-        self.social_graph.add_nodes_from([agent.id for agent in agents])
+        self.social_graph.add_nodes_from([agent for agent in agents])
         # 每个智能体贡献品质的时间序列，用于检测行为突变
         # Time series of each agent's contribution quality for detecting behavioral changes
-        self.performance_history = {agent.id: [] for agent in agents}
+        self.performance_history = {agent: [] for agent in agents}
 
     def get_initial_score(self) -> float:
         return CRS_INITIAL
@@ -122,14 +122,14 @@ class ADAPT_MAS(SecurityFramework):
         context = task_category  # 使用 'context' 作为内部变量名以匹配数据结构
         # --- 1. 动态信任模型：时间衰减 / Dynamic Trust Model: Time Decay ---
         for agent in self.agents:
-            current_trust = self.get_trust_score(agent.id, context)
-            self.scores[agent.id][context] = current_trust * TRUST_TIME_DECAY_FACTOR
+            current_trust = self.get_trust_score(agent, context)
+            self.scores[agent][context] = current_trust * TRUST_TIME_DECAY_FACTOR
 
         # --- 2. 动态信任模型：新证据融合 / Dynamic Trust Model: New Evidence Fusion ---
         evidence = self._calculate_cis(peer_reviews, context) if peer_reviews else {}
         # 客观任务的奖励信号优先 / Objective task reward signal has priority
         if ground_truth_reward is not None:
-            evidence = {agent.id: ground_truth_reward for agent in self.agents}
+            evidence = {agent: ground_truth_reward for agent in self.agents}
 
 
         for agent_id, E_t in evidence.items():
@@ -159,10 +159,10 @@ class ADAPT_MAS(SecurityFramework):
                         self.scores[agent_id][context] = current_trust * TRUST_PENALTY_FACTOR
         # --- 规范化所有分数到 [0, 1] 区间 / Normalize all scores to the [0, 1] range ---
         for agent in self.agents:
-            score = self.get_trust_score(agent.id, context)
-            self.scores[agent.id][context] = max(0.0, min(1.0, score))
+            score = self.get_trust_score(agent, context)
+            self.scores[agent][context] = max(0.0, min(1.0, score))
 
-        current_scores_snapshot = {agent.id: self.get_trust_score(agent.id, context) for agent in self.agents}
+        current_scores_snapshot = {agent: self.get_trust_score(agent, context) for agent in self.agents}
         self.history.append(current_scores_snapshot)
         print(f"ADAPT-MAS 已更新 (情境: {context}): {current_scores_snapshot}")
 
@@ -179,8 +179,8 @@ class ADAPT_MAS(SecurityFramework):
         公式: CIS_i = Σ(TS_j * EvalScore(j,i)) / Σ(TS_j) for all j != i
         Calculates the Contribution Influence Score (CIS).
         """
-        cis_scores = {agent.id: 0.0 for agent in self.agents}
-        total_trust_weight = {agent.id: 1e-9 for agent in self.agents}  # 避免除以零 / Avoid division by zero
+        cis_scores = {agent: 0.0 for agent in self.agents}
+        total_trust_weight = {agent: 1e-9 for agent in self.agents}  # 避免除以零 / Avoid division by zero
 
         for reviewer_id, reviews in peer_reviews.items():
             reviewer_trust = self.get_trust_score(reviewer_id, context)
