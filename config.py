@@ -7,24 +7,30 @@
 
 DEEPSEEK_API_KEY = "sk-0feb5f04d49b491eaf2884ef745a40fe" # 在此处填入你的DeepSeek API Key
 DEEPSEEK_API_BASE = "https://api.deepseek.com/v1"
-JUDGE_MODEL = "deepseek-coder"  # 用于评估、打分的强大模型
+JUDGE_MODEL = "deepseek-chat"  # 用于评估、打分的强大模型
 AGENT_MODEL = "deepseek-chat"    # 普通智能体使用的模型
 
 # --- Experiment Hyperparameters ---
 NUM_AGENTS = 5                  # 智能体总数
-NUM_ROUNDS = 6                 # 每个实验场景运行的回合数
+NUM_ROUNDS = 1                 # 每个实验场景运行的回合数
 MAX_TOKENS = 2048
 TEMPERATURE = 0.7
 
-# --- Baseline CrS Framework Parameters ---
-CRS_INITIAL = 0.5               # Credibility Score 初始值
-CRS_LEARNING_RATE = 0.1         # η (eta), CrS 更新的学习率
+# --- 默认超参数 / Default Hyperparameters ---
+# 基线模型 Credibility Score (CrS) / Baseline Model
+CRS_INITIAL = 0.5
+CRS_LEARNING_RATE = 0.1  # η in paper
 
-# --- ADAPT-MAS Framework Parameters ---
-TRUST_INITIAL = 0.5             # Trust Score 初始值
-TRUST_TIME_DECAY_RATE = 0.1     # α (alpha), 信任分数的时间衰减率 (越小，历史影响越大)
-TRUST_SKEPTICISM_THRESHOLD = 0.3 # 怀疑阈值，低于此分数将触发特殊处理
-GRAPH_COLLUSION_THRESHOLD = 0.8 # 用于社群检测的边权重阈值，判断两个智能体是否关系紧密
+# ADAPT-MAS Trust Score (TS)
+TRUST_INITIAL = 0.5
+TRUST_LEARNING_RATE = 0.2  # α in paper
+TRUST_TIME_DECAY_FACTOR = 0.98 # (1 - α) in formula, conceptually
+
+# 社交图谱分析 / Social Graph Analysis
+GRAPH_EDGE_UPDATE_SMOOTHING = 0.3 # 平滑更新图权重的因子 / Smoothing factor for updating graph weights
+GRAPH_COLLUSION_THRESHOLD = 0.8 # 定义强连接的权重阈值 / Weight threshold for defining a strong link
+COMMUNITY_SUSPICION_THRESHOLD = 0.7 # 社群可疑度阈值 / Community suspicion threshold
+TRUST_PENALTY_FACTOR = 0.5 # 对检测到的合谋团体的惩罚因子 / Penalty factor for detected colluding groups
 
 # --- Agent Mix Configuration ---
 # 定义不同实验场景下的智能体构成

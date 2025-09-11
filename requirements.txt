@@ -1,11 +1,14 @@
-langgraph
+langgraph~=0.6.5
 langchain
 langchain_openai
 python-dotenv
-numpy
+numpy~=2.3.2
 pandas
-networkx
+networkx~=3.5
 scikit-learn
 matplotlib
 ipykernel # for notebooks
 jupyter
+community~=1.0.0b1
+python-louvain~=0.16
+datasets~=4.0.0
