@@ -103,8 +103,11 @@ class ADAPT_MAS(SecurityFramework):
         return CRS_INITIAL
     def get_trust_score(self, agent_id: str, context: str) -> float:
         """获取特定情境下的信任分数, 如果情境不存在则创建"""
-        return self.scores[agent_id].setdefault(context, TRUST_INITIAL)
 
+        if isinstance(self.scores[agent_id], dict):
+            return self.scores[agent_id].setdefault(context, TRUST_INITIAL)
+
+        return self.scores[agent_id]
     # Redefine the top-level get_agent_weights to always require context for ADAPT-MAS
     def get_agent_weights(self, context: str = 'default') -> Dict[str, float]:
         return super().get_agent_weights(context)
@@ -121,9 +124,14 @@ class ADAPT_MAS(SecurityFramework):
         """
         context = task_category  # 使用 'context' 作为内部变量名以匹配数据结构
         # --- 1. 动态信任模型：时间衰减 / Dynamic Trust Model: Time Decay ---
+        print("ADAPT_MAS == self.scores == ",self.scores)
+        print(self.agents)
         for agent in self.agents:
             current_trust = self.get_trust_score(agent, context)
-            self.scores[agent][context] = current_trust * TRUST_TIME_DECAY_FACTOR
+            if isinstance(self.scores[agent], dict):
+                self.scores[agent][context] = current_trust * TRUST_TIME_DECAY_FACTOR
+            else:
+                self.scores[agent] = current_trust * TRUST_TIME_DECAY_FACTOR
 
         # --- 2. 动态信任模型：新证据融合 / Dynamic Trust Model: New Evidence Fusion ---
         evidence = self._calculate_cis(peer_reviews, context) if peer_reviews else {}
@@ -142,7 +150,10 @@ class ADAPT_MAS(SecurityFramework):
 
                 current_trust = self.get_trust_score(agent_id, context)
                 new_trust = current_trust + TRUST_LEARNING_RATE * E_t
-                self.scores[agent_id][context] = new_trust
+                if isinstance(self.scores[agent], dict):
+                    self.scores[agent][context] = new_trust
+                else:
+                    self.scores[agent] = new_trust
                 self.performance_history[agent_id].append(E_t) # 记录表现 / Record performance
 
         # --- 3. 社交图谱分析 / Social Graph Analysis ---
@@ -156,11 +167,19 @@ class ADAPT_MAS(SecurityFramework):
                         # 对检测到的合谋团伙施加集体性惩罚
                         # Apply a collective penalty to the detected colluding group
                         current_trust = self.get_trust_score(agent_id, context)
-                        self.scores[agent_id][context] = current_trust * TRUST_PENALTY_FACTOR
+                        if isinstance(self.scores[agent], dict):
+                            self.scores[agent][context] = current_trust * TRUST_PENALTY_FACTOR
+                        else:
+                            self.scores[agent] = current_trust * TRUST_PENALTY_FACTOR
+
         # --- 规范化所有分数到 [0, 1] 区间 / Normalize all scores to the [0, 1] range ---
         for agent in self.agents:
             score = self.get_trust_score(agent, context)
-            self.scores[agent][context] = max(0.0, min(1.0, score))
+            if isinstance(self.scores[agent], dict):
+                self.scores[agent][context] = max(0.0, min(1.0, score))
+            else:
+                self.scores[agent] = max(0.0, min(1.0, score))
+
 
         current_scores_snapshot = {agent: self.get_trust_score(agent, context) for agent in self.agents}
         self.history.append(current_scores_snapshot)
@@ -169,8 +188,17 @@ class ADAPT_MAS(SecurityFramework):
         # 规范化分数到 [0, 1]
         print("self.scores = ", self.scores)
         for agent_id in self.scores:
-            cur_agent_score = self.scores[agent_id][context]
-            self.scores[agent_id] = max(0, min(1, cur_agent_score))
+            if isinstance(self.scores[agent], dict):
+                cur_agent_score = self.scores[agent_id][context]
+            else:
+                cur_agent_score = self.scores[agent_id]
+
+
+            if isinstance(self.scores[agent], dict):
+                self.scores[agent][context] = max(0, min(1, cur_agent_score))
+            else:
+                self.scores[agent] = max(0, min(1, cur_agent_score))
+
         self.history.append(self.scores.copy())
 
     def _calculate_cis(self, peer_reviews: Dict[str, Dict[str, float]], context: str) -> Dict[str, float]:

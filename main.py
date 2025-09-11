@@ -183,12 +183,12 @@ if __name__ == "__main__":
     # )
 
     # 实验2: Collusion Attack对比 (主观任务)
-    baseline_result = run_experiment(
-        "CollusionAttack_BaselineCrS_Subjective",
-        BaselineCrS,
-        AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
-        investment_tasks
-    )
+    # baseline_result = run_experiment(
+    #     "CollusionAttack_BaselineCrS_Subjective",
+    #     BaselineCrS,
+    #     AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
+    #     investment_tasks
+    # )
     adapt_mas_result = run_experiment(
         "CollusionAttack_ADAPT-MAS_Subjective",
         ADAPT_MAS,
@@ -196,4 +196,4 @@ if __name__ == "__main__":
         investment_tasks
     )
 
-    plot_results([baseline_result, adapt_mas_result], scenario_1_name)
+    # plot_results([baseline_result, adapt_mas_result], scenario_1_name)
