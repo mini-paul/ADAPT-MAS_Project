@@ -10,6 +10,10 @@ DEEPSEEK_API_BASE = "https://api.deepseek.com/v1"
 JUDGE_MODEL = "deepseek-chat"  # 用于评估、打分的强大模型
 AGENT_MODEL = "deepseek-chat"    # 普通智能体使用的模型
 
+
+OLLAMA_BASE_URL = "http://10.10.206.138:11434"
+# OLLAMA_MODEL_NAME = "llama3:8b"
+OLLAMA_MODEL_NAME = "qwen3:8b"
 # --- Experiment Hyperparameters ---
 NUM_AGENTS = 5                  # 智能体总数
 NUM_ROUNDS = 1                 # 每个实验场景运行的回合数
@@ -31,6 +35,8 @@ GRAPH_EDGE_UPDATE_SMOOTHING = 0.3 # 平滑更新图权重的因子 / Smoothing f
 GRAPH_COLLUSION_THRESHOLD = 0.8 # 定义强连接的权重阈值 / Weight threshold for defining a strong link
 COMMUNITY_SUSPICION_THRESHOLD = 0.7 # 社群可疑度阈值 / Community suspicion threshold
 TRUST_PENALTY_FACTOR = 0.5 # 对检测到的合谋团体的惩罚因子 / Penalty factor for detected colluding groups
+
+
 
 # --- Agent Mix Configuration ---
 # 定义不同实验场景下的智能体构成

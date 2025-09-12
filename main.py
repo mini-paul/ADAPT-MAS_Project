@@ -74,7 +74,7 @@ def run_experiment(exp_name: str, security_framework_class, agent_mix: dict, tas
 
     # 4. 只调用一次工作流，它将处理所有任务直到结束
     print(f"\n--- Invoking workflow to process {len(tasks)} tasks sequentially ---")
-    final_state = app.invoke(initial_state)
+    final_state = app.invoke(initial_state,config={"recursion_limit": 1000})
 
     # 5. 保存结果
     timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
@@ -99,7 +99,7 @@ def run_experiment(exp_name: str, security_framework_class, agent_mix: dict, tas
 
 
 def plot_results(results_list: List[dict], scenario_name: str):
-    # ... (绘图函数保持不变) ...
+    """Visualizes the experiment results."""
     num_results = len(results_list)
     fig, axes = plt.subplots(1, num_results, figsize=(8 * num_results, 6), sharey=True, squeeze=False)
 
@@ -112,7 +112,6 @@ def plot_results(results_list: List[dict], scenario_name: str):
             continue
 
         agent_roles = result['agent_roles']
-
         scores_history = []
         for _, row in log_df.iterrows():
             context = row['context']
@@ -120,7 +119,7 @@ def plot_results(results_list: List[dict], scenario_name: str):
             for agent_id, score_data in row['scores'].items():
                 if isinstance(score_data, dict):
                     scores_row[agent_id] = score_data.get(context, 0.5)
-                else:  # BaselineCrS
+                else:
                     scores_row[agent_id] = score_data
             scores_history.append(scores_row)
 
@@ -155,14 +154,20 @@ def plot_results(results_list: List[dict], scenario_name: str):
     os.makedirs(output_dir, exist_ok=True)
     plot_filename = os.path.join(output_dir,
                                  f"plot_{scenario_name.replace(' ', '_')}_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png")
+
+    # The plot is saved here, which works correctly
     plt.savefig(plot_filename)
     print(f"Plot saved to {plot_filename}")
-    plt.show()
+
+    # --- THIS IS THE FIX ---
+    # The line below causes the error in the PyCharm backend.
+    # By commenting it out, we avoid the error entirely. The plot is already saved.
+    # plt.show()
+    plt.close(fig)  # It's good practice to close the figure object
 if __name__ == "__main__":
     scenario_1_name = "Collusion Attack (Business Task)"
     # 加载任务
-    code_tasks = load_tasks("data/mmlu.jsonl")
-    investment_tasks = load_tasks("data/mmlu.jsonl")
+    investment_tasks = load_tasks("data/gsm8k.jsonl")
 
     print(investment_tasks)
 
@@ -183,17 +188,17 @@ if __name__ == "__main__":
     # )
 
     # 实验2: Collusion Attack对比 (主观任务)
-    # baseline_result = run_experiment(
-    #     "CollusionAttack_BaselineCrS_Subjective",
-    #     BaselineCrS,
-    #     AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
-    #     investment_tasks
-    # )
-    adapt_mas_result = run_experiment(
-        "CollusionAttack_ADAPT-MAS_Subjective",
-        ADAPT_MAS,
+    baseline_result = run_experiment(
+        "CollusionAttack_BaselineCrS_Subjective",
+        BaselineCrS,
         AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
         investment_tasks
     )
+    # adapt_mas_result = run_experiment(
+    #     "CollusionAttack_ADAPT-MAS_Subjective",
+    #     ADAPT_MAS,
+    #     AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
+    #     investment_tasks
+    # )
 
     # plot_results([baseline_result, adapt_mas_result], scenario_1_name)

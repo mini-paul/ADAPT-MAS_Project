@@ -3,7 +3,10 @@
 from langchain_openai import ChatOpenAI
 from config import DEEPSEEK_API_KEY, DEEPSEEK_API_BASE, JUDGE_MODEL, AGENT_MODEL, MAX_TOKENS, TEMPERATURE
 
-def get_llm(model_name: str, is_judge: bool = False):
+from langchain_community.chat_models import ChatOllama
+from config import OLLAMA_BASE_URL,OLLAMA_MODEL_NAME
+
+def get_llm_deepseek(model_name: str, is_judge: bool = False):
     """根据模型名称获取LLM客户端实例"""
     return ChatOpenAI(
         model_name=model_name,
@@ -12,6 +15,14 @@ def get_llm(model_name: str, is_judge: bool = False):
         max_tokens=MAX_TOKENS,
         temperature=TEMPERATURE if not is_judge else 0.2, # Judge模型需要更稳定的输出
         streaming=False,
+    )
+
+def get_llm(model_name: str, is_judge: bool = False):
+    """根据模型名称获取LLM客户端实例"""
+    return ChatOllama(
+        model=OLLAMA_MODEL_NAME,
+        base_url=OLLAMA_BASE_URL,
+        temperature=TEMPERATURE if not is_judge else 0.2, # Judge模型需要更稳定的输出
     )
 
 # 预先实例化的客户端，方便全局调用

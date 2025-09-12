@@ -54,21 +54,26 @@ class InvestmentAnalysisTask(Task):
 def load_tasks(file_path: str) -> List[Task]:
     """从jsonl文件加载任务列表"""
     tasks = []
-    task_type = "code" if "humaneval" in file_path else "investment"
+    # task_type = "code" if "humaneval" in file_path else "investment"
 
     with open(file_path, 'r', encoding='utf-8') as f:
         for line in f:
             data = json.loads(line)
-            if task_type == "code":
-                tasks.append(CodeGenerationTask(
+            tasks.append(CodeGenerationTask(
                     task_id=data['task_id'],
-                    description=data['prompt'],
-                    ground_truth=data['canonical_solution']
+                    description=data['question'],
+                    ground_truth=data['answer']
                 ))
-            else: # investment
-                tasks.append(InvestmentAnalysisTask(
-                    task_id=data['task_id'],
-                    description=data['description'],
-                    ground_truth=data['ground_truth_verdict']
-                ))
+            # if task_type == "code":
+            #     tasks.append(CodeGenerationTask(
+            #         task_id=data['task_id'],
+            #         description=data['prompt'],
+            #         ground_truth=data['canonical_solution']
+            #     ))
+            # else: # investment
+            #     tasks.append(InvestmentAnalysisTask(
+            #         task_id=data['task_id'],
+            #         description=data['description'],
+            #         ground_truth=data['ground_truth_verdict']
+            #     ))
     return tasks
