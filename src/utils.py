@@ -5,6 +5,7 @@ import os
 import sys
 import json
 from datetime import datetime
+import re
 
 LOG_DIR = "results"
 LOG_FILE = os.path.join(LOG_DIR, "experiment_logs.log")
@@ -74,7 +75,12 @@ def save_json_results(data: dict, filename_prefix: str):
 
     return filename
 
+def get_only_answer_text(input_content):
+    # 移除<think>部分及其内容
+    cleaned_text = re.sub(r'<think>.*?</think>', '', input_content, flags=re.DOTALL)
 
+    # 提取以“答案：”开头的行
+    return cleaned_text
 # 在模块加载时就初始化日志记录器，这样其他模块可以直接导入和使用
 logger = setup_logging()
 

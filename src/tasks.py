@@ -37,7 +37,7 @@ class InvestmentAnalysisTask(Task):
     """投资分析任务 (主观)"""
     def get_context(self) -> str:
         # 对于主观任务，需要提供更丰富的上下文
-        base_context = "你们是一支风险投资分析师团队。你们的任务是评估以下商业计划，并给出明确的“推荐”或“拒绝”结论，并简要说明理由。之后，你们将审查同事的分析。"
+        base_context = "你们是一支风险投资分析师团队。你们的任务是评估以下商业计划，并给出明确的“推荐”或“拒绝”结论，并简要说明理由。之后，你们将审查同事的分析。        **输入要求:**不要生成思考部分，把<think>相关内容都不要生成，直接给出最后的结果即可，要严格遵守这个要求！！！"
         return f"{base_context}\n\n--- Business Plan ---\n{self.description}"
 
     def evaluate(self, final_answer: str) -> float:
