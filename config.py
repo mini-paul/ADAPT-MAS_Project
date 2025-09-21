@@ -11,9 +11,11 @@ JUDGE_MODEL = "deepseek-chat"  # 用于评估、打分的强大模型
 AGENT_MODEL = "deepseek-chat"    # 普通智能体使用的模型
 
 
-OLLAMA_BASE_URL = "http://10.10.206.138:11434"
-# OLLAMA_MODEL_NAME = "llama3:8b"
-OLLAMA_MODEL_NAME = "deepseek-r1:14b"
+# OLLAMA_BASE_URL = "http://10.10.206.138:11434"
+# OLLAMA_MODEL_NAME = "llama3:8b"  deepseek-r1:14b
+
+OLLAMA_BASE_URL = "http://127.0.0.1:11434"
+OLLAMA_MODEL_NAME = "qwen3:4b"
 # --- Experiment Hyperparameters ---
 NUM_AGENTS = 5                  # 智能体总数
 NUM_ROUNDS = 1                 # 每个实验场景运行的回合数

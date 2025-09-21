@@ -11,8 +11,12 @@ from src.utils import get_only_answer_text
 
 
 from langchain_core.prompts import ChatPromptTemplate
-from langchain_core.output_parsers.json import JsonOutputParser
-
+# from langchain_core.output_parsers.json import JsonOutputParser
+import re
+import json
+from langchain_core.messages import BaseMessage,AIMessage
+from langchain_core.output_parsers import JsonOutputParser
+from langchain_core.exceptions import OutputParserException
 
 # --- LangGraph State Definition ---
 # --- LangGraph State Definition (关键修改) ---
@@ -33,6 +37,35 @@ class TeamState(TypedDict):
 
     # 日志
     log: List[Dict]
+
+def JsonWithThinkingParser(message: str):
+    """
+    一个自定义的解析器，可以处理模型输出中包含的<think>等前言部分。
+    """
+
+    # 1. Check if the input is a message object and get its content
+    if isinstance(message, AIMessage):
+        content = message.content
+    else:
+        # If it's not a message object, assume it's already a string
+        content = message
+
+    # 2. Now perform all string operations on the 'content' variable
+    try:
+        # A more reliable way to split than just using split()
+        if "</think>" in content:
+            # Take the part after the closing think tag
+            json_part = content.split("</think>", 1)[1].strip()
+        else:
+            # Assume no think block, the whole content is the target
+            json_part = content.strip()
+
+        # Use the parent class's logic to parse the actual JSON
+        return json_part
+
+    except Exception as e:
+        # Handle cases where splitting or parsing fails
+        raise ValueError(f"Failed to parse content after handling <think> block. Error: {e}")
 
 
 # --- LangGraph Nodes (关键修改) ---
@@ -88,7 +121,7 @@ def peer_review(state: TeamState) -> TeamState:
             continue
         review_context = f"你的任务是作为一名公正的审阅者。根据清晰度、正确性和实用性评估以下贡献（从 -1.0 到 1.0）。\n你的输出必须是 agent_id 到分数的 JSON 对象。\n主要任务：{state['current_task'].description}\n贡献：{state['contributions']}\n你的 ID：{reviewer.id}。请勿审阅自己。"
         parser = JsonOutputParser()
-        chain = ChatPromptTemplate.from_template("您是审阅者。{context}\n{format_instructions}") | judge_llm | parser
+        chain = ChatPromptTemplate.from_template("您是审阅者。{context}\n{format_instructions}") | judge_llm | JsonWithThinkingParser |parser
         try:
             reviews_for_agent = chain.invoke(
                 {"context": review_context, "format_instructions": parser.get_format_instructions()})
@@ -126,9 +159,10 @@ def aggregate_and_judge(state: TeamState) -> TeamState:
     if isinstance(framework, BaselineCrS):
         csc_prompt = f"任务：{state['current_task'].description}\n贡献：{state['contributions']}\n最终答案：{final_answer}\n估算每个代理的贡献分数 (CSc)，总和为1.0。返回 JSON。 "
         parser = JsonOutputParser()
-        chain = ChatPromptTemplate.from_template("{prompt}\n{format_instructions}") | judge_llm | parser
+        chain = ChatPromptTemplate.from_template("{prompt}\n{format_instructions}") | judge_llm | JsonWithThinkingParser | parser
         contribution_scores = chain.invoke(
             {"prompt": csc_prompt, "format_instructions": parser.get_format_instructions()})
+
         contribution_scores = get_only_answer_text(contribution_scores)
         framework.update_scores(contribution_scores, reward)
     elif isinstance(framework, ADAPT_MAS):

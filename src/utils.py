@@ -77,10 +77,13 @@ def save_json_results(data: dict, filename_prefix: str):
 
 def get_only_answer_text(input_content):
     # 移除<think>部分及其内容
-    cleaned_text = re.sub(r'<think>.*?</think>', '', input_content, flags=re.DOTALL)
+    if "</think>" in input_content:
 
-    # 提取以“答案：”开头的行
-    return cleaned_text
+        cleaned_text = re.sub(r'<think>.*?</think>', '', input_content, flags=re.DOTALL)
+
+        # 提取以“答案：”开头的行
+        return cleaned_text
+    return input_content
 # 在模块加载时就初始化日志记录器，这样其他模块可以直接导入和使用
 logger = setup_logging()
 

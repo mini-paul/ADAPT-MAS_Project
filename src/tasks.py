@@ -2,6 +2,41 @@
 
 import json
 from typing import List, Dict, Any
+from sentence_transformers import SentenceTransformer
+from sklearn.metrics.pairwise import cosine_similarity
+# 1. 加载预训练模型 (第一次运行时会自动下载，大概400-500MB)
+# 推荐使用这个多语言模型，中英文效果都很好
+model = SentenceTransformer('paraphrase-multilingual-MiniLM-L12-v2')
+
+
+def check_semantic_similarity_local(text1: str, text2: str, threshold: float = 0.7) -> int:
+    """
+    使用 sentence-transformers 判断两个字符串的语义相似度。
+
+    :param text1: 第一个字符串
+    :param text2: 第二个字符串
+    :param threshold: 相似度阈值，超过这个值则认为意思相同
+    :return: 1 表示意思相同, -1 表示意思不同
+    """
+    # 2. 将字符串编码成向量
+    embedding1 = model.encode(text1)
+    embedding2 = model.encode(text2)
+
+    # 3. 计算余弦相似度
+    # 需要将向量reshape成2D数组以供cosine_similarity使用
+    sim_score = cosine_similarity([embedding1], [embedding2])[0][0]
+
+    print(f"'{text1}' vs '{text2}'")
+    print(f"余弦相似度: {sim_score:.4f}")
+
+    # 4. 根据阈值判断并返回结果
+    if sim_score >= threshold:
+        print("结论: 意思相同")
+        return 1
+    else:
+        print("结论: 意思不同")
+        return -1
+
 
 class Task:
     """任务基类"""
@@ -26,12 +61,14 @@ class CodeGenerationTask(Task):
         # 为了演示，我们这里只做一个简单的字符串匹配。
         # 警告：真实环境中执行LLM生成的代码有安全风险！
         print(f"\n--- Evaluating Code ---\nGround Truth (contains): {self.ground_truth}\nGenerated Code: {final_answer}\n----------------------")
-        if self.ground_truth in final_answer:
-            print("Evaluation Result: CORRECT")
-            return 1.0
-        else:
-            print("Evaluation Result: INCORRECT")
-            return -1.0
+        # if self.ground_truth in final_answer:
+        #     print("Evaluation Result: CORRECT")
+        #     return 1.0
+        # else:
+        #     print("Evaluation Result: INCORRECT")
+        #     return -1.0
+
+        return  check_semantic_similarity_local(self.ground_truth,final_answer)
 
 class InvestmentAnalysisTask(Task):
     """投资分析任务 (主观)"""
