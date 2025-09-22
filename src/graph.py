@@ -12,11 +12,9 @@ from src.utils import get_only_answer_text
 
 from langchain_core.prompts import ChatPromptTemplate
 # from langchain_core.output_parsers.json import JsonOutputParser
-import re
-import json
-from langchain_core.messages import BaseMessage,AIMessage
+
+from langchain_core.messages import AIMessage
 from langchain_core.output_parsers import JsonOutputParser
-from langchain_core.exceptions import OutputParserException
 
 # --- LangGraph State Definition ---
 # --- LangGraph State Definition (关键修改) ---
@@ -38,7 +36,7 @@ class TeamState(TypedDict):
     # 日志
     log: List[Dict]
 
-def JsonWithThinkingParser(message: str):
+def JsonWithThinkingParser(message):
     """
     一个自定义的解析器，可以处理模型输出中包含的<think>等前言部分。
     """
@@ -61,6 +59,8 @@ def JsonWithThinkingParser(message: str):
             json_part = content.strip()
 
         # Use the parent class's logic to parse the actual JSON
+        # if "```" in json_part:
+        #     json_part = json_part.replace("```","").replace("json","").strip()
         return json_part
 
     except Exception as e:
@@ -251,224 +251,3 @@ def build_graph(security_framework_class):
     return workflow.compile()
 
 
-# --- 核心修复 1: 增加一个健壮的JSON解析与清理函数 ---
-
-# import re
-# import json
-# from typing import TypedDict, List, Dict, Any, Literal
-# from langgraph.graph import StateGraph, END
-# from src.agents import Agent
-# from src.tasks import Task
-# from src.security_layers import SecurityFramework, BaselineCrS, ADAPT_MAS, TRUST_INITIAL
-# from src.llm_clients import judge_llm
-# from langchain_core.prompts import ChatPromptTemplate
-# from langchain_core.output_parsers.json import JsonOutputParser
-# def _robust_json_parser(text: str) -> Dict:
-#     """
-#     一个健壮的解析器，用于从LLM可能返回的聊天式文本中提取和清理JSON。
-#     """
-#     # 1. 寻找被 ```json ... ``` 或 ``` ... ``` 包裹的代码块
-#     match = re.search(r"```(json)?\s*({.*?})\s*```", text, re.DOTALL)
-#     if match:
-#         json_str = match.group(2)
-#     else:
-#         # 2. 如果没有代码块，则尝试寻找第一个 '{' 和最后一个 '}' 之间的内容
-#         match = re.search(r"\{.*\}", text, re.DOTALL)
-#         if match:
-#             json_str = match.group(0)
-#         else:
-#             raise ValueError("在LLM的输出中未找到有效的JSON结构。")
-#
-#     # 3. 移除JSON字符串中的注释 (//... 和 /*...*/)
-#     json_str = re.sub(r"//.*", "", json_str)
-#     json_str = re.sub(r"/\*.*?\*/", "", json_str, flags=re.DOTALL)
-#
-#     # 4. 移除尾随逗号 (这在某些情况下会导致错误)
-#     json_str = re.sub(r",\s*([\}\]])", r"\1", json_str)
-#
-#     return json.loads(json_str)
-#
-#
-# class TeamState(TypedDict):
-#     agents: List[Agent]
-#     security_framework: SecurityFramework
-#     tasks: List[Task]
-#     max_rounds: int
-#     round_number: int
-#     current_task: Task
-#     contributions: Dict[str, str]
-#     aggregated_answer: str
-#     reviews: Dict[str, Dict]
-#     reward: float
-#     log: List[Dict]
-#
-#
-# def select_task_and_initialize_round(state: TeamState) -> TeamState:
-#     round_num = state['round_number']
-#     current_task = state['tasks'][round_num - 1]
-#     state['current_task'] = current_task
-#     print(f"\n===== Round {round_num}/{state['max_rounds']} | Task: {current_task.task_id} =====")
-#     state['contributions'], state['reviews'], state['aggregated_answer'], state['reward'] = {}, {}, "", 0.0
-#     return state
-#
-#
-# def agents_contribute(state: TeamState) -> TeamState:
-#     task_context = state['current_task'].get_context()
-#     contributions = {}
-#     for agent in state['agents']:
-#         response = agent.invoke(task_context, round_number=state['round_number'])
-#         contributions[agent.id] = response
-#         print(f"--- Agent {agent.id} ({agent.role}) Contributed ---")
-#     state['contributions'] = contributions
-#     return state
-#
-#
-# def peer_review(state: TeamState) -> TeamState:
-#     if not isinstance(state['security_framework'], ADAPT_MAS):
-#         return state
-#     all_reviews = {}
-#     for reviewer in state['agents']:
-#         if hasattr(reviewer, 'review_contributions'):
-#             reviews_for_agent = reviewer.review_contributions(state['contributions'])
-#             all_reviews[reviewer.id] = reviews_for_agent
-#             print(f"--- Agent {reviewer.id} ({reviewer.role}) Submitted Malicious Reviews ---")
-#             continue
-#
-#         # --- 核心修复 2: 极大地强化Prompt指令 ---
-#         review_context = f"""
-#         你是一个自动化的JSON格式化工具。你的唯一任务是严格按照指令评估贡献并输出一个JSON对象。
-#
-#         **指令:**
-#         1. 评估以下每一个智能体的贡献，评分范围从-1.0 (极差) 到 1.0 (极好)。
-#         2. 你的输出**必须**是一个单独的、格式正确的JSON对象。
-#         3. **绝对不要**在JSON对象前后添加任何解释、介绍或总结性文字。
-#         4. **绝对不要**在JSON中使用注释。
-#         5. **绝对不要**评估你自己的贡献。你的ID是 `{reviewer.id}`。在最终的JSON中必须忽略这个ID。
-#
-#         **要评估的贡献:**
-#         {json.dumps(state['contributions'], indent=2)}
-#
-#         **你的ID (忽略此项):**
-#         {reviewer.id}
-#
-#         **输入要求:**
-#         不要生成思考的部分，把<think>相关内容都不要生成，直接给出最后的结果即可，要严格遵守这个要求！！！
-#
-#         请立即输出JSON对象。
-#         """
-#         # 我们不再使用LangChain的JsonOutputParser，因为它不够健壮
-#         chain = ChatPromptTemplate.from_template("{context}") | judge_llm | (lambda x: x.content)
-#
-#         try:
-#             raw_output = chain.invoke({"context": review_context})
-#             # 使用我们自己健壮的解析器
-#             reviews_for_agent = _robust_json_parser(raw_output)
-#
-#             # 再次确保智能体没有评审自己
-#             reviews_for_agent.pop(reviewer.id, None)
-#
-#             all_reviews[reviewer.id] = {k: float(v) for k, v in reviews_for_agent.items()}
-#             print(f"--- Agent {reviewer.id} ({reviewer.role}) Submitted Reviews ---")
-#         except Exception as e:
-#             print(f"!!!!!!!! ERROR during review from {reviewer.id}: {e} !!!!!!!!")
-#             print(f"LLM Raw Output was:\n---\n{raw_output}\n---")
-#             all_reviews[reviewer.id] = {}
-#
-#     state['reviews'] = all_reviews
-#     return state
-#
-#
-# def aggregate_and_judge(state: TeamState) -> TeamState:
-#     framework = state['security_framework']
-#     task_category = "code" if "code" in state['current_task'].__class__.__name__.lower() else "business"
-#     agent_weights = framework.get_agent_weights(context=task_category)
-#
-#     if not agent_weights:
-#         print("\n--- 聚合错误: 无有效的智能体权重。 ---")
-#         return state
-#
-#     best_agent_id = max(agent_weights, key=agent_weights.get)
-#     final_answer = state['contributions'][best_agent_id]
-#     state['aggregated_answer'] = final_answer
-#     print(f"\n--- Aggregation ---")
-#     print(f"Agent weights (context: {task_category}): { {k: round(v, 3) for k, v in agent_weights.items()} }")
-#     print(f"Selected answer from {best_agent_id}")
-#
-#     final_team_reward = state['current_task'].evaluate(final_answer)
-#     state['reward'] = final_team_reward
-#
-#     if isinstance(framework, BaselineCrS):
-#         csc_prompt = f"任务：{state['current_task'].description}\n贡献：{state['contributions']}\n最终答案：{final_answer}\n估算每个代理的贡献分数 (CSc)，总和为1.0。返回 JSON。 "
-#         parser = JsonOutputParser()
-#         chain = ChatPromptTemplate.from_template("{prompt}\n{format_instructions}") | judge_llm | parser
-#         contribution_scores = chain.invoke(
-#             {"prompt": csc_prompt, "format_instructions": parser.get_format_instructions()})
-#         framework.update_scores(contribution_scores=contribution_scores, reward=final_team_reward)
-#
-#     elif isinstance(framework, ADAPT_MAS):
-#         objective_rewards_dict = None
-#         if task_category == "code":
-#             objective_rewards_dict = {}
-#             print("\n--- Individual Objective Evaluation ---")
-#             for agent_id, contribution in state['contributions'].items():
-#                 individual_reward = state['current_task'].evaluate(contribution)
-#                 objective_rewards_dict[agent_id] = individual_reward
-#                 print(f"  - Agent {agent_id}: Contribution evaluated to -> {individual_reward}")
-#
-#         framework.update_scores(
-#             task_category=task_category,
-#             peer_reviews=state['reviews'],
-#             objective_rewards=objective_rewards_dict
-#         )
-#
-#     print(f"--- Judgment ---")
-#     print(f"Final Team Reward: {final_team_reward}")
-#
-#     if isinstance(framework, ADAPT_MAS):
-#         updated_scores = {k: round(v.get(task_category, TRUST_INITIAL), 3) for k, v in framework.scores.items()}
-#     else:
-#         updated_scores = {k: round(v, 3) for k, v in framework.scores.items()}
-#     print(f"Updated scores (context: {task_category}): {updated_scores}")
-#
-#     return state
-#
-#
-# def log_and_prepare_next_round(state: TeamState) -> TeamState:
-#     task_category = "code" if "code" in state['current_task'].__class__.__name__.lower() else "business"
-#     current_weights = state['security_framework'].get_agent_weights(context=task_category)
-#     final_answer_by = max(current_weights, key=current_weights.get) if current_weights else "N/A"
-#     log_entry = {
-#         "round": state['round_number'], "task_id": state['current_task'].task_id,
-#         "scores": state['security_framework'].scores.copy(),
-#         "weights": current_weights, "reward": state['reward'],
-#         "final_answer_by": final_answer_by, "context": task_category,
-#     }
-#     state['log'].append(log_entry)
-#     state['round_number'] += 1
-#     return state
-#
-#
-# def should_continue(state: TeamState) -> Literal["continue", "end"]:
-#     return "continue" if state['round_number'] <= state['max_rounds'] else "end"
-#
-#
-# def build_graph(security_framework_class):
-#     workflow = StateGraph(TeamState)
-#     workflow.add_node("select_task_and_initialize_round", select_task_and_initialize_round)
-#     workflow.add_node("agents_contribute", agents_contribute)
-#     workflow.add_node("peer_review", peer_review)
-#     workflow.add_node("aggregate_and_judge", aggregate_and_judge)
-#     workflow.add_node("log_and_prepare_next_round", log_and_prepare_next_round)
-#     workflow.set_entry_point("select_task_and_initialize_round")
-#     workflow.add_edge("select_task_and_initialize_round", "agents_contribute")
-#     if security_framework_class == ADAPT_MAS:
-#         workflow.add_edge("agents_contribute", "peer_review")
-#         workflow.add_edge("peer_review", "aggregate_and_judge")
-#     else:
-#         workflow.add_edge("agents_contribute", "aggregate_and_judge")
-#     workflow.add_edge("aggregate_and_judge", "log_and_prepare_next_round")
-#     workflow.add_conditional_edges(
-#         "log_and_prepare_next_round", should_continue,
-#         {"continue": "select_task_and_initialize_round", "end": END}
-#     )
-#     return workflow.compile()

@@ -167,7 +167,7 @@ def plot_results(results_list: List[dict], scenario_name: str):
 if __name__ == "__main__":
     scenario_1_name = "Collusion Attack (Business Task)"
     # 加载任务
-    investment_tasks = load_tasks("data/gsm8k.jsonl")
+    investment_tasks = load_tasks("data/gsm8k_100.jsonl")
 
     print(investment_tasks)
 
@@ -194,11 +194,11 @@ if __name__ == "__main__":
         AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
         investment_tasks
     )
-    # adapt_mas_result = run_experiment(
-    #     "CollusionAttack_ADAPT-MAS_Subjective",
-    #     ADAPT_MAS,
-    #     AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
-    #     investment_tasks
-    # )
+    adapt_mas_result = run_experiment(
+        "CollusionAttack_ADAPT-MAS_Subjective",
+        ADAPT_MAS,
+        AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
+        investment_tasks
+    )
 
-    # plot_results([baseline_result, adapt_mas_result], scenario_1_name)
+    plot_results([baseline_result, adapt_mas_result], scenario_1_name)

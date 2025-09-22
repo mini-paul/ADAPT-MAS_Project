@@ -28,3 +28,4 @@ def get_llm(model_name: str, is_judge: bool = False):
 # 预先实例化的客户端，方便全局调用
 judge_llm = get_llm(JUDGE_MODEL, is_judge=True)
 agent_llm = get_llm(AGENT_MODEL)
+evaluation_llm = get_llm("JUDGE_MODEL")
