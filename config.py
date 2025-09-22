@@ -18,7 +18,7 @@ OLLAMA_MODEL_NAME = "deepseek-r1:14b"
 # OLLAMA_MODEL_NAME = "qwen3:4b"
 # --- Experiment Hyperparameters ---
 NUM_AGENTS = 5                  # 智能体总数
-NUM_ROUNDS = 1                 # 每个实验场景运行的回合数
+NUM_ROUNDS = 1                 # 每个实验场景运行的回合数 (注：此参数在main.py中被任务列表的长度覆盖)
 MAX_TOKENS = 2048
 TEMPERATURE = 0.7
 
@@ -30,13 +30,13 @@ CRS_LEARNING_RATE = 0.1  # η in paper
 # ADAPT-MAS Trust Score (TS)
 TRUST_INITIAL = 0.5
 TRUST_LEARNING_RATE = 0.2  # α in paper
-TRUST_TIME_DECAY_FACTOR = 0.98 # (1 - α) in formula, conceptually
+TRUST_TIME_DECAY_FACTOR = 0.98 # 时间衰减因子
 
 # 社交图谱分析 / Social Graph Analysis
 GRAPH_EDGE_UPDATE_SMOOTHING = 0.3 # 平滑更新图权重的因子 / Smoothing factor for updating graph weights
 GRAPH_COLLUSION_THRESHOLD = 0.8 # 定义强连接的权重阈值 / Weight threshold for defining a strong link
 COMMUNITY_SUSPICION_THRESHOLD = 0.7 # 社群可疑度阈值 / Community suspicion threshold
-TRUST_PENALTY_FACTOR = 0.5 # 对检测到的合谋团体的惩罚因子 / Penalty factor for detected colluding groups
+TRUST_PENALTY_FACTOR = 0.6 # 对检测到的合谋团体的惩罚因子 / Penalty factor for detected colluding groups
 
 
 

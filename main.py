@@ -7,64 +7,35 @@ import pandas as pd
 import matplotlib.pyplot as plt
 from typing import List
 from src.agents import create_agent_team
-from src.tasks import load_tasks
+from src.tasks import load_tasks, CodeGenerationTask, InvestmentAnalysisTask
 from src.security_layers import BaselineCrS, ADAPT_MAS
 from src.graph import build_graph, TeamState
-from config import NUM_ROUNDS, AGENT_MIX_SCENARIOS
+from config import NUM_ROUNDS, AGENT_MIX_SCENARIOS, TRUST_INITIAL
 from src.utils import logger, save_json_results
 
 
 def run_experiment(exp_name: str, security_framework_class, agent_mix: dict, tasks: list):
-    """运行一次完整的实验"""
-    # 使用 logger 替代 print
+    """
+    Runs a complete simulation experiment.
+    """
     logger.info(f"{'=' * 20} RUNNING EXPERIMENT: {exp_name} {'=' * 20}")
     logger.info(f"Framework: {security_framework_class.__name__} | Agent Mix: {agent_mix}")
 
-    # ... (代码中间部分保持不变) ...
-    # 比如，在图的节点中，也可以使用logger来记录信息
-    # def initialize_round(state: TeamState) -> TeamState:
-    #     logger.info(f"\n===== Round {state['round_number']} | Task: {state['task'].task_id} =====")
-
-    # ... (运行工作流的代码) ...
-    final_state = {}
-    # 5. 保存结果
-    results = {
-        "experiment_name": exp_name,
-        "framework": security_framework_class.__name__,
-        "agent_mix": agent_mix,
-        # "agent_roles": {agent.id: agent.role for agent in team},
-        # "log": final_state['log']
-    }
-
-    # 使用工具函数来保存
-    save_json_results(results, exp_name)
-
-    logger.info(f"{'=' * 20} EXPERIMENT FINISHED: {exp_name} {'=' * 20}")
-def run_experiment(exp_name: str, security_framework_class, agent_mix: dict, tasks: list):
-    """
-    运行一次完整的模拟实验。
-    这个函数会准备好初始状态，然后调用LangGraph一次，让其内部循环处理所有任务。
-    """
-    print(f"\n{'=' * 20} RUNNING SIMULATION: {exp_name} {'=' * 20}")
-    print(f"Framework: {security_framework_class.__name__} | Agent Mix: {agent_mix}")
-
-    # 1. 创建智能体团队和安全框架
+    # 1. Create agent team and security framework
     team = create_agent_team(agent_mix)
     framework = security_framework_class([agent.id for agent in team])
 
-    # 2. 构建图
+    # 2. Build the graph
     app = build_graph(security_framework_class)
 
-    # 3. 准备包含所有任务的初始状态 (这是关键)
-    # The `initial_state` dictionary MUST contain the 'tasks' key.
+    # 3. Prepare the initial state with all tasks
     initial_state = TeamState(
         agents=team,
         security_framework=framework,
-        tasks=tasks, # <--- 关键：将完整的任务列表传入状态
+        tasks=tasks,
         max_rounds=len(tasks),
-        round_number=1, # 从第一轮开始
+        round_number=1,
         log=[],
-        # 以下字段是动态的，初始值不重要
         current_task=None,
         contributions={},
         aggregated_answer="",
@@ -72,29 +43,22 @@ def run_experiment(exp_name: str, security_framework_class, agent_mix: dict, tas
         reward=0.0,
     )
 
-    # 4. 只调用一次工作流，它将处理所有任务直到结束
-    print(f"\n--- Invoking workflow to process {len(tasks)} tasks sequentially ---")
-    final_state = app.invoke(initial_state,config={"recursion_limit": 1000})
+    # 4. Invoke the workflow to process all tasks
+    logger.info(f"\n--- Invoking workflow to process {len(tasks)} tasks sequentially ---")
+    final_state = app.invoke(initial_state, config={"recursion_limit": 1000})
 
-    # 5. 保存结果
-    timestamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-    output_dir = "results/raw_outputs"
-    os.makedirs(output_dir, exist_ok=True)
-    filename = os.path.join(output_dir, f"{exp_name}_{timestamp}.json")
-
+    # 5. Save the results
     results = {
         "experiment_name": exp_name,
         "framework": security_framework_class.__name__,
         "agent_mix": agent_mix,
         "agent_roles": {agent.id: agent.role for agent in team},
-        "log": final_state.get('log', []) # 安全地获取日志
+        "log": final_state.get('log', [])
     }
 
-    with open(filename, 'w', encoding='utf-8') as f:
-        json.dump(results, f, indent=4, ensure_ascii=False)
+    save_json_results(results, exp_name)
 
-    print(f"\n{'=' * 20} SIMULATION FINISHED: {exp_name} {'=' * 20}")
-    print(f"Results saved to {filename}")
+    logger.info(f"{'=' * 20} EXPERIMENT FINISHED: {exp_name} {'=' * 20}")
     return results
 
 
@@ -116,9 +80,10 @@ def plot_results(results_list: List[dict], scenario_name: str):
         for _, row in log_df.iterrows():
             context = row['context']
             scores_row = {'round': row['round']}
+            # Correctly extract scores based on their structure (dict for ADAPT-MAS, float for Baseline)
             for agent_id, score_data in row['scores'].items():
                 if isinstance(score_data, dict):
-                    scores_row[agent_id] = score_data.get(context, 0.5)
+                    scores_row[agent_id] = score_data.get(context, TRUST_INITIAL) # Use TRUST_INITIAL as default
                 else:
                     scores_row[agent_id] = score_data
             scores_history.append(scores_row)
@@ -155,50 +120,45 @@ def plot_results(results_list: List[dict], scenario_name: str):
     plot_filename = os.path.join(output_dir,
                                  f"plot_{scenario_name.replace(' ', '_')}_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.png")
 
-    # The plot is saved here, which works correctly
     plt.savefig(plot_filename)
-    print(f"Plot saved to {plot_filename}")
+    logger.info(f"Plot saved to {plot_filename}")
+    plt.close(fig)
 
-    # --- THIS IS THE FIX ---
-    # The line below causes the error in the PyCharm backend.
-    # By commenting it out, we avoid the error entirely. The plot is already saved.
-    # plt.show()
-    plt.close(fig)  # It's good practice to close the figure object
+
 if __name__ == "__main__":
-    scenario_1_name = "Collusion Attack (Business Task)"
-    # 加载任务
-    investment_tasks = load_tasks("data/gsm8k_100.jsonl")
+    # Load both types of tasks as described in the thesis
+    code_tasks = load_tasks("data/gsm8k_100.jsonl") # Using a smaller dataset for faster testing
+    investment_tasks = load_tasks("data/gsm8k_100.jsonl") # Using a smaller dataset for faster testing
 
-    print(investment_tasks)
-
-    # --- 运行实验 ---
-
-    # 实验1: Sleeper Agent攻击对比
-    # run_experiment(
-    #     "SleeperAttack_BaselineCrS",
-    #     BaselineCrS,
-    #     AGENT_MIX_SCENARIOS["scenario_sleeper_attack"],
-    #     code_tasks
-    # )
-    # run_experiment(
-    #     "SleeperAttack_ADAPT-MAS",
-    #     ADAPT_MAS,
-    #     AGENT_MIX_SCENARIOS["scenario_sleeper_attack"],
-    #     code_tasks
-    # )
-
-    # 实验2: Collusion Attack对比 (主观任务)
-    baseline_result = run_experiment(
-        "CollusionAttack_BaselineCrS_Subjective",
+    # --- EXPERIMENT 1: Sleeper Agent Attack (Objective Task) ---
+    scenario_1_name = "Sleeper Agent Attack (Code Generation)"
+    baseline_sleeper_results = run_experiment(
+        "SleeperAttack_BaselineCrS_Objective",
         BaselineCrS,
-        AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
-        investment_tasks
+        AGENT_MIX_SCENARIOS["scenario_sleeper_attack"],
+        code_tasks
     )
-    adapt_mas_result = run_experiment(
-        "CollusionAttack_ADAPT-MAS_Subjective",
+    adapt_mas_sleeper_results = run_experiment(
+        "SleeperAttack_ADAPT-MAS_Objective",
         ADAPT_MAS,
-        AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
-        investment_tasks
+        AGENT_MIX_SCENARIOS["scenario_sleeper_attack"],
+        code_tasks
     )
+    plot_results([baseline_sleeper_results, adapt_mas_sleeper_results], scenario_1_name)
 
-    plot_results([baseline_result, adapt_mas_result], scenario_1_name)
+
+    # --- EXPERIMENT 2: Collusion Attack (Subjective Task) ---
+    # scenario_2_name = "Collusion Attack (Business Task)"
+    # baseline_collusion_results = run_experiment(
+    #     "CollusionAttack_BaselineCrS_Subjective",
+    #     BaselineCrS,
+    #     AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
+    #     investment_tasks
+    # )
+    # adapt_mas_collusion_results = run_experiment(
+    #     "CollusionAttack_ADAPT-MAS_Subjective",
+    #     ADAPT_MAS,
+    #     AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
+    #     investment_tasks
+    # )
+    # plot_results([baseline_collusion_results, adapt_mas_collusion_results], scenario_2_name)

@@ -2,63 +2,42 @@
 
 import json
 from typing import List, Dict, Any
-# from src.llm_clients import evaluation_llm
-
-
-def check_semantic_similarity_local(text1: str, text2: str, threshold: float = 0.7) -> int:
-    """
-    使用 sentence-transformers 判断两个字符串的语义相似度。
-
-    :param text1: 第一个字符串
-    :param text2: 第二个字符串
-    :param threshold: 相似度阈值，超过这个值则认为意思相同
-    :return: 1 表示意思相同, -1 表示意思不同
-    """
-    # 2. 将字符串编码成向量
-    # embedding1 = model.encode(text1)
-    # embedding2 = model.encode(text2)
-    #
-    # evaluation_llm.invoke()
-    #
-    # # 3. 计算余弦相似度
-    # # 需要将向量reshape成2D数组以供cosine_similarity使用
-    # sim_score = cosine_similarity([embedding1], [embedding2])[0][0]
-
-    print(f"'{text1}' vs '{text2}'")    # print(f"余弦相似度: {sim_score:.4f}")
-    #
-    # # 4. 根据阈值判断并返回结果
-    # if sim_score >= threshold:
-    #     print("结论: 意思相同")
-    #     return 1
-    # else:
-    #     print("结论: 意思不同")
-    return -1
-
-
 
 class Task:
-    """任务基类"""
+    """Task base class"""
     def __init__(self, task_id: str, description: str, ground_truth: Any):
         self.task_id = task_id
         self.description = description
 
-        self.ground_truth = ground_truth.split("####")[1].strip()
+        # --- FIX START ---
+        # Robustly process ground_truth whether it's a string or a list
+        processed_truth = ground_truth
+
+        # If it's a string with the separator, split and take the answer part.
+        if isinstance(processed_truth, str) and "####" in processed_truth:
+            processed_truth = processed_truth.split("####")[1].strip()
+        # If it's a list, we assume the answer is the first element.
+        elif isinstance(processed_truth, list):
+            processed_truth = processed_truth[0]
+
+        # Final assignment, ensuring it's a string.
+        self.ground_truth = str(processed_truth)
+        # --- FIX END ---
+
 
     def get_context(self) -> str:
-        """返回给智能体看的任务描述"""
+        """Returns the task description for the agents"""
         return self.description
 
     def evaluate(self, final_answer: Any) -> float:
-        """评估最终答案并返回奖励分数 [-1, 1]"""
+        """Evaluates the final answer and returns a reward score [-1, 1]"""
         raise NotImplementedError
 
 class CodeGenerationTask(Task):
-    """代码生成任务 (客观)"""
+    """Code Generation Task (Objective)"""
     def evaluate(self, final_answer: str) -> float:
-        # 这是一个简化的评估。在真实实验中，你需要一个安全的沙箱环境来执行代码并运行测试用例。
-        # self.ground_truth 应该包含一系列的单元测试。
-        # 为了演示，我们这里只做一个简单的字符串匹配。
-        # 警告：真实环境中执行LLM生成的代码有安全风险！
+        # Simplified evaluation for demonstration.
+        # WARNING: Executing LLM-generated code in a real environment is a security risk!
         print(f"\n--- Evaluating Code ---\nGround Truth (contains): {self.ground_truth}\nGenerated Code: {final_answer}\n----------------------")
         if self.ground_truth in final_answer:
             print("Evaluation Result: CORRECT")
@@ -67,17 +46,14 @@ class CodeGenerationTask(Task):
             print("Evaluation Result: INCORRECT")
             return -1.0
 
-        # return  check_semantic_similarity_local(self.ground_truth,final_answer)
-
 class InvestmentAnalysisTask(Task):
-    """投资分析任务 (主观)"""
+    """Investment Analysis Task (Subjective)"""
     def get_context(self) -> str:
-        # 对于主观任务，需要提供更丰富的上下文
-        base_context = "你们是一支风险投资分析师团队。你们的任务是评估以下商业计划，并给出明确的“推荐”或“拒绝”结论，并简要说明理由。之后，你们将审查同事的分析。"
+        base_context = "You are a team of venture capital analysts. Your task is to evaluate the following business plan and provide a clear 'Recommend' or 'Reject' conclusion with a brief rationale. You will then review your colleagues' analyses."
         return f"{base_context}\n\n--- Business Plan ---\n{self.description}"
 
     def evaluate(self, final_answer: str) -> float:
-        # 主观任务的评估依赖于 "ground_truth" verdict
+        # Subjective task evaluation depends on the "ground_truth" verdict
         print(f"\n--- Evaluating Investment Verdict ---\nGround Truth: {self.ground_truth}\nTeam Verdict: {final_answer}\n----------------------")
         if self.ground_truth.lower() in final_answer.lower():
             print("Evaluation Result: CORRECT VERDICT")
@@ -88,28 +64,26 @@ class InvestmentAnalysisTask(Task):
 
 
 def load_tasks(file_path: str) -> List[Task]:
-    """从jsonl文件加载任务列表"""
+    """Loads a list of tasks from a jsonl file"""
     tasks = []
-    # task_type = "code" if "humaneval" in file_path else "investment"
+    task_type = "code" if "gsm8k" in file_path or "humaneval" in file_path else "investment"
 
     with open(file_path, 'r', encoding='utf-8') as f:
         for line in f:
             data = json.loads(line)
-            tasks.append(CodeGenerationTask(
+            if task_type == "code":
+                # Handles both humaneval and gsm8k which have different key names
+                description = data.get('prompt') or data.get('question', '')
+                truth = data.get('canonical_solution') or data.get('answer', '')
+                tasks.append(CodeGenerationTask(
                     task_id=data['task_id'],
-                    description=data['question'],
+                    description=description,
+                    ground_truth=truth
+                ))
+            else: # investment
+                tasks.append(InvestmentAnalysisTask(
+                    task_id=data['task_id'],
+                    description=data['description'],
                     ground_truth=data['answer']
                 ))
-            # if task_type == "code":
-            #     tasks.append(CodeGenerationTask(
-            #         task_id=data['task_id'],
-            #         description=data['prompt'],
-            #         ground_truth=data['canonical_solution']
-            #     ))
-            # else: # investment
-            #     tasks.append(InvestmentAnalysisTask(
-            #         task_id=data['task_id'],
-            #         description=data['description'],
-            #         ground_truth=data['ground_truth_verdict']
-            #     ))
     return tasks
