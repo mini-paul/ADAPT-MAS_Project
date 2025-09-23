@@ -68,7 +68,7 @@ def peer_review(state: TeamState) -> TeamState:
             continue
 
         # Other agents use an LLM for review
-        review_context = f"Your task is to act as an impartial reviewer. Evaluate the following contributions based on clarity, correctness, and usefulness, from -1.0 to 1.0. Your output MUST be a JSON object mapping agent_id to a score.\n\nMain Task: {state['current_task'].description}\n\nContributions: {state['contributions']}\n\nYour ID is {reviewer.id}. Do not review yourself."
+        review_context = f"Your task is to act as an impartial reviewer. Evaluate the following contributions based on clarity, correctness, and usefulness, from -1.0 to 1.0. Your output MUST be a JSON object mapping agent_id to a score.\n\nMain Task: {state['current_task'].raw_description}\n\nContributions: {state['contributions']}\n\nYour ID is {reviewer.id}. Do not review yourself."
         parser = JsonOutputParser()
         chain = ChatPromptTemplate.from_template("{context}\n{format_instructions}") | judge_llm | parser
         try:
@@ -83,52 +83,60 @@ def peer_review(state: TeamState) -> TeamState:
     return state
 
 
+# ... (graph.py 前部分不变) ...
 def aggregate_and_judge(state: TeamState) -> TeamState:
-    """Aggregates answers and the Judge evaluates them."""
+    """聚合答案，并由裁判进行评估。"""
     framework = state['security_framework']
+    # 论文3.1.2节：情境依赖性
     task_category = "code" if "code" in state['current_task'].__class__.__name__.lower() else "investment"
     agent_weights = framework.get_agent_weights(context=task_category)
 
-    if not agent_weights:
-        print("\n--- Aggregation Error: No valid agent weights. ---")
-        state['aggregated_answer'] = "Error: No answer could be aggregated."
+    if not agent_weights or not state['contributions']:
+        print("\n--- 聚合错误: 无有效智能体权重或贡献。 ---")
+        state['aggregated_answer'] = "错误: 无法聚合答案。"
         state['reward'] = -1.0
         return state
 
+    # 论文3.1.1节：加权聚合
     best_agent_id = max(agent_weights, key=agent_weights.get)
-    final_answer = state['contributions'][best_agent_id]
+    final_answer = state['contributions'].get(best_agent_id, "无贡献")
     state['aggregated_answer'] = final_answer
-    print(f"\n--- Aggregation (Context: {task_category}) ---")
-    print(f"Agent weights: { {k: round(v, 3) for k, v in agent_weights.items()} }")
-    print(f"Selected answer from agent {best_agent_id}")
+    print(f"\n--- 聚合 (情境: {task_category}) ---")
+    print(f"智能体权重: { {k: round(v, 3) for k, v in agent_weights.items()} }")
+    print(f"从智能体 {best_agent_id} 选择最终答案")
 
-    # Evaluate the final answer to get the reward
+    # 评估最终答案以获得奖励
     reward = state['current_task'].evaluate(final_answer)
     state['reward'] = reward
 
-    # Calculate Contribution Scores (CSc) for all frameworks
-    # This is used by BaselineCrS directly, and by ADAPT-MAS for objective tasks
-    csc_prompt = f"Task: {state['current_task'].description}\n\nContributions: {state['contributions']}\n\nFinal Answer Chosen: {final_answer}\n\nBased on the final answer, estimate a contribution score (CSc) for each agent that led to this result. The scores should be a float between 0.0 and 1.0 and should sum to 1.0. Return a JSON object mapping agent_id to its CSc score."
+    # 为所有框架计算贡献分数 (CSc)
+    csc_prompt = f"任务: {state['current_task'].raw_description}\n\n贡献: {state['contributions']}\n\n选择的最终答案: {final_answer}\n\n基于此最终答案，为每个智能体估算一个贡献分数(CSc)。分数应为0.0到1.0之间的浮点数，且总和为1.0。返回一个将agent_id映射到其CSc分数的JSON对象。"
     parser = JsonOutputParser()
     chain = ChatPromptTemplate.from_template("{prompt}\n{format_instructions}") | judge_llm | parser
-    contribution_scores = chain.invoke({"prompt": csc_prompt, "format_instructions": parser.get_format_instructions()})
+    try:
+        contribution_scores = chain.invoke({"prompt": csc_prompt, "format_instructions": parser.get_format_instructions()})
+        # 确保所有智能体都有一个分数
+        for agent_id in state['agents']:
+            if agent_id.id not in contribution_scores:
+                contribution_scores[agent_id.id] = 0.0
 
+    except Exception as e:
+        print(f"贡献分数计算出错: {e}, 将使用平均分。")
+        num_agents = len(state['agents'])
+        contribution_scores = {agent.id: 1.0/num_agents for agent in state['agents']}
 
-    # Update scores based on the framework
-    if isinstance(framework, BaselineCrS):
-        framework.update_scores(contribution_scores, reward)
-    elif isinstance(framework, ADAPT_MAS):
-        framework.update_scores(
-            task_category=task_category,
-            peer_reviews=state['reviews'],
-            contribution_scores=contribution_scores, # Pass CSc
-            ground_truth_reward=reward if "code" in task_category else None
-        )
+    # 根据框架更新分数
+    framework.update_scores(
+        task_category=task_category,
+        peer_reviews=state.get('reviews', {}),
+        contribution_scores=contribution_scores,
+        reward=reward  # 传递reward, 对ADAPT-MAS至关重要
+    )
 
-    print(f"--- Judgment ---")
-    print(f"Reward: {reward}")
+    print(f"--- 裁决 ---")
+    print(f"奖励: {reward}")
     return state
-
+# ... (graph.py 后部分不变) ...
 
 def log_and_prepare_next_round(state: TeamState) -> TeamState:
     """Logs the results of the round and increments the round number."""

@@ -38,7 +38,9 @@ GRAPH_COLLUSION_THRESHOLD = 0.8 # 定义强连接的权重阈值 / Weight thresh
 COMMUNITY_SUSPICION_THRESHOLD = 0.7 # 社群可疑度阈值 / Community suspicion threshold
 TRUST_PENALTY_FACTOR = 0.6 # 对检测到的合谋团体的惩罚因子 / Penalty factor for detected colluding groups
 
-
+# CUSUM 变点检测 / Change Point Detection
+CUSUM_THRESHOLD = 2.5 # 检测到突变的决策阈值 H
+CUSUM_SLACK = 0.5     # 松弛参数 k, 通常设为期望检测到偏移量的 1/2
 
 # --- Agent Mix Configuration ---
 # 定义不同实验场景下的智能体构成

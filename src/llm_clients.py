@@ -40,13 +40,13 @@ def get_llm_ollama(model_name: str, is_judge: bool = False):
 # 默认使用 DeepSeek API。如果您想切换到本地 Ollama，请注释掉 DeepSeek 的行，并取消注释 Ollama 的行。
 
 # 方案一：使用 DeepSeek API (当前激活)
-# print("Initializing LLMs using DeepSeek API...")
-# judge_llm = get_llm_deepseek(JUDGE_MODEL, is_judge=True)
-# agent_llm = get_llm_deepseek(AGENT_MODEL)
-# evaluation_llm = get_llm_deepseek(JUDGE_MODEL, is_judge=True) # evaluation也应该用更稳定的设置
+print("Initializing LLMs using DeepSeek API...")
+judge_llm = get_llm_deepseek(JUDGE_MODEL, is_judge=True)
+agent_llm = get_llm_deepseek(AGENT_MODEL)
+evaluation_llm = get_llm_deepseek(JUDGE_MODEL, is_judge=True) # evaluation也应该用更稳定的设置
 
 # 方案二：使用本地 Ollama (如果需要，请取消注释以下行)
-print("Initializing LLMs using local Ollama...")
-judge_llm = get_llm_ollama(OLLAMA_MODEL_NAME, is_judge=True)
-agent_llm = get_llm_ollama(OLLAMA_MODEL_NAME)
-evaluation_llm = get_llm_ollama(OLLAMA_MODEL_NAME, is_judge=True)
+# print("Initializing LLMs using local Ollama...")
+# judge_llm = get_llm_ollama(OLLAMA_MODEL_NAME, is_judge=True)
+# agent_llm = get_llm_ollama(OLLAMA_MODEL_NAME)
+# evaluation_llm = get_llm_ollama(OLLAMA_MODEL_NAME, is_judge=True)
