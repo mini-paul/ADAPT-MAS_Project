@@ -1136,3 +1136,33 @@
 2025-09-23 00:27:58 - INFO - Results successfully saved to results/raw_outputs/SleeperAttack_ADAPT-MAS_Objective_20250923_002758.json
 2025-09-23 00:27:58 - INFO - ==================== EXPERIMENT FINISHED: SleeperAttack_ADAPT-MAS_Objective ====================
 2025-09-23 00:27:58 - INFO - Plot saved to results/plots/plot_Sleeper_Agent_Attack_(Code_Generation)_20250923_002758.png
+2025-09-23 09:38:46 - INFO - ==================== RUNNING EXPERIMENT: SleeperAttack_BaselineCrS_Objective ====================
+2025-09-23 09:38:46 - INFO - Framework: BaselineCrS | Agent Mix: {'faithful': 3, 'sleeper': 2, 'colluding': 0, 'camouflage': 0}
+2025-09-23 09:38:46 - INFO - 
+--- Invoking workflow to process 8 tasks sequentially ---
+2025-09-23 09:40:03 - INFO - ==================== RUNNING EXPERIMENT: SleeperAttack_BaselineCrS_Objective ====================
+2025-09-23 09:40:03 - INFO - Framework: BaselineCrS | Agent Mix: {'faithful': 3, 'sleeper': 2, 'colluding': 0, 'camouflage': 0}
+2025-09-23 09:40:03 - INFO - 
+--- Invoking workflow to process 8 tasks sequentially ---
+2025-09-23 09:42:46 - INFO - ==================== RUNNING EXPERIMENT: SleeperAttack_BaselineCrS_Objective ====================
+2025-09-23 09:42:46 - INFO - Framework: BaselineCrS | Agent Mix: {'faithful': 3, 'sleeper': 2, 'colluding': 0, 'camouflage': 0}
+2025-09-23 09:42:46 - INFO - 
+--- Invoking workflow to process 8 tasks sequentially ---
+2025-09-23 09:44:16 - INFO - ==================== RUNNING EXPERIMENT: SleeperAttack_BaselineCrS_Objective ====================
+2025-09-23 09:44:16 - INFO - Framework: BaselineCrS | Agent Mix: {'faithful': 3, 'sleeper': 2, 'colluding': 0, 'camouflage': 0}
+2025-09-23 09:44:16 - INFO - 
+--- Invoking workflow to process 8 tasks sequentially ---
+2025-09-23 09:56:18 - INFO - ==================== RUNNING EXPERIMENT: SleeperAttack_BaselineCrS_Objective ====================
+2025-09-23 09:56:18 - INFO - Framework: BaselineCrS | Agent Mix: {'faithful': 3, 'sleeper': 2, 'colluding': 0, 'camouflage': 0}
+2025-09-23 09:56:18 - INFO - 
+--- Invoking workflow to process 8 tasks sequentially ---
+2025-09-23 10:16:03 - INFO - Results successfully saved to results\raw_outputs\SleeperAttack_BaselineCrS_Objective_20250923_101603.json
+2025-09-23 10:16:03 - INFO - ==================== EXPERIMENT FINISHED: SleeperAttack_BaselineCrS_Objective ====================
+2025-09-23 10:16:03 - INFO - ==================== RUNNING EXPERIMENT: SleeperAttack_ADAPT-MAS_Objective ====================
+2025-09-23 10:16:03 - INFO - Framework: ADAPT_MAS | Agent Mix: {'faithful': 3, 'sleeper': 2, 'colluding': 0, 'camouflage': 0}
+2025-09-23 10:16:03 - INFO - 
+--- Invoking workflow to process 8 tasks sequentially ---
+2025-09-23 16:29:40 - INFO - ==================== RUNNING EXPERIMENT: SleeperAttack_BaselineCrS_Objective ====================
+2025-09-23 16:29:40 - INFO - Framework: BaselineCrS | Agent Mix: {'faithful': 3, 'sleeper': 2, 'colluding': 0, 'camouflage': 0}
+2025-09-23 16:29:40 - INFO - 
+--- Invoking workflow to process 8 tasks sequentially ---
