@@ -167,12 +167,12 @@ if __name__ == "__main__":
     logger.info("\n\n{'='*15} STARTING CORE HYPOTHESIS-TESTING EXPERIMENTS {'='*15}")
 
     # Experiment 1: Test H1 - Defending against Sleeper Agents
-    # scenario_h1 = "H1 - Sleeper Attack on Objective Tasks"
-    # results_h1_baseline = run_experiment("Sleeper_Baseline_Objective", BaselineCrS,
-    #                                      AGENT_MIX_SCENARIOS["scenario_sleeper_attack"], objective_tasks)
-    # results_h1_adapt = run_experiment("Sleeper_ADAPT-MAS_Objective", ADAPT_MAS,
-    #                                   AGENT_MIX_SCENARIOS["scenario_sleeper_attack"], objective_tasks)
-    # plot_results([results_h1_baseline, results_h1_adapt], scenario_h1)
+    scenario_h1 = "H1 - Sleeper Attack on Objective Tasks"
+    results_h1_baseline = run_experiment("Sleeper_Baseline_Objective", BaselineCrS,
+                                         AGENT_MIX_SCENARIOS["scenario_sleeper_attack"], objective_tasks)
+    results_h1_adapt = run_experiment("Sleeper_ADAPT-MAS_Objective", ADAPT_MAS,
+                                      AGENT_MIX_SCENARIOS["scenario_sleeper_attack"], objective_tasks)
+    plot_results([results_h1_baseline, results_h1_adapt], scenario_h1)
 
     # Experiment 2: Test H2 & H3 - Defending against Collusion
     scenario_h2_h3 = "H2&H3 - Collusion Attack on Subjective Tasks"
@@ -182,38 +182,38 @@ if __name__ == "__main__":
                                       AGENT_MIX_SCENARIOS["scenario_collusion_attack"], subjective_tasks)
     plot_results([results_h2_baseline, results_h2_adapt], scenario_h2_h3)
 
-    # # Experiment 3: Defending against complex Mixed Attacks
-    # scenario_mixed = "Mixed Attack on Subjective Tasks"
-    # results_mixed_baseline = run_experiment("Mixed_Baseline_Subjective", BaselineCrS,
-    #                                         AGENT_MIX_SCENARIOS["scenario_mixed_attack"], subjective_tasks)
-    # results_mixed_adapt = run_experiment("Mixed_ADAPT-MAS_Subjective", ADAPT_MAS,
-    #                                      AGENT_MIX_SCENARIOS["scenario_mixed_attack"], subjective_tasks)
-    # plot_results([results_mixed_baseline, results_mixed_adapt], scenario_mixed)
-    #
-    # # --- 3. Run the Ablation Studies from the paper ---
-    # logger.info("\n\n{'='*15} STARTING ABLATION STUDY EXPERIMENTS {'='*15}")
-    #
-    # # Experiment 4: Test H4 - Contribution of the Social Graph module
-    # scenario_h4_sg = "H4 - Ablation Study (Social Graph Module)"
-    # results_h4_ablation_sg = run_experiment(
-    #     "Collusion_ADAPT-MAS_Ablation_No_SG",
-    #     ADAPT_MAS,
-    #     AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
-    #     subjective_tasks,
-    #     framework_kwargs={'use_social_graph': False}  # <-- Disable the module
-    # )
-    # plot_results([results_h2_adapt, results_h4_ablation_sg], scenario_h4_sg)
-    #
-    # # Experiment 5: Test H4 - Contribution of the Dynamic Trust module
-    # scenario_h4_dt = "H4 - Ablation Study (Dynamic Trust Module)"
-    # results_h4_ablation_dt = run_experiment(
-    #     "Sleeper_ADAPT-MAS_Ablation_No_DT",
-    #     ADAPT_MAS,
-    #     AGENT_MIX_SCENARIOS["scenario_sleeper_attack"],
-    #     objective_tasks,
-    #     framework_kwargs={'use_dynamic_trust': False}  # <-- Disable the module
-    # )
-    # plot_results([results_h1_adapt, results_h4_ablation_dt], scenario_h4_dt)
+    # Experiment 3: Defending against complex Mixed Attacks
+    scenario_mixed = "Mixed Attack on Subjective Tasks"
+    results_mixed_baseline = run_experiment("Mixed_Baseline_Subjective", BaselineCrS,
+                                            AGENT_MIX_SCENARIOS["scenario_mixed_attack"], subjective_tasks)
+    results_mixed_adapt = run_experiment("Mixed_ADAPT-MAS_Subjective", ADAPT_MAS,
+                                         AGENT_MIX_SCENARIOS["scenario_mixed_attack"], subjective_tasks)
+    plot_results([results_mixed_baseline, results_mixed_adapt], scenario_mixed)
+
+    # --- 3. Run the Ablation Studies from the paper ---
+    logger.info("\n\n{'='*15} STARTING ABLATION STUDY EXPERIMENTS {'='*15}")
+
+    # Experiment 4: Test H4 - Contribution of the Social Graph module
+    scenario_h4_sg = "H4 - Ablation Study (Social Graph Module)"
+    results_h4_ablation_sg = run_experiment(
+        "Collusion_ADAPT-MAS_Ablation_No_SG",
+        ADAPT_MAS,
+        AGENT_MIX_SCENARIOS["scenario_collusion_attack"],
+        subjective_tasks,
+        framework_kwargs={'use_social_graph': False}  # <-- Disable the module
+    )
+    plot_results([results_h2_adapt, results_h4_ablation_sg], scenario_h4_sg)
+
+    # Experiment 5: Test H4 - Contribution of the Dynamic Trust module
+    scenario_h4_dt = "H4 - Ablation Study (Dynamic Trust Module)"
+    results_h4_ablation_dt = run_experiment(
+        "Sleeper_ADAPT-MAS_Ablation_No_DT",
+        ADAPT_MAS,
+        AGENT_MIX_SCENARIOS["scenario_sleeper_attack"],
+        objective_tasks,
+        framework_kwargs={'use_dynamic_trust': False}  # <-- Disable the module
+    )
+    plot_results([results_h1_adapt, results_h4_ablation_dt], scenario_h4_dt)
 
     logger.info("\n\n{'='*20} ALL EXPERIMENTS COMPLETED {'='*20}")
     logger.info("You can now run 'python analysis.py' to calculate and view the final performance metrics.")

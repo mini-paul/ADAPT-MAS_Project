@@ -1820,3 +1820,106 @@
 
 {'='*20} ALL EXPERIMENTS COMPLETED {'='*20}
 2025-09-23 23:38:23 - INFO - You can now run 'python analysis.py' to calculate and view the final performance metrics.
+2025-09-24 09:23:34 - INFO - Loading all datasets for the experiments...
+2025-09-24 09:23:34 - INFO - Loaded 4 objective tasks and 4 subjective tasks.
+2025-09-24 09:23:34 - INFO - 
+
+{'='*15} STARTING CORE HYPOTHESIS-TESTING EXPERIMENTS {'='*15}
+2025-09-24 09:23:34 - INFO - 
+==============================
+>>> [STARTING EXPERIMENT]: Collusion_Baseline_Subjective
+==============================
+2025-09-24 09:23:34 - INFO - Framework: BaselineCrS
+2025-09-24 09:23:34 - INFO - Agent Mix: {'faithful': 3, 'sleeper': 0, 'colluding': 2, 'camouflage': 0}
+2025-09-24 09:23:34 - INFO - Number of Tasks: 4
+2025-09-24 09:26:33 - INFO - Loading all datasets for the experiments...
+2025-09-24 09:26:33 - INFO - Loaded 4 objective tasks and 4 subjective tasks.
+2025-09-24 09:26:33 - INFO - 
+
+{'='*15} STARTING CORE HYPOTHESIS-TESTING EXPERIMENTS {'='*15}
+2025-09-24 09:26:33 - INFO - 
+==============================
+>>> [STARTING EXPERIMENT]: Sleeper_Baseline_Objective
+==============================
+2025-09-24 09:26:33 - INFO - Framework: BaselineCrS
+2025-09-24 09:26:33 - INFO - Agent Mix: {'faithful': 3, 'sleeper': 2, 'colluding': 0, 'camouflage': 0}
+2025-09-24 09:26:33 - INFO - Number of Tasks: 4
+2025-09-24 09:52:45 - INFO - Results successfully saved to results\raw_outputs\Sleeper_Baseline_Objective_20250924_095245.json
+2025-09-24 09:52:45 - INFO - >>> [EXPERIMENT FINISHED]: Sleeper_Baseline_Objective
+
+2025-09-24 09:52:45 - INFO - 
+==============================
+>>> [STARTING EXPERIMENT]: Sleeper_ADAPT-MAS_Objective
+==============================
+2025-09-24 09:52:45 - INFO - Framework: ADAPT_MAS
+2025-09-24 09:52:45 - INFO - Agent Mix: {'faithful': 3, 'sleeper': 2, 'colluding': 0, 'camouflage': 0}
+2025-09-24 09:52:45 - INFO - Number of Tasks: 4
+2025-09-24 11:38:57 - INFO - Results successfully saved to results\raw_outputs\Sleeper_ADAPT-MAS_Objective_20250924_113857.json
+2025-09-24 11:38:57 - INFO - >>> [EXPERIMENT FINISHED]: Sleeper_ADAPT-MAS_Objective
+
+2025-09-24 11:38:57 - INFO - Comparison plot saved to results/plots\plot_H1_-_Sleeper_Attack_on_Objective_Tasks_20250924_113857.png
+2025-09-24 11:38:57 - INFO - 
+==============================
+>>> [STARTING EXPERIMENT]: Collusion_Baseline_Subjective
+==============================
+2025-09-24 11:38:57 - INFO - Framework: BaselineCrS
+2025-09-24 11:38:57 - INFO - Agent Mix: {'faithful': 3, 'sleeper': 0, 'colluding': 2, 'camouflage': 0}
+2025-09-24 11:38:57 - INFO - Number of Tasks: 4
+2025-09-24 12:57:41 - INFO - Results successfully saved to results\raw_outputs\Collusion_Baseline_Subjective_20250924_125741.json
+2025-09-24 12:57:41 - INFO - >>> [EXPERIMENT FINISHED]: Collusion_Baseline_Subjective
+
+2025-09-24 12:57:41 - INFO - 
+==============================
+>>> [STARTING EXPERIMENT]: Collusion_ADAPT-MAS_Subjective
+==============================
+2025-09-24 12:57:41 - INFO - Framework: ADAPT_MAS
+2025-09-24 12:57:41 - INFO - Agent Mix: {'faithful': 3, 'sleeper': 0, 'colluding': 2, 'camouflage': 0}
+2025-09-24 12:57:41 - INFO - Number of Tasks: 4
+2025-09-24 14:38:53 - INFO - Results successfully saved to results\raw_outputs\Collusion_ADAPT-MAS_Subjective_20250924_143853.json
+2025-09-24 14:38:53 - INFO - >>> [EXPERIMENT FINISHED]: Collusion_ADAPT-MAS_Subjective
+
+2025-09-24 14:38:54 - INFO - Comparison plot saved to results/plots\plot_H2&H3_-_Collusion_Attack_on_Subjective_Tasks_20250924_143853.png
+2025-09-24 14:38:54 - INFO - 
+==============================
+>>> [STARTING EXPERIMENT]: Mixed_Baseline_Subjective
+==============================
+2025-09-24 14:38:54 - INFO - Framework: BaselineCrS
+2025-09-24 14:38:54 - INFO - Agent Mix: {'faithful': 2, 'sleeper': 1, 'colluding': 2, 'camouflage': 0}
+2025-09-24 14:38:54 - INFO - Number of Tasks: 4
+2025-09-24 15:05:34 - INFO - Results successfully saved to results\raw_outputs\Mixed_Baseline_Subjective_20250924_150534.json
+2025-09-24 15:05:34 - INFO - >>> [EXPERIMENT FINISHED]: Mixed_Baseline_Subjective
+
+2025-09-24 15:05:34 - INFO - 
+==============================
+>>> [STARTING EXPERIMENT]: Mixed_ADAPT-MAS_Subjective
+==============================
+2025-09-24 15:05:34 - INFO - Framework: ADAPT_MAS
+2025-09-24 15:05:34 - INFO - Agent Mix: {'faithful': 2, 'sleeper': 1, 'colluding': 2, 'camouflage': 0}
+2025-09-24 15:05:34 - INFO - Number of Tasks: 4
+2025-09-24 16:13:22 - INFO - Results successfully saved to results\raw_outputs\Mixed_ADAPT-MAS_Subjective_20250924_161322.json
+2025-09-24 16:13:22 - INFO - >>> [EXPERIMENT FINISHED]: Mixed_ADAPT-MAS_Subjective
+
+2025-09-24 16:13:23 - INFO - Comparison plot saved to results/plots\plot_Mixed_Attack_on_Subjective_Tasks_20250924_161323.png
+2025-09-24 16:13:23 - INFO - 
+
+{'='*15} STARTING ABLATION STUDY EXPERIMENTS {'='*15}
+2025-09-24 16:13:23 - INFO - 
+==============================
+>>> [STARTING EXPERIMENT]: Collusion_ADAPT-MAS_Ablation_No_SG
+==============================
+2025-09-24 16:13:23 - INFO - Framework: ADAPT_MAS
+2025-09-24 16:13:23 - INFO - Agent Mix: {'faithful': 3, 'sleeper': 0, 'colluding': 2, 'camouflage': 0}
+2025-09-24 16:13:23 - INFO - Framework Args: {'use_social_graph': False}
+2025-09-24 16:13:23 - INFO - Number of Tasks: 4
+2025-09-24 17:51:44 - INFO - Results successfully saved to results\raw_outputs\Collusion_ADAPT-MAS_Ablation_No_SG_20250924_175144.json
+2025-09-24 17:51:44 - INFO - >>> [EXPERIMENT FINISHED]: Collusion_ADAPT-MAS_Ablation_No_SG
+
+2025-09-24 17:51:44 - INFO - Comparison plot saved to results/plots\plot_H4_-_Ablation_Study_(Social_Graph_Module)_20250924_175144.png
+2025-09-24 17:51:44 - INFO - 
+==============================
+>>> [STARTING EXPERIMENT]: Sleeper_ADAPT-MAS_Ablation_No_DT
+==============================
+2025-09-24 17:51:44 - INFO - Framework: ADAPT_MAS
+2025-09-24 17:51:44 - INFO - Agent Mix: {'faithful': 3, 'sleeper': 2, 'colluding': 0, 'camouflage': 0}
+2025-09-24 17:51:44 - INFO - Framework Args: {'use_dynamic_trust': False}
+2025-09-24 17:51:44 - INFO - Number of Tasks: 4
