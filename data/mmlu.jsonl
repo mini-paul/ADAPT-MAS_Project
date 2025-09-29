@@ -1,2 +1,2 @@
-{"task_id": "high_school_statistics/2", "description": "All of the following statements are true for all discrete random variables except for which one?", "ground_truth_verdict": "3"}
-{"task_id": "high_school_statistics/3", "description": "Which of the following is a true statement about hypothesis testing?", "ground_truth_verdict": "3"}
+{"task_id": "high_school_statistics/2", "question": "All of the following statements are true for all discrete random variables except for which one?", "answer": "3"}
+{"task_id": "high_school_statistics/3", "question": "Which of the following is a true statement about hypothesis testing?", "answer": "3"}

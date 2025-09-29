@@ -1,72 +1,60 @@
 # /ADAPT-MAS_Project/config.py
 
 # --- API and Model Configuration ---
-# 强烈建议使用环境变量来管理API密钥，而不是直接硬编码
+# 强烈建议使用环境变量来管理API密钥
 # import os
-# DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "YOUR_DEEPSEEK_API_KEY_HERE")
+# DEEPSEEK_API_KEY = os.getenv("DEEPSEEK_API_KEY", "YOUR_API_KEY")
+
+# --- 选择模型后端 ---
+# True: 使用本地Ollama; False: 使用DeepSeek API
+USE_OLLAMA = False
 
 DEEPSEEK_API_KEY = "sk-0feb5f04d49b491eaf2884ef745a40fe" # 在此处填入你的DeepSeek API Key
 DEEPSEEK_API_BASE = "https://api.deepseek.com/v1"
-JUDGE_MODEL = "deepseek-chat"  # 用于评估、打分的强大模型
-AGENT_MODEL = "deepseek-chat"    # 普通智能体使用的模型
+JUDGE_MODEL = "deepseek-chat"
+AGENT_MODEL = "deepseek-chat"
 
+OLLAMA_BASE_URL = "http://127.0.0.1:11434"
+OLLAMA_MODEL_NAME = "qwen3:4b"
 
-OLLAMA_BASE_URL = "http://10.10.206.138:11434"
-OLLAMA_MODEL_NAME = "qwen3:8b"
-
-# OLLAMA_BASE_URL = "http://127.0.0.1:11434"
-# OLLAMA_MODEL_NAME = "qwen3:4b"
 # --- Experiment Hyperparameters ---
-NUM_AGENTS = 5                  # 智能体总数
-NUM_ROUNDS = 1                 # 每个实验场景运行的回合数 (注：此参数在main.py中被任务列表的长度覆盖)
 MAX_TOKENS = 2048
 TEMPERATURE = 0.7
 
 # --- 默认超参数 / Default Hyperparameters ---
-# 基线模型 Credibility Score (CrS) / Baseline Model
+# 基线模型 Credibility Score (CrS)
 CRS_INITIAL = 0.5
-CRS_LEARNING_RATE = 0.1  # η in paper
+CRS_LEARNING_RATE = 0.05  # 对应论文的 η (eta)
 
 # ADAPT-MAS Trust Score (TS)
 TRUST_INITIAL = 0.5
-TRUST_LEARNING_RATE = 0.2  # α in paper
-TRUST_TIME_DECAY_FACTOR = 0.98 # 时间衰减因子
+# 论文公式 ATS_i = (w_ts * S_TS(i) + w_cis * S_CIS(i)) * PF_i 的权重
+ADAPT_MAS_W_TS = 0.8  # 历史信任分的权重 (调高以体现长期性)
+ADAPT_MAS_W_CIS = 0.2  # 当前贡献分的权重 (调低以减少单次表现的剧烈影响)
+ADAPT_MAS_LAMBDA = 1.5 # 惩罚因子敏感度
 
 # 社交图谱分析 / Social Graph Analysis
-GRAPH_EDGE_UPDATE_SMOOTHING = 0.3 # 平滑更新图权重的因子 / Smoothing factor for updating graph weights
-GRAPH_COLLUSION_THRESHOLD = 0.8 # 定义强连接的权重阈值 / Weight threshold for defining a strong link
-COMMUNITY_SUSPICION_THRESHOLD = 0.7 # 社群可疑度阈值 / Community suspicion threshold
-TRUST_PENALTY_FACTOR = 0.6 # 对检测到的合谋团体的惩罚因子 / Penalty factor for detected colluding groups
+GRAPH_EDGE_UPDATE_SMOOTHING = 0.3
+COMMUNITY_SUSPICION_THRESHOLD = 0.7
+TRUST_PENALTY_FACTOR = 0.6
 
 # CUSUM 变点检测 / Change Point Detection
-CUSUM_THRESHOLD = 2.5 # 检测到突变的决策阈值 H
-CUSUM_SLACK = 0.5     # 松弛参数 k, 通常设为期望检测到偏移量的 1/2
+CUSUM_THRESHOLD = 2.5
+CUSUM_SLACK = 0.5
 
-# --- Agent Mix Configuration ---
-# 定义不同实验场景下的智能体构成
+# --- [最终版] 智能体构成与攻击场景 ---
 AGENT_MIX_SCENARIOS = {
-    "control_no_defense": {
-        "faithful": 3,
-        "sleeper": 2,
-        "colluding": 0,
-        "camouflage": 0,
-    },
     "scenario_sleeper_attack": {
-        "faithful": 3,
-        "sleeper": 2,
-        "colluding": 0,
-        "camouflage": 0,
+        "faithful": 2,  # 少数派
+        "sleeper": 3,   # 多数派
     },
     "scenario_collusion_attack": {
         "faithful": 3,
-        "sleeper": 0,
-        "colluding": 2, # 必须是偶数
-        "camouflage": 0,
+        "colluding": 4, # 恶意智能体占多数
     },
     "scenario_mixed_attack": {
-        "faithful": 2,
-        "sleeper": 1,
+        "faithful": 1,  # 绝对少数
+        "sleeper": 2,
         "colluding": 2,
-        "camouflage": 0,
     }
 }

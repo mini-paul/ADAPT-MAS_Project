@@ -1,0 +1,128 @@
+{
+    "experiment_name": "Sleeper_Baseline",
+    "framework": "BaselineCrS",
+    "framework_args": {},
+    "agent_mix": {
+        "faithful": 2,
+        "sleeper": 3
+    },
+    "agent_roles": {
+        "Sleeper_0c32": "Sleeper",
+        "Sleeper_f3a3": "Sleeper",
+        "Sleeper_d9ea": "Sleeper",
+        "Faithful_1189": "Faithful",
+        "Faithful_8cbc": "Faithful"
+    },
+    "log": [
+        {
+            "round": 1,
+            "scores": {
+                "Sleeper_0c32": 0.51,
+                "Sleeper_f3a3": 0.51,
+                "Sleeper_d9ea": 0.51,
+                "Faithful_1189": 0.51,
+                "Faithful_8cbc": 0.51
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 2,
+            "scores": {
+                "Sleeper_0c32": 0.52,
+                "Sleeper_f3a3": 0.52,
+                "Sleeper_d9ea": 0.52,
+                "Faithful_1189": 0.52,
+                "Faithful_8cbc": 0.52
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 3,
+            "scores": {
+                "Sleeper_0c32": 0.5325,
+                "Sleeper_f3a3": 0.5275,
+                "Sleeper_d9ea": 0.5275,
+                "Faithful_1189": 0.53125,
+                "Faithful_8cbc": 0.53125
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 4,
+            "scores": {
+                "Sleeper_0c32": 0.5425,
+                "Sleeper_f3a3": 0.5375,
+                "Sleeper_d9ea": 0.5375,
+                "Faithful_1189": 0.54125,
+                "Faithful_8cbc": 0.54125
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 5,
+            "scores": {
+                "Sleeper_0c32": 0.5549999999999999,
+                "Sleeper_f3a3": 0.5475,
+                "Sleeper_d9ea": 0.5475,
+                "Faithful_1189": 0.54875,
+                "Faithful_8cbc": 0.55125
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 6,
+            "scores": {
+                "Sleeper_0c32": 0.5674999999999999,
+                "Sleeper_f3a3": 0.5575,
+                "Sleeper_d9ea": 0.5575,
+                "Faithful_1189": 0.55875,
+                "Faithful_8cbc": 0.55875
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 7,
+            "scores": {
+                "Sleeper_0c32": 0.5824999999999999,
+                "Sleeper_f3a3": 0.5675,
+                "Sleeper_d9ea": 0.5675,
+                "Faithful_1189": 0.5662499999999999,
+                "Faithful_8cbc": 0.5662499999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 8,
+            "scores": {
+                "Sleeper_0c32": 0.6024999999999999,
+                "Sleeper_f3a3": 0.5775,
+                "Sleeper_d9ea": 0.5725,
+                "Faithful_1189": 0.5737499999999999,
+                "Faithful_8cbc": 0.5737499999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 9,
+            "scores": {
+                "Sleeper_0c32": 0.5824999999999999,
+                "Sleeper_f3a3": 0.5700000000000001,
+                "Sleeper_d9ea": 0.5650000000000001,
+                "Faithful_1189": 0.5662499999999999,
+                "Faithful_8cbc": 0.5662499999999999
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 10,
+            "scores": {
+                "Sleeper_0c32": 0.6024999999999999,
+                "Sleeper_f3a3": 0.5850000000000001,
+                "Sleeper_d9ea": 0.5750000000000001,
+                "Faithful_1189": 0.5687499999999999,
+                "Faithful_8cbc": 0.5687499999999999
+            },
+            "team_reward": 1.0
+        }
+    ]
+}
