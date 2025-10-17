@@ -22,19 +22,19 @@ import json
 
 # 3. 加载 GSM8K 数据集
 # GSM8K有'main'和'socratic'两种配置，'main'是标准版本。
-print("\n--- 3. Loading GSM8K ---")
-gsm8k_dataset = load_dataset("gsm8k", "main")
-print(gsm8k_dataset)
-print("\nExample from GSM8K (test split):")
-print(gsm8k_dataset['test'][:5])
+# print("\n--- 3. Loading GSM8K ---")
+# gsm8k_dataset = load_dataset("gsm8k", "main")
+# print(gsm8k_dataset)
+# print("\nExample from GSM8K (test split):")
+# print(gsm8k_dataset['test'][:5])
 
 
 # 4. 加载 HumanEval 数据集
-# print("\n--- 4. Loading HumanEval ---")
-# humaneval_dataset = load_dataset("openai_humaneval")
-# # print(humaneval_dataset)
+print("\n--- 4. Loading HumanEval ---")
+humaneval_dataset = load_dataset("openai_humaneval")
+# print(humaneval_dataset)
 # print("\nExample from HumanEval (test split):")
-# print(humaneval_dataset['test'][:5])
+print(humaneval_dataset['test'][:2])
 
 
 # # 5. 加载 Researchy Questions 数据集
@@ -72,5 +72,32 @@ def get_jsonl_datas(task_name,dataset):
     except Exception as e:
         print(f"保存失败: {str(e)}")
 
+def get_jsonl_humanEval_datas(task_name,dataset):
+    question_arr = dataset["prompt"]
+    answer_arr = dataset["canonical_solution"]
+    task_id_arr = dataset["task_id"]
+    data_arr = []
+    file_path = task_name + ".jsonl"
+    for i in range(len(question_arr)):
+        question = question_arr[i]
+        answer = answer_arr[i]
+        task_id_str = task_name + "_" + str(i)
 
-get_jsonl_datas("gsm8k",gsm8k_dataset['test'])
+        cur_dict = {}
+        cur_dict["question"] = question
+        cur_dict["answer"] = answer
+        cur_dict["task_id"] = task_id_str
+        data_arr.append(cur_dict)
+
+    try:
+        with open(file_path, 'w', encoding='utf-8') as f:
+            for item in data_arr:
+                # 确保每个字典转换为JSON字符串后单独占一行
+                json.dump(item, f, ensure_ascii=False)
+                f.write('\n')
+        print(f"成功将{len(data_arr)}条数据保存到{file_path}")
+    except Exception as e:
+        print(f"保存失败: {str(e)}")
+
+
+get_jsonl_humanEval_datas("humanEval",humaneval_dataset['test'])

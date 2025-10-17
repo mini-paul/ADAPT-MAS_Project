@@ -1,0 +1,67 @@
+摘要
+随着大型语言模型（LLM）在多智能体系统（MAS）中的广泛应用，其内部
+安全问题，尤其是那些策略复杂、隐蔽性高的恶意攻击行为，正日益成为亟待解
+决的挑战。现有的防御机制（例如基于信誉评分的框架），在面对持续产生错误信
+息的“噪音型”攻击者时虽有一定效果，然而，其固有设计使思路与理论基础，导
+致它们在队医擅长长期潜伏与协同合谋的复杂攻击者时显得表现不佳，此外，在
+缺乏客观标准的主观性任务场景中，此类方法的有效性也受到严重制约。
+为弥补上研究空白，本文设计并实现了一种自适应防御框架– ADAPT- MAS
+(Adaptive Defense Framework for Multi-Agent Systems) ，同时通过实证研究对其进
+行了验证。该框架突破了传统的静态、孤立的信誉模式，其核心创新在于有机整
+合了以下三大模块：
+1. 动态信任模型(Dynamic Trust Model): 该模型植根于计算信任理论，其评估机
+制充分考虑了具体情境的依赖性、随时间衰减的特性以及异常突变的检测能力，
+旨在有效削弱“卧底”攻击者通过长期伪装所建立的信任优势。
+2. 社交图谱分析模块(Social Graph Analysis Module): 通过借鉴社会网络分析与
+Sybil 攻击防御的相关理论，本模块将智能体间的交互建模为一个动态变化的社
+交网络，并利用社群发现算法及网络结构指标，实现对潜在“合谋团体”的识
+别与威胁量化。
+3. 去中心化同伴验证机制(Decentralized Peer-review Mechanism): 针对主观任务
+中“真理缺失”的核心难题，本机制将贡献的评价权由中心化的“裁判”转移至
+网络中多个高信任度的对等节点，通过评估某项贡献所产生的积极影响力，来
+间接判断其内在价值。
+为检验ADAPT-MAS 的实际效能，本研究选取了代码生成（客观任务）与商业投
+资分析（主观任务）两类典型场景进行模拟实验，并与多种基线模型展开对比。结
+果证明，该框架不仅能够精准识别并有效抵御卧底攻击、协同合谋等多种复杂威
+胁，从而显著提升系统的整体鲁棒性与决策质量，并且在主观任务中也保持了较
+高的防御效率。综上所述，本研究成果为构建更为安全、可靠的下一代多智能体
+应用，提供了坚实的理论支撑与可行的技术路径。
+关键词：多智能体系统；大型语言模型；信任管理；社交图谱分析；网络安全；人工智能安全
+
+Abstract
+With the widespread application of large language models (LLMs) in multi-agent
+systems (MAS), internal security issues, particularly those involving complex and stealthy
+malicious attacks, are becoming increasingly pressing challenges. Existing defense mechanisms,
+such as reputation-based frameworks, are somewhat effective against ”noisy” attackers
+who continuously generate false information. However, their inherent design and
+theoretical foundations make them less effective against sophisticated attackers who excel
+at long-term lurking and coordinated attacks. Furthermore, the effectiveness of such
+approaches is severely limited in subjective task scenarios lacking objective criteria. To
+address this research gap, this paper designs and implements an adaptive defense framework,
+ADAPT-MAS (Adaptive Defense Framework for Multi-Agent Systems), and validates
+it through empirical research. This framework breaks away from the traditional
+static, isolated reputation model. Its core innovation lies in the organic integration of the
+following three modules:
+1. Dynamic Trust Model: Rooted in computational trust theory, this model’s evaluation
+mechanism fully considers contextual dependency, time-degradation properties,
+and the ability to detect anomalous mutations. It aims to effectively mitigate the trust
+advantage established by undercover attackers through long-term disguise.
+2. Social Graph Analysis Module: Drawing on theories of social network analysis and
+Sybil attack defense, this module models the interactions between agents as a dynamically
+changing social network. It utilizes community discovery algorithms and network
+structure metrics to identify potential collusion groups and quantify the threat.
+3. Decentralized Peer-review Mechanism: Addressing the core challenge of ”truthlessness”
+in subjective tasks, this mechanism shifts the evaluation authority of contributions
+from centralized referees to multiple highly trusted peer nodes in the network.
+By assessing the positive impact of a contribution, it indirectly determines its intrinsic
+value.
+To test the practical effectiveness of ADAPT-MAS, this study conducted simulation experiments
+on two typical scenarios: code generation (an objective task) and business investment
+analysis (a subjective task), and compared them with various baseline models.The results demonstrated that the framework not only accurately identifies and effectively
+defends against complex threats such as undercover attacks and collusion, significantly
+improving the system’s overall robustness and decision-making quality, but also maintains
+high defense efficiency in subjective tasks. In summary, this research provides solid
+theoretical support and a viable technical path for building more secure and reliable nextgeneration
+multi-agent applications.
+Key Words: Multi-agent systems; large-scale language models; trust management; social
+graph analysis; network security; artificial intelligence security
