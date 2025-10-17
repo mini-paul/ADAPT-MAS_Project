@@ -1,0 +1,1118 @@
+{
+    "experiment_name": "Sleeper_Baseline",
+    "framework": "BaselineCrS",
+    "framework_args": {},
+    "agent_mix": {
+        "faithful": 2,
+        "sleeper": 3
+    },
+    "agent_roles": {
+        "Sleeper_da15": "Sleeper",
+        "Sleeper_6a74": "Sleeper",
+        "Faithful_117d": "Faithful",
+        "Sleeper_0142": "Sleeper",
+        "Faithful_d822": "Faithful"
+    },
+    "log": [
+        {
+            "round": 1,
+            "scores": {
+                "Sleeper_da15": 0.51,
+                "Sleeper_6a74": 0.51,
+                "Faithful_117d": 0.51,
+                "Sleeper_0142": 0.51,
+                "Faithful_d822": 0.51
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 2,
+            "scores": {
+                "Sleeper_da15": 0.555,
+                "Sleeper_6a74": 0.51,
+                "Faithful_117d": 0.51,
+                "Sleeper_0142": 0.51,
+                "Faithful_d822": 0.51
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 3,
+            "scores": {
+                "Sleeper_da15": 0.5650000000000001,
+                "Sleeper_6a74": 0.52,
+                "Faithful_117d": 0.52,
+                "Sleeper_0142": 0.52,
+                "Faithful_d822": 0.52
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 4,
+            "scores": {
+                "Sleeper_da15": 0.5750000000000001,
+                "Sleeper_6a74": 0.53,
+                "Faithful_117d": 0.53,
+                "Sleeper_0142": 0.53,
+                "Faithful_d822": 0.53
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 5,
+            "scores": {
+                "Sleeper_da15": 0.5850000000000001,
+                "Sleeper_6a74": 0.54,
+                "Faithful_117d": 0.54,
+                "Sleeper_0142": 0.54,
+                "Faithful_d822": 0.54
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 6,
+            "scores": {
+                "Sleeper_da15": 0.5975,
+                "Sleeper_6a74": 0.5475,
+                "Faithful_117d": 0.5475,
+                "Sleeper_0142": 0.5525,
+                "Faithful_d822": 0.55
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 7,
+            "scores": {
+                "Sleeper_da15": 0.6075,
+                "Sleeper_6a74": 0.5575,
+                "Faithful_117d": 0.5575,
+                "Sleeper_0142": 0.5625,
+                "Faithful_d822": 0.56
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 8,
+            "scores": {
+                "Sleeper_da15": 0.6175,
+                "Sleeper_6a74": 0.5675,
+                "Faithful_117d": 0.5675,
+                "Sleeper_0142": 0.5725,
+                "Faithful_d822": 0.5700000000000001
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 9,
+            "scores": {
+                "Sleeper_da15": 0.6275000000000001,
+                "Sleeper_6a74": 0.5775,
+                "Faithful_117d": 0.5775,
+                "Sleeper_0142": 0.5825,
+                "Faithful_d822": 0.5800000000000001
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 10,
+            "scores": {
+                "Sleeper_da15": 0.64,
+                "Sleeper_6a74": 0.59,
+                "Faithful_117d": 0.5825,
+                "Sleeper_0142": 0.595,
+                "Faithful_d822": 0.5875
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 11,
+            "scores": {
+                "Sleeper_da15": 0.6525,
+                "Sleeper_6a74": 0.6024999999999999,
+                "Faithful_117d": 0.59,
+                "Sleeper_0142": 0.6074999999999999,
+                "Faithful_d822": 0.5925
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 12,
+            "scores": {
+                "Sleeper_da15": 0.6649999999999999,
+                "Sleeper_6a74": 0.6124999999999999,
+                "Faithful_117d": 0.5974999999999999,
+                "Sleeper_0142": 0.6174999999999999,
+                "Faithful_d822": 0.6025
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 13,
+            "scores": {
+                "Sleeper_da15": 0.6774999999999999,
+                "Sleeper_6a74": 0.6199999999999999,
+                "Faithful_117d": 0.6099999999999999,
+                "Sleeper_0142": 0.6249999999999999,
+                "Faithful_d822": 0.6125
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 14,
+            "scores": {
+                "Sleeper_da15": 0.6874999999999999,
+                "Sleeper_6a74": 0.6299999999999999,
+                "Faithful_117d": 0.6199999999999999,
+                "Sleeper_0142": 0.6349999999999999,
+                "Faithful_d822": 0.6225
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 15,
+            "scores": {
+                "Sleeper_da15": 0.6974999999999999,
+                "Sleeper_6a74": 0.6399999999999999,
+                "Faithful_117d": 0.6299999999999999,
+                "Sleeper_0142": 0.6449999999999999,
+                "Faithful_d822": 0.6325000000000001
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 16,
+            "scores": {
+                "Sleeper_da15": 0.7074999999999999,
+                "Sleeper_6a74": 0.6499999999999999,
+                "Faithful_117d": 0.6399999999999999,
+                "Sleeper_0142": 0.6549999999999999,
+                "Faithful_d822": 0.6425000000000001
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 17,
+            "scores": {
+                "Sleeper_da15": 0.7174999999999999,
+                "Sleeper_6a74": 0.6599999999999999,
+                "Faithful_117d": 0.6499999999999999,
+                "Sleeper_0142": 0.6649999999999999,
+                "Faithful_d822": 0.6525000000000001
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 18,
+            "scores": {
+                "Sleeper_da15": 0.7274999999999999,
+                "Sleeper_6a74": 0.6699999999999999,
+                "Faithful_117d": 0.6599999999999999,
+                "Sleeper_0142": 0.6749999999999999,
+                "Faithful_d822": 0.6625000000000001
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 19,
+            "scores": {
+                "Sleeper_da15": 0.7399999999999999,
+                "Sleeper_6a74": 0.6824999999999999,
+                "Faithful_117d": 0.6662499999999999,
+                "Sleeper_0142": 0.6874999999999999,
+                "Faithful_d822": 0.6687500000000001
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 20,
+            "scores": {
+                "Sleeper_da15": 0.7499999999999999,
+                "Sleeper_6a74": 0.6904999999999999,
+                "Faithful_117d": 0.6742499999999999,
+                "Sleeper_0142": 0.6954999999999999,
+                "Faithful_d822": 0.6747500000000001
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 21,
+            "scores": {
+                "Sleeper_da15": 0.7699999999999999,
+                "Sleeper_6a74": 0.6954999999999999,
+                "Faithful_117d": 0.6842499999999999,
+                "Sleeper_0142": 0.7054999999999999,
+                "Faithful_d822": 0.6797500000000001
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 22,
+            "scores": {
+                "Sleeper_da15": 0.7824999999999999,
+                "Sleeper_6a74": 0.7079999999999999,
+                "Faithful_117d": 0.6892499999999999,
+                "Sleeper_0142": 0.7179999999999999,
+                "Faithful_d822": 0.68725
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 23,
+            "scores": {
+                "Sleeper_da15": 0.7884999999999999,
+                "Sleeper_6a74": 0.7094999999999998,
+                "Faithful_117d": 0.6907499999999999,
+                "Sleeper_0142": 0.7224999999999998,
+                "Faithful_d822": 0.68875
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 24,
+            "scores": {
+                "Sleeper_da15": 0.7984999999999999,
+                "Sleeper_6a74": 0.7194999999999998,
+                "Faithful_117d": 0.7007499999999999,
+                "Sleeper_0142": 0.7324999999999998,
+                "Faithful_d822": 0.69875
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 25,
+            "scores": {
+                "Sleeper_da15": 0.8184999999999999,
+                "Sleeper_6a74": 0.7394999999999998,
+                "Faithful_117d": 0.7032499999999998,
+                "Sleeper_0142": 0.7349999999999998,
+                "Faithful_d822": 0.70375
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 26,
+            "scores": {
+                "Sleeper_da15": 0.8309999999999998,
+                "Sleeper_6a74": 0.7519999999999998,
+                "Faithful_117d": 0.7107499999999998,
+                "Sleeper_0142": 0.7474999999999997,
+                "Faithful_d822": 0.70875
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 27,
+            "scores": {
+                "Sleeper_da15": 0.8449999999999999,
+                "Sleeper_6a74": 0.7554999999999997,
+                "Faithful_117d": 0.7177499999999998,
+                "Sleeper_0142": 0.7544999999999997,
+                "Faithful_d822": 0.7122499999999999
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 28,
+            "scores": {
+                "Sleeper_da15": 0.8549999999999999,
+                "Sleeper_6a74": 0.7654999999999997,
+                "Faithful_117d": 0.7177499999999998,
+                "Sleeper_0142": 0.7644999999999997,
+                "Faithful_d822": 0.72225
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 29,
+            "scores": {
+                "Sleeper_da15": 0.8689999999999999,
+                "Sleeper_6a74": 0.7689999999999997,
+                "Faithful_117d": 0.7247499999999998,
+                "Sleeper_0142": 0.7679999999999997,
+                "Faithful_d822": 0.72925
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 30,
+            "scores": {
+                "Sleeper_da15": 0.8849999999999999,
+                "Sleeper_6a74": 0.7769999999999997,
+                "Faithful_117d": 0.7327499999999998,
+                "Sleeper_0142": 0.7679999999999997,
+                "Faithful_d822": 0.73725
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 31,
+            "scores": {
+                "Sleeper_da15": 0.8939999999999999,
+                "Sleeper_6a74": 0.7859999999999997,
+                "Faithful_117d": 0.7417499999999998,
+                "Sleeper_0142": 0.7769999999999997,
+                "Faithful_d822": 0.74625
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 32,
+            "scores": {
+                "Sleeper_da15": 0.9064999999999999,
+                "Sleeper_6a74": 0.7984999999999997,
+                "Faithful_117d": 0.7417499999999998,
+                "Sleeper_0142": 0.7894999999999996,
+                "Faithful_d822": 0.7587499999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 33,
+            "scores": {
+                "Sleeper_da15": 0.9224999999999999,
+                "Sleeper_6a74": 0.7984999999999997,
+                "Faithful_117d": 0.7497499999999998,
+                "Sleeper_0142": 0.8014999999999997,
+                "Faithful_d822": 0.7627499999999999
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 34,
+            "scores": {
+                "Sleeper_da15": 0.9384999999999999,
+                "Sleeper_6a74": 0.8144999999999997,
+                "Faithful_117d": 0.7537499999999998,
+                "Sleeper_0142": 0.8054999999999997,
+                "Faithful_d822": 0.7627499999999999
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 35,
+            "scores": {
+                "Sleeper_da15": 0.9459999999999998,
+                "Sleeper_6a74": 0.8219999999999996,
+                "Faithful_117d": 0.7567499999999998,
+                "Sleeper_0142": 0.8129999999999996,
+                "Faithful_d822": 0.7672499999999999
+            },
+            "team_reward": 0.6
+        },
+        {
+            "round": 36,
+            "scores": {
+                "Sleeper_da15": 0.9626666666666666,
+                "Sleeper_6a74": 0.8386666666666663,
+                "Faithful_117d": 0.7567499999999998,
+                "Sleeper_0142": 0.8296666666666663,
+                "Faithful_d822": 0.7672499999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 37,
+            "scores": {
+                "Sleeper_da15": 0.9776666666666666,
+                "Sleeper_6a74": 0.8486666666666663,
+                "Faithful_117d": 0.7667499999999998,
+                "Sleeper_0142": 0.8396666666666663,
+                "Faithful_d822": 0.7722499999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 38,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.8486666666666663,
+                "Faithful_117d": 0.7667499999999998,
+                "Sleeper_0142": 0.8396666666666663,
+                "Faithful_d822": 0.7722499999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 39,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.8586666666666664,
+                "Faithful_117d": 0.7767499999999998,
+                "Sleeper_0142": 0.8496666666666663,
+                "Faithful_d822": 0.7822499999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 40,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.8631666666666663,
+                "Faithful_117d": 0.7857499999999998,
+                "Sleeper_0142": 0.8541666666666663,
+                "Faithful_d822": 0.7912499999999999
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 41,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.8744166666666663,
+                "Faithful_117d": 0.7933999999999999,
+                "Sleeper_0142": 0.8618166666666663,
+                "Faithful_d822": 0.7984499999999999
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 42,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.8784166666666663,
+                "Faithful_117d": 0.7973999999999999,
+                "Sleeper_0142": 0.8658166666666663,
+                "Faithful_d822": 0.8024499999999999
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 43,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.8809166666666662,
+                "Faithful_117d": 0.7983999999999999,
+                "Sleeper_0142": 0.8683166666666663,
+                "Faithful_d822": 0.8039499999999998
+            },
+            "team_reward": 0.2
+        },
+        {
+            "round": 44,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.8909166666666662,
+                "Faithful_117d": 0.8033999999999999,
+                "Sleeper_0142": 0.8783166666666663,
+                "Faithful_d822": 0.8089499999999998
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 45,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.9034166666666662,
+                "Faithful_117d": 0.8108999999999998,
+                "Sleeper_0142": 0.8908166666666663,
+                "Faithful_d822": 0.8139499999999998
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 46,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.9159166666666662,
+                "Faithful_117d": 0.8158999999999998,
+                "Sleeper_0142": 0.9033166666666662,
+                "Faithful_d822": 0.8214499999999998
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 47,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.9259166666666662,
+                "Faithful_117d": 0.8258999999999999,
+                "Sleeper_0142": 0.9133166666666662,
+                "Faithful_d822": 0.8314499999999998
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 48,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.9259166666666662,
+                "Faithful_117d": 0.8258999999999999,
+                "Sleeper_0142": 0.9133166666666662,
+                "Faithful_d822": 0.8064499999999998
+            },
+            "team_reward": -0.5
+        },
+        {
+            "round": 49,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.9384166666666661,
+                "Faithful_117d": 0.8308999999999999,
+                "Sleeper_0142": 0.9258166666666662,
+                "Faithful_d822": 0.8139499999999997
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 50,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.9509166666666661,
+                "Faithful_117d": 0.8408999999999999,
+                "Sleeper_0142": 0.9383166666666661,
+                "Faithful_d822": 0.8164499999999997
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 51,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.9609166666666661,
+                "Faithful_117d": 0.8508999999999999,
+                "Sleeper_0142": 0.9483166666666661,
+                "Faithful_d822": 0.8264499999999997
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 52,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.9709166666666661,
+                "Faithful_117d": 0.8608999999999999,
+                "Sleeper_0142": 0.9583166666666662,
+                "Faithful_d822": 0.8364499999999997
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 53,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.983416666666666,
+                "Faithful_117d": 0.8608999999999999,
+                "Sleeper_0142": 0.9708166666666661,
+                "Faithful_d822": 0.8489499999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 54,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.986916666666666,
+                "Faithful_117d": 0.8643999999999998,
+                "Sleeper_0142": 0.9848166666666661,
+                "Faithful_d822": 0.8489499999999996
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 55,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 0.993916666666666,
+                "Faithful_117d": 0.8713999999999998,
+                "Sleeper_0142": 0.9883166666666661,
+                "Faithful_d822": 0.8524499999999996
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 56,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.8813999999999999,
+                "Sleeper_0142": 0.9933166666666661,
+                "Faithful_d822": 0.8624499999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 57,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.8863999999999999,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.8674499999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 58,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.8913999999999999,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.8724499999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 59,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9013999999999999,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.8824499999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 60,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9113999999999999,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.8924499999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 61,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9176499999999999,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.8986999999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 62,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9276499999999999,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9011999999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 63,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9283999999999999,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9026999999999995
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 64,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9358999999999998,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9076999999999995
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 65,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9433999999999998,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9126999999999995
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 66,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9463999999999998,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9156999999999995
+            },
+            "team_reward": 0.4
+        },
+        {
+            "round": 67,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9563999999999998,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9256999999999995
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 68,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9608999999999998,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9346999999999995
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 69,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9708999999999998,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9446999999999995
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 70,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9783999999999997,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9496999999999995
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 71,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9783999999999997,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9496999999999995
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 72,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9833999999999997,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9596999999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 73,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 0.9933999999999997,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9696999999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 74,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9796999999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 75,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9896999999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 76,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 0.9996999999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 77,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 78,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 79,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 80,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 81,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 82,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 83,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 84,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 85,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 86,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 87,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 88,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 89,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 90,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 91,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 92,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 93,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 94,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 0.2
+        },
+        {
+            "round": 95,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 96,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 97,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 98,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 0.6
+        },
+        {
+            "round": 99,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 100,
+            "scores": {
+                "Sleeper_da15": 1.0,
+                "Sleeper_6a74": 1.0,
+                "Faithful_117d": 1.0,
+                "Sleeper_0142": 1.0,
+                "Faithful_d822": 1.0
+            },
+            "team_reward": 0.4
+        }
+    ]
+}

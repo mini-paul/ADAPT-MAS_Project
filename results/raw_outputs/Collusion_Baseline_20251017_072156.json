@@ -1,0 +1,1017 @@
+{
+    "experiment_name": "Collusion_Baseline",
+    "framework": "BaselineCrS",
+    "framework_args": {},
+    "agent_mix": {
+        "faithful": 2,
+        "colluding": 2
+    },
+    "agent_roles": {
+        "Faithful_da93": "Faithful",
+        "Colluding_efcb": "Colluding",
+        "Faithful_3805": "Faithful",
+        "Colluding_6a00": "Colluding"
+    },
+    "log": [
+        {
+            "round": 1,
+            "scores": {
+                "Faithful_da93": 0.5225,
+                "Colluding_efcb": 0.5025,
+                "Faithful_3805": 0.5175,
+                "Colluding_6a00": 0.5075
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 2,
+            "scores": {
+                "Faithful_da93": 0.5065,
+                "Colluding_efcb": 0.5025,
+                "Faithful_3805": 0.5135,
+                "Colluding_6a00": 0.5075
+            },
+            "team_reward": -0.4
+        },
+        {
+            "round": 3,
+            "scores": {
+                "Faithful_da93": 0.49399999999999994,
+                "Colluding_efcb": 0.49499999999999994,
+                "Faithful_3805": 0.49099999999999994,
+                "Colluding_6a00": 0.49999999999999994
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 4,
+            "scores": {
+                "Faithful_da93": 0.5015,
+                "Colluding_efcb": 0.49649999999999994,
+                "Faithful_3805": 0.49849999999999994,
+                "Colluding_6a00": 0.5135
+            },
+            "team_reward": 0.6
+        },
+        {
+            "round": 5,
+            "scores": {
+                "Faithful_da93": 0.5015,
+                "Colluding_efcb": 0.49649999999999994,
+                "Faithful_3805": 0.49849999999999994,
+                "Colluding_6a00": 0.5135
+            },
+            "team_reward": 0.0
+        },
+        {
+            "round": 6,
+            "scores": {
+                "Faithful_da93": 0.48899999999999993,
+                "Colluding_efcb": 0.48399999999999993,
+                "Faithful_3805": 0.48599999999999993,
+                "Colluding_6a00": 0.501
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 7,
+            "scores": {
+                "Faithful_da93": 0.4927499999999999,
+                "Colluding_efcb": 0.4877499999999999,
+                "Faithful_3805": 0.4897499999999999,
+                "Colluding_6a00": 0.50475
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 8,
+            "scores": {
+                "Faithful_da93": 0.4937499999999999,
+                "Colluding_efcb": 0.4897499999999999,
+                "Faithful_3805": 0.4907499999999999,
+                "Colluding_6a00": 0.50575
+            },
+            "team_reward": 0.1
+        },
+        {
+            "round": 9,
+            "scores": {
+                "Faithful_da93": 0.5025,
+                "Colluding_efcb": 0.4914999999999999,
+                "Faithful_3805": 0.4994999999999999,
+                "Colluding_6a00": 0.5215000000000001
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 10,
+            "scores": {
+                "Faithful_da93": 0.5099999999999999,
+                "Colluding_efcb": 0.5089999999999999,
+                "Faithful_3805": 0.5069999999999999,
+                "Colluding_6a00": 0.539
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 11,
+            "scores": {
+                "Faithful_da93": 0.5204999999999999,
+                "Colluding_efcb": 0.5164999999999998,
+                "Faithful_3805": 0.5144999999999998,
+                "Colluding_6a00": 0.5435
+            },
+            "team_reward": 0.6
+        },
+        {
+            "round": 12,
+            "scores": {
+                "Faithful_da93": 0.5164999999999998,
+                "Colluding_efcb": 0.5124999999999998,
+                "Faithful_3805": 0.5124999999999998,
+                "Colluding_6a00": 0.5335
+            },
+            "team_reward": -0.4
+        },
+        {
+            "round": 13,
+            "scores": {
+                "Faithful_da93": 0.5234999999999999,
+                "Colluding_efcb": 0.5247499999999998,
+                "Faithful_3805": 0.5177499999999998,
+                "Colluding_6a00": 0.5439999999999999
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 14,
+            "scores": {
+                "Faithful_da93": 0.5264999999999999,
+                "Colluding_efcb": 0.5292499999999998,
+                "Faithful_3805": 0.5207499999999998,
+                "Colluding_6a00": 0.5484999999999999
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 15,
+            "scores": {
+                "Faithful_da93": 0.5264999999999999,
+                "Colluding_efcb": 0.5042499999999998,
+                "Faithful_3805": 0.5207499999999998,
+                "Colluding_6a00": 0.5234999999999999
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 16,
+            "scores": {
+                "Faithful_da93": 0.5564999999999999,
+                "Colluding_efcb": 0.5092499999999998,
+                "Faithful_3805": 0.5307499999999998,
+                "Colluding_6a00": 0.5284999999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 17,
+            "scores": {
+                "Faithful_da93": 0.5654999999999999,
+                "Colluding_efcb": 0.5107499999999997,
+                "Faithful_3805": 0.5344999999999999,
+                "Colluding_6a00": 0.5292499999999999
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 18,
+            "scores": {
+                "Faithful_da93": 0.5892499999999999,
+                "Colluding_efcb": 0.5154999999999997,
+                "Faithful_3805": 0.5487499999999998,
+                "Colluding_6a00": 0.5339999999999999
+            },
+            "team_reward": 0.95
+        },
+        {
+            "round": 19,
+            "scores": {
+                "Faithful_da93": 0.5772499999999999,
+                "Colluding_efcb": 0.5134999999999997,
+                "Faithful_3805": 0.5437499999999998,
+                "Colluding_6a00": 0.5329999999999999
+            },
+            "team_reward": -0.4
+        },
+        {
+            "round": 20,
+            "scores": {
+                "Faithful_da93": 0.5422499999999999,
+                "Colluding_efcb": 0.5084999999999997,
+                "Faithful_3805": 0.5362499999999999,
+                "Colluding_6a00": 0.5305
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 21,
+            "scores": {
+                "Faithful_da93": 0.53475,
+                "Colluding_efcb": 0.5069999999999998,
+                "Faithful_3805": 0.53175,
+                "Colluding_6a00": 0.529
+            },
+            "team_reward": -0.3
+        },
+        {
+            "round": 22,
+            "scores": {
+                "Faithful_da93": 0.49974999999999997,
+                "Colluding_efcb": 0.5019999999999998,
+                "Faithful_3805": 0.52425,
+                "Colluding_6a00": 0.5265000000000001
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 23,
+            "scores": {
+                "Faithful_da93": 0.48224999999999996,
+                "Colluding_efcb": 0.48949999999999977,
+                "Faithful_3805": 0.50925,
+                "Colluding_6a00": 0.5215000000000001
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 24,
+            "scores": {
+                "Faithful_da93": 0.48224999999999996,
+                "Colluding_efcb": 0.48949999999999977,
+                "Faithful_3805": 0.50925,
+                "Colluding_6a00": 0.5065000000000001
+            },
+            "team_reward": -0.3
+        },
+        {
+            "round": 25,
+            "scores": {
+                "Faithful_da93": 0.47624999999999995,
+                "Colluding_efcb": 0.48749999999999977,
+                "Faithful_3805": 0.49924999999999997,
+                "Colluding_6a00": 0.5045000000000001
+            },
+            "team_reward": -0.4
+        },
+        {
+            "round": 26,
+            "scores": {
+                "Faithful_da93": 0.46374999999999994,
+                "Colluding_efcb": 0.46999999999999975,
+                "Faithful_3805": 0.48674999999999996,
+                "Colluding_6a00": 0.49700000000000005
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 27,
+            "scores": {
+                "Faithful_da93": 0.45874999999999994,
+                "Colluding_efcb": 0.46249999999999974,
+                "Faithful_3805": 0.48174999999999996,
+                "Colluding_6a00": 0.48950000000000005
+            },
+            "team_reward": -0.5
+        },
+        {
+            "round": 28,
+            "scores": {
+                "Faithful_da93": 0.46774999999999994,
+                "Colluding_efcb": 0.47599999999999976,
+                "Faithful_3805": 0.49074999999999996,
+                "Colluding_6a00": 0.503
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 29,
+            "scores": {
+                "Faithful_da93": 0.45524999999999993,
+                "Colluding_efcb": 0.46349999999999975,
+                "Faithful_3805": 0.47824999999999995,
+                "Colluding_6a00": 0.4905
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 30,
+            "scores": {
+                "Faithful_da93": 0.46324999999999994,
+                "Colluding_efcb": 0.47549999999999976,
+                "Faithful_3805": 0.48624999999999996,
+                "Colluding_6a00": 0.5025
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 31,
+            "scores": {
+                "Faithful_da93": 0.47074999999999995,
+                "Colluding_efcb": 0.48799999999999977,
+                "Faithful_3805": 0.49374999999999997,
+                "Colluding_6a00": 0.5249999999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 32,
+            "scores": {
+                "Faithful_da93": 0.47474999999999995,
+                "Colluding_efcb": 0.4999999999999998,
+                "Faithful_3805": 0.49774999999999997,
+                "Colluding_6a00": 0.5449999999999999
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 33,
+            "scores": {
+                "Faithful_da93": 0.45974999999999994,
+                "Colluding_efcb": 0.4949999999999998,
+                "Faithful_3805": 0.48274999999999996,
+                "Colluding_6a00": 0.5299999999999999
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 34,
+            "scores": {
+                "Faithful_da93": 0.47162499999999996,
+                "Colluding_efcb": 0.4949999999999998,
+                "Faithful_3805": 0.49937499999999996,
+                "Colluding_6a00": 0.5489999999999999
+            },
+            "team_reward": 0.95
+        },
+        {
+            "round": 35,
+            "scores": {
+                "Faithful_da93": 0.47862499999999997,
+                "Colluding_efcb": 0.5054999999999997,
+                "Faithful_3805": 0.5063749999999999,
+                "Colluding_6a00": 0.5594999999999999
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 36,
+            "scores": {
+                "Faithful_da93": 0.47112499999999996,
+                "Colluding_efcb": 0.4929999999999997,
+                "Faithful_3805": 0.4988749999999999,
+                "Colluding_6a00": 0.5369999999999999
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 37,
+            "scores": {
+                "Faithful_da93": 0.48112499999999997,
+                "Colluding_efcb": 0.5079999999999997,
+                "Faithful_3805": 0.5088749999999999,
+                "Colluding_6a00": 0.5519999999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 38,
+            "scores": {
+                "Faithful_da93": 0.48487499999999994,
+                "Colluding_efcb": 0.5102499999999996,
+                "Faithful_3805": 0.5126249999999999,
+                "Colluding_6a00": 0.5572499999999999
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 39,
+            "scores": {
+                "Faithful_da93": 0.49487499999999995,
+                "Colluding_efcb": 0.5202499999999997,
+                "Faithful_3805": 0.5226249999999999,
+                "Colluding_6a00": 0.5672499999999999
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 40,
+            "scores": {
+                "Faithful_da93": 0.49187499999999995,
+                "Colluding_efcb": 0.5132499999999997,
+                "Faithful_3805": 0.5196249999999999,
+                "Colluding_6a00": 0.5602499999999999
+            },
+            "team_reward": -0.4
+        },
+        {
+            "round": 41,
+            "scores": {
+                "Faithful_da93": 0.5031249999999999,
+                "Colluding_efcb": 0.5154999999999996,
+                "Faithful_3805": 0.5308749999999999,
+                "Colluding_6a00": 0.5804999999999999
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 42,
+            "scores": {
+                "Faithful_da93": 0.49437499999999995,
+                "Colluding_efcb": 0.5117499999999996,
+                "Faithful_3805": 0.5221249999999998,
+                "Colluding_6a00": 0.5767499999999999
+            },
+            "team_reward": -0.5
+        },
+        {
+            "round": 43,
+            "scores": {
+                "Faithful_da93": 0.5043749999999999,
+                "Colluding_efcb": 0.5267499999999996,
+                "Faithful_3805": 0.5321249999999998,
+                "Colluding_6a00": 0.5917499999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 44,
+            "scores": {
+                "Faithful_da93": 0.5218749999999999,
+                "Colluding_efcb": 0.5342499999999996,
+                "Faithful_3805": 0.5471249999999999,
+                "Colluding_6a00": 0.6017499999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 45,
+            "scores": {
+                "Faithful_da93": 0.5306249999999999,
+                "Colluding_efcb": 0.5394999999999995,
+                "Faithful_3805": 0.5558749999999999,
+                "Colluding_6a00": 0.6139999999999999
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 46,
+            "scores": {
+                "Faithful_da93": 0.5418749999999999,
+                "Colluding_efcb": 0.5394999999999995,
+                "Faithful_3805": 0.5671249999999999,
+                "Colluding_6a00": 0.6364999999999998
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 47,
+            "scores": {
+                "Faithful_da93": 0.5268749999999999,
+                "Colluding_efcb": 0.5294999999999995,
+                "Faithful_3805": 0.5521249999999999,
+                "Colluding_6a00": 0.6264999999999998
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 48,
+            "scores": {
+                "Faithful_da93": 0.5348749999999999,
+                "Colluding_efcb": 0.5334999999999995,
+                "Faithful_3805": 0.5601249999999999,
+                "Colluding_6a00": 0.6464999999999999
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 49,
+            "scores": {
+                "Faithful_da93": 0.5223749999999999,
+                "Colluding_efcb": 0.5259999999999996,
+                "Faithful_3805": 0.5476249999999999,
+                "Colluding_6a00": 0.6289999999999999
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 50,
+            "scores": {
+                "Faithful_da93": 0.531125,
+                "Colluding_efcb": 0.5347499999999996,
+                "Faithful_3805": 0.556375,
+                "Colluding_6a00": 0.6377499999999999
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 51,
+            "scores": {
+                "Faithful_da93": 0.537125,
+                "Colluding_efcb": 0.5487499999999996,
+                "Faithful_3805": 0.562375,
+                "Colluding_6a00": 0.6517499999999999
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 52,
+            "scores": {
+                "Faithful_da93": 0.5333749999999999,
+                "Colluding_efcb": 0.5464999999999997,
+                "Faithful_3805": 0.5586249999999999,
+                "Colluding_6a00": 0.6465
+            },
+            "team_reward": -0.3
+        },
+        {
+            "round": 53,
+            "scores": {
+                "Faithful_da93": 0.542125,
+                "Colluding_efcb": 0.5482499999999997,
+                "Faithful_3805": 0.5708749999999999,
+                "Colluding_6a00": 0.65875
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 54,
+            "scores": {
+                "Faithful_da93": 0.550125,
+                "Colluding_efcb": 0.5602499999999997,
+                "Faithful_3805": 0.5788749999999999,
+                "Colluding_6a00": 0.67075
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 55,
+            "scores": {
+                "Faithful_da93": 0.560125,
+                "Colluding_efcb": 0.5802499999999997,
+                "Faithful_3805": 0.5838749999999999,
+                "Colluding_6a00": 0.68575
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 56,
+            "scores": {
+                "Faithful_da93": 0.550125,
+                "Colluding_efcb": 0.5602499999999997,
+                "Faithful_3805": 0.5738749999999999,
+                "Colluding_6a00": 0.67575
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 57,
+            "scores": {
+                "Faithful_da93": 0.552375,
+                "Colluding_efcb": 0.5654999999999997,
+                "Faithful_3805": 0.5761249999999999,
+                "Colluding_6a00": 0.6809999999999999
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 58,
+            "scores": {
+                "Faithful_da93": 0.552375,
+                "Colluding_efcb": 0.5404999999999996,
+                "Faithful_3805": 0.5761249999999999,
+                "Colluding_6a00": 0.6559999999999999
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 59,
+            "scores": {
+                "Faithful_da93": 0.562375,
+                "Colluding_efcb": 0.5544999999999997,
+                "Faithful_3805": 0.5821249999999999,
+                "Colluding_6a00": 0.6659999999999999
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 60,
+            "scores": {
+                "Faithful_da93": 0.5646249999999999,
+                "Colluding_efcb": 0.5597499999999996,
+                "Faithful_3805": 0.5843749999999999,
+                "Colluding_6a00": 0.6712499999999999
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 61,
+            "scores": {
+                "Faithful_da93": 0.5771249999999999,
+                "Colluding_efcb": 0.5722499999999996,
+                "Faithful_3805": 0.5968749999999998,
+                "Colluding_6a00": 0.6837499999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 62,
+            "scores": {
+                "Faithful_da93": 0.5876249999999998,
+                "Colluding_efcb": 0.5774999999999996,
+                "Faithful_3805": 0.6073749999999998,
+                "Colluding_6a00": 0.6924999999999999
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 63,
+            "scores": {
+                "Faithful_da93": 0.5906249999999998,
+                "Colluding_efcb": 0.5819999999999995,
+                "Faithful_3805": 0.6103749999999998,
+                "Colluding_6a00": 0.6969999999999998
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 64,
+            "scores": {
+                "Faithful_da93": 0.6006249999999999,
+                "Colluding_efcb": 0.5969999999999995,
+                "Faithful_3805": 0.6203749999999998,
+                "Colluding_6a00": 0.7119999999999999
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 65,
+            "scores": {
+                "Faithful_da93": 0.6058749999999998,
+                "Colluding_efcb": 0.6092499999999995,
+                "Faithful_3805": 0.6256249999999998,
+                "Colluding_6a00": 0.7242499999999998
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 66,
+            "scores": {
+                "Faithful_da93": 0.6088749999999998,
+                "Colluding_efcb": 0.6137499999999995,
+                "Faithful_3805": 0.6286249999999998,
+                "Colluding_6a00": 0.7287499999999998
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 67,
+            "scores": {
+                "Faithful_da93": 0.6103749999999998,
+                "Colluding_efcb": 0.6172499999999994,
+                "Faithful_3805": 0.6301249999999997,
+                "Colluding_6a00": 0.7322499999999997
+            },
+            "team_reward": 0.2
+        },
+        {
+            "round": 68,
+            "scores": {
+                "Faithful_da93": 0.6103749999999998,
+                "Colluding_efcb": 0.5922499999999994,
+                "Faithful_3805": 0.6301249999999997,
+                "Colluding_6a00": 0.7072499999999997
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 69,
+            "scores": {
+                "Faithful_da93": 0.6208749999999997,
+                "Colluding_efcb": 0.5957499999999993,
+                "Faithful_3805": 0.6406249999999997,
+                "Colluding_6a00": 0.7177499999999997
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 70,
+            "scores": {
+                "Faithful_da93": 0.6188749999999997,
+                "Colluding_efcb": 0.5877499999999993,
+                "Faithful_3805": 0.6386249999999997,
+                "Colluding_6a00": 0.7097499999999997
+            },
+            "team_reward": -0.4
+        },
+        {
+            "round": 71,
+            "scores": {
+                "Faithful_da93": 0.6286749999999998,
+                "Colluding_efcb": 0.5968499999999993,
+                "Faithful_3805": 0.6477249999999997,
+                "Colluding_6a00": 0.7167499999999997
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 72,
+            "scores": {
+                "Faithful_da93": 0.6236749999999998,
+                "Colluding_efcb": 0.5938499999999993,
+                "Faithful_3805": 0.6427249999999997,
+                "Colluding_6a00": 0.7097499999999997
+            },
+            "team_reward": -0.4
+        },
+        {
+            "round": 73,
+            "scores": {
+                "Faithful_da93": 0.6086749999999997,
+                "Colluding_efcb": 0.5813499999999994,
+                "Faithful_3805": 0.6302249999999997,
+                "Colluding_6a00": 0.6997499999999997
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 74,
+            "scores": {
+                "Faithful_da93": 0.6186749999999998,
+                "Colluding_efcb": 0.5963499999999994,
+                "Faithful_3805": 0.6402249999999997,
+                "Colluding_6a00": 0.7147499999999997
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 75,
+            "scores": {
+                "Faithful_da93": 0.6166749999999998,
+                "Colluding_efcb": 0.5883499999999994,
+                "Faithful_3805": 0.6382249999999997,
+                "Colluding_6a00": 0.7067499999999997
+            },
+            "team_reward": -0.4
+        },
+        {
+            "round": 76,
+            "scores": {
+                "Faithful_da93": 0.6016749999999997,
+                "Colluding_efcb": 0.5758499999999994,
+                "Faithful_3805": 0.6232249999999997,
+                "Colluding_6a00": 0.6992499999999997
+            },
+            "team_reward": -1.0
+        },
+        {
+            "round": 77,
+            "scores": {
+                "Faithful_da93": 0.6084249999999998,
+                "Colluding_efcb": 0.5915999999999995,
+                "Faithful_3805": 0.6299749999999997,
+                "Colluding_6a00": 0.7149999999999997
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 78,
+            "scores": {
+                "Faithful_da93": 0.6209249999999997,
+                "Colluding_efcb": 0.6040999999999994,
+                "Faithful_3805": 0.6424749999999997,
+                "Colluding_6a00": 0.7274999999999997
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 79,
+            "scores": {
+                "Faithful_da93": 0.6299249999999997,
+                "Colluding_efcb": 0.6175999999999994,
+                "Faithful_3805": 0.6514749999999997,
+                "Colluding_6a00": 0.7409999999999997
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 80,
+            "scores": {
+                "Faithful_da93": 0.6321749999999997,
+                "Colluding_efcb": 0.6228499999999993,
+                "Faithful_3805": 0.6537249999999997,
+                "Colluding_6a00": 0.7462499999999996
+            },
+            "team_reward": 0.3
+        },
+        {
+            "round": 81,
+            "scores": {
+                "Faithful_da93": 0.6446749999999997,
+                "Colluding_efcb": 0.6353499999999993,
+                "Faithful_3805": 0.6662249999999996,
+                "Colluding_6a00": 0.7587499999999996
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 82,
+            "scores": {
+                "Faithful_da93": 0.6536749999999997,
+                "Colluding_efcb": 0.6488499999999993,
+                "Faithful_3805": 0.6752249999999996,
+                "Colluding_6a00": 0.7722499999999995
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 83,
+            "scores": {
+                "Faithful_da93": 0.6661749999999996,
+                "Colluding_efcb": 0.6613499999999992,
+                "Faithful_3805": 0.6877249999999996,
+                "Colluding_6a00": 0.7847499999999995
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 84,
+            "scores": {
+                "Faithful_da93": 0.6621749999999996,
+                "Colluding_efcb": 0.6553499999999992,
+                "Faithful_3805": 0.6837249999999996,
+                "Colluding_6a00": 0.7787499999999995
+            },
+            "team_reward": -0.4
+        },
+        {
+            "round": 85,
+            "scores": {
+                "Faithful_da93": 0.6696749999999996,
+                "Colluding_efcb": 0.6728499999999992,
+                "Faithful_3805": 0.6912249999999995,
+                "Colluding_6a00": 0.7962499999999995
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 86,
+            "scores": {
+                "Faithful_da93": 0.6771749999999995,
+                "Colluding_efcb": 0.6903499999999991,
+                "Faithful_3805": 0.6987249999999995,
+                "Colluding_6a00": 0.8137499999999994
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 87,
+            "scores": {
+                "Faithful_da93": 0.6896749999999995,
+                "Colluding_efcb": 0.7028499999999991,
+                "Faithful_3805": 0.7112249999999994,
+                "Colluding_6a00": 0.8262499999999994
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 88,
+            "scores": {
+                "Faithful_da93": 0.6916749999999995,
+                "Colluding_efcb": 0.7058499999999991,
+                "Faithful_3805": 0.7132249999999994,
+                "Colluding_6a00": 0.8292499999999994
+            },
+            "team_reward": 0.2
+        },
+        {
+            "round": 89,
+            "scores": {
+                "Faithful_da93": 0.7016749999999995,
+                "Colluding_efcb": 0.7138499999999991,
+                "Faithful_3805": 0.7232249999999995,
+                "Colluding_6a00": 0.8412499999999994
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 90,
+            "scores": {
+                "Faithful_da93": 0.7116749999999995,
+                "Colluding_efcb": 0.7288499999999991,
+                "Faithful_3805": 0.7332249999999995,
+                "Colluding_6a00": 0.8562499999999994
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 91,
+            "scores": {
+                "Faithful_da93": 0.7184249999999995,
+                "Colluding_efcb": 0.7445999999999992,
+                "Faithful_3805": 0.7399749999999995,
+                "Colluding_6a00": 0.8719999999999994
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 92,
+            "scores": {
+                "Faithful_da93": 0.7144249999999995,
+                "Colluding_efcb": 0.7395999999999991,
+                "Faithful_3805": 0.7359749999999995,
+                "Colluding_6a00": 0.8649999999999994
+            },
+            "team_reward": -0.4
+        },
+        {
+            "round": 93,
+            "scores": {
+                "Faithful_da93": 0.7211749999999996,
+                "Colluding_efcb": 0.7553499999999992,
+                "Faithful_3805": 0.7472249999999995,
+                "Colluding_6a00": 0.8762499999999994
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 94,
+            "scores": {
+                "Faithful_da93": 0.7337749999999996,
+                "Colluding_efcb": 0.7661499999999992,
+                "Faithful_3805": 0.7598249999999995,
+                "Colluding_6a00": 0.8852499999999994
+            },
+            "team_reward": 0.9
+        },
+        {
+            "round": 95,
+            "scores": {
+                "Faithful_da93": 0.7407749999999996,
+                "Colluding_efcb": 0.7766499999999992,
+                "Faithful_3805": 0.7668249999999995,
+                "Colluding_6a00": 0.8957499999999994
+            },
+            "team_reward": 0.7
+        },
+        {
+            "round": 96,
+            "scores": {
+                "Faithful_da93": 0.7507749999999996,
+                "Colluding_efcb": 0.7916499999999992,
+                "Faithful_3805": 0.7768249999999995,
+                "Colluding_6a00": 0.9107499999999994
+            },
+            "team_reward": 1.0
+        },
+        {
+            "round": 97,
+            "scores": {
+                "Faithful_da93": 0.7607749999999996,
+                "Colluding_efcb": 0.7916499999999992,
+                "Faithful_3805": 0.7908249999999996,
+                "Colluding_6a00": 0.9267499999999994
+            },
+            "team_reward": 0.8
+        },
+        {
+            "round": 98,
+            "scores": {
+                "Faithful_da93": 0.7567749999999996,
+                "Colluding_efcb": 0.7856499999999992,
+                "Faithful_3805": 0.7868249999999996,
+                "Colluding_6a00": 0.9207499999999994
+            },
+            "team_reward": -0.4
+        },
+        {
+            "round": 99,
+            "scores": {
+                "Faithful_da93": 0.7662749999999996,
+                "Colluding_efcb": 0.8022749999999992,
+                "Faithful_3805": 0.7939499999999996,
+                "Colluding_6a00": 0.9349999999999994
+            },
+            "team_reward": 0.95
+        },
+        {
+            "round": 100,
+            "scores": {
+                "Faithful_da93": 0.7733999999999996,
+                "Colluding_efcb": 0.8188999999999992,
+                "Faithful_3805": 0.8010749999999996,
+                "Colluding_6a00": 0.9516249999999994
+            },
+            "team_reward": 0.95
+        }
+    ]
+}
