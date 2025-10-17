@@ -143,30 +143,30 @@ if __name__ == "__main__":
     # plot_results([results_h1_base, results_h1_adapt], scenario_h1)
 
     # 实验 2: 抵御合谋攻击 (主观任务 - 投资分析)
-    scenario_h2 = "H2 - Collusion Attack (Investment Analysis Task)"
-    results_h2_base = run_experiment("Collusion_Baseline", BaselineCrS,
-                                     AGENT_MIX_SCENARIOS["scenario_collusion_attack"], tasks_subjective, task_category='analysis')
-    results_h2_adapt = run_experiment("Collusion_ADAPT-MAS", ADAPT_MAS,
-                                      AGENT_MIX_SCENARIOS["scenario_collusion_attack"], tasks_subjective, task_category='analysis')
-    plot_results([results_h2_base, results_h2_adapt], scenario_h2)
+    # scenario_h2 = "H2 - Collusion Attack (Investment Analysis Task)"
+    # results_h2_base = run_experiment("Collusion_Baseline", BaselineCrS,
+    #                                  AGENT_MIX_SCENARIOS["scenario_collusion_attack"], tasks_subjective, task_category='analysis')
+    # results_h2_adapt = run_experiment("Collusion_ADAPT-MAS", ADAPT_MAS,
+    #                                   AGENT_MIX_SCENARIOS["scenario_collusion_attack"], tasks_subjective, task_category='analysis')
+    # plot_results([results_h2_base, results_h2_adapt], scenario_h2)
 
-    # logger.info("\n\n{'='*15} 开始消融研究实验 {'='*15}")
-    # # 实验 3: 消融研究 - 社交图谱模块
-    # scenario_h4_sg = "H4 - Ablation studies (social graphs)"
-    # results_h4_no_sg = run_experiment(
-    #     "Collusion_ADAPT-MAS_No_SG", ADAPT_MAS,
-    #     AGENT_MIX_SCENARIOS["scenario_collusion_attack"], tasks_subjective,
-    #     task_category='analysis', framework_kwargs={'use_social_graph': False}
-    # )
+    logger.info("\n\n{'='*15} 开始消融研究实验 {'='*15}")
+    # 实验 3: 消融研究 - 社交图谱模块
+    scenario_h4_sg = "H4 - Ablation studies (social graphs)"
+    results_h4_no_sg = run_experiment(
+        "Collusion_ADAPT-MAS_No_SG", ADAPT_MAS,
+        AGENT_MIX_SCENARIOS["scenario_collusion_attack"], tasks_subjective,
+        task_category='analysis', framework_kwargs={'use_social_graph': False}
+    )
     # plot_results([results_h2_adapt, results_h4_no_sg], scenario_h4_sg)
-    #
-    # # 实验 4: 消融研究 - 动态信任模块
-    # scenario_h4_dt = "H4 - Ablation Study (Dynamic Trust)"
-    # results_h4_no_dt = run_experiment(
-    #     "Sleeper_ADAPT-MAS_No_DT", ADAPT_MAS,
-    #     AGENT_MIX_SCENARIOS["scenario_sleeper_attack"], tasks_objective,
-    #     task_category='coding', framework_kwargs={'use_dynamic_trust': False}
-    # )
+
+    # 实验 4: 消融研究 - 动态信任模块
+    scenario_h4_dt = "H4 - Ablation Study (Dynamic Trust)"
+    results_h4_no_dt = run_experiment(
+        "Sleeper_ADAPT-MAS_No_DT", ADAPT_MAS,
+        AGENT_MIX_SCENARIOS["scenario_sleeper_attack"], tasks_objective,
+        task_category='coding', framework_kwargs={'use_dynamic_trust': False}
+    )
     # plot_results([results_h1_adapt, results_h4_no_dt], scenario_h4_dt)
 
     logger.info("\n\n{'='*20} 所有实验已完成 {'='*20}")
