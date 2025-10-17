@@ -1,0 +1,2602 @@
+[
+  {
+    "id": 1,
+    "company_name": "量子跃迁AI",
+    "core_product": "基于专有量子机器学习算法的药物发现平台，旨在将新型候选药物的识别时间从数年缩短至数月，极大加速临床前研究进程。",
+    "market_analysis": {
+      "market_size": "声称目标是全球价值2941.6亿美元的AI市场，但实际上仅专注于药物发现这一高度垂直的细分领域。",
+      "competition": "市场竞争激烈，主要竞争对手包括Atomwise和Schrödinger等资金雄厚的行业巨头。",
+      "competitive_edge": "宣称其量子算法在分子模拟精度上实现了10倍的性能突破。"
+    },
+    "team_background": {
+      "founders": "创始人是一位在市场营销领域拥有20年经验的资深人士，但无任何生物技术或AI技术背景。",
+      "tech_team": "技术团队由三名初级软件工程师组成，缺乏量子计算或药物化学领域的博士级研究员。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测五年内获取30%的市场份额。",
+      "profit_status": "未盈利",
+      "cac": 500000,
+      "revenue_projection": [500000, 5000000, 50000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "team_incompetence",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "创始团队缺乏核心的AI与生物技术专业知识，技术团队配置无法支撑其宣称的'量子算法'研发，团队能力与项目目标严重不匹配。"
+    }
+  },
+  {
+    "id": 2,
+    "company_name": "敏捷云仓SaaS",
+    "core_product": "为中小型电商卖家提供的一站式库存管理与订单履行SaaS平台。通过智能补货算法和多渠道订单同步，帮助用户降低30%的库存成本并提升25%的发货效率。",
+    "market_analysis": {
+      "market_size": "全球B2B SaaS市场预计到2025年将达到3156.8亿美元，电商SaaS是其中快速增长的领域。",
+      "competition": "竞争激烈，面临Shopify、BigCommerce等成熟平台以及众多新兴库存管理软件的挑战。",
+      "competitive_edge": "针对中小卖家的定价模型更灵活，并提供与新兴社交电商平台的深度集成。"
+    },
+    "team_background": {
+      "founders": "创始人曾是某大型电商平台的高级运营经理，深刻理解卖家痛点。联合创始人为资深软件架构师。",
+      "tech_team": "技术团队由15名经验丰富的全栈工程师和UI/UX设计师组成，具备大规模SaaS系统开发经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内付费用户达到5万名。",
+      "profit_status": "未盈利",
+      "cac": 250,
+      "revenue_projection": [2500000, 12500000, 50000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队背景与业务高度匹配，市场规模合理，竞争优势明确，财务预测保守且可实现。"
+    }
+  },
+  {
+    "id": 3,
+    "company_name": "合规智审FinTech",
+    "core_product": "基于自然语言处理（NLP）的智能合同审查工具，专为金融机构设计，可自动识别贷款协议中的合规风险和不一致条款，将审查效率提升90%。",
+    "market_analysis": {
+      "market_size": "全球金融科技市场预计2025年将达到3948.8亿美元，其中监管科技（RegTech）是重要组成部分。",
+      "competition": "面临来自大型法律科技公司和传统咨询公司的竞争。",
+      "competitive_edge": "模型针对特定金融法规进行了深度优化，识别精度高于通用NLP工具。"
+    },
+    "team_background": {
+      "founders": "CEO为前资深金融律师，CTO为NLP领域的博士，曾在顶级科技公司领导相关项目。",
+      "tech_team": "技术团队实力雄厚，拥有多名AI算法工程师和熟悉金融业务的软件工程师。"
+    },
+    "financial_forecast": {
+      "user_growth": "目标在三年内签约50家大中型金融机构。",
+      "profit_status": "未盈利",
+      "cac": 80000,
+      "revenue_projection": [4000000, 20000000, 80000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "优质项目，团队经验丰富，产品切入点精准，市场需求明确，财务预测合理。"
+    }
+  },
+  {
+    "id": 4,
+    "company_name": "乡邻健康",
+    "core_product": "一款专注于农村及偏远地区的远程医疗服务App，通过连接城市三甲医院医生与基层患者，提供在线问诊、电子处方及健康管理服务，旨在解决医疗资源不均问题。",
+    "market_analysis": {
+      "market_size": "声称目标市场为价值4272.4亿美元的全球数字健康市场，但其业务模式高度依赖特定区域的基础设施和用户习惯。",
+      "competition": "面临政策性远程医疗平台和大型互联网医疗巨头（如平安好医生）下沉市场的竞争。",
+      "competitive_edge": "与地方卫生系统建立合作，并针对老年用户设计了极简化的操作界面。"
+    },
+    "team_background": {
+      "founders": "创始人有丰富的互联网产品运营经验，但缺乏医疗行业背景或政府资源。",
+      "tech_team": "技术团队在App开发方面经验充足，但缺少处理医疗数据安全和合规性的专家。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测用户年增长率达到500%。",
+      "profit_status": "未盈利",
+      "cac": 80,
+      "revenue_projection": [800000, 4000000, 20000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "项目有社会价值，但创始团队缺乏关键的医疗行业经验和资源，市场推广和合规性方面存在较大不确定性，财务预测过于乐观。"
+    }
+  },
+  {
+    "id": 5,
+    "company_name": "光伏巡检无人机",
+    "core_product": "结合高清热成像与AI图像识别技术的无人机解决方案，用于大型太阳能发电站的自动化巡检。能自动检测太阳能电池板的隐裂、热斑等缺陷，效率是人工巡检的50倍。",
+    "market_analysis": {
+      "market_size": "美国清洁技术市场预计到2030年将达到3051.2亿美元，太阳能运维是其中稳定增长的环节。",
+      "competition": "大疆等无人机硬件厂商以及一些专业的能源检测服务公司是主要竞争者。",
+      "competitive_edge": "其AI缺陷识别算法的准确率达到99.5%，并能生成包含修复建议的自动化报告。"
+    },
+    "team_background": {
+      "founders": "CEO是前无人机公司的产品总监，CTO是计算机视觉领域的博士后研究员。",
+      "tech_team": "团队拥有资深的无人机飞控工程师和AI算法专家，技术实力全面。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内服务的光伏电站总装机容量达到10GW。",
+      "profit_status": "盈利",
+      "cac": 35000,
+      "revenue_projection": [3500000, 17500000, 70000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队技术背景强大，产品解决了行业痛点，市场需求真实，且已实现盈利，增长潜力明确。"
+    }
+  },
+  {
+    "id": 6,
+    "company_name": "美食说",
+    "core_product": "一个基于短视频的UGC美食分享社区，用户可以发布探店视频、分享烹饪技巧。其核心变现模式为本地生活商家的广告和交易佣金。",
+    "market_analysis": {
+      "market_size": "本地生活服务市场规模巨大，但竞争已成红海。",
+      "competition": "直接与抖音、快手、小红书等巨头在同一赛道竞争，用户注意力和商家资源被高度垄断。",
+      "competitive_edge": "声称通过更精准的美食兴趣算法为用户提供个性化推荐。"
+    },
+    "team_background": {
+      "founders": "创始人为连续创业者，之前项目是O2O上门美甲，团队拥有社区运营经验。",
+      "tech_team": "技术团队在推荐算法方面有一定经验，但与巨头公司相比实力悬殊。"
+    },
+    "financial_forecast": {
+      "user_growth": "计划在一年内获取1000万活跃用户。",
+      "profit_status": "未盈利",
+      "cac": 2,
+      "revenue_projection": [200000, 1000000, 5000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "市场竞争极其激烈，项目缺乏清晰的差异化优势和护城河，用户增长和变现路径面临巨大挑战，但团队有相关经验。"
+    }
+  },
+  {
+    "id": 7,
+    "company_name": "AI代码生成器Pro",
+    "core_product": "一款面向开发者的AI辅助编程工具，声称能理解复杂的业务逻辑，并自动生成高质量、无bug的完整应用模块代码，将开发效率提升10倍。",
+    "market_analysis": {
+      "market_size": "全球AI市场规模庞大，开发者工具是热门赛道。",
+      "competition": "面临来自GitHub Copilot, Amazon CodeWhisperer等由科技巨头支持的强大产品的直接竞争。",
+      "competitive_edge": "宣称其代码生成质量远超现有产品，能处理更复杂的逻辑。"
+    },
+    "team_background": {
+      "founders": "创始人是一位产品经理，对开发者需求有一定理解。",
+      "tech_team": "技术团队由5名应届毕业生组成，无大规模AI模型训练和部署的经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测两年内实现收入1亿美元。",
+      "profit_status": "未盈利",
+      "cac": 150,
+      "revenue_projection": [1500000, 7500000, 100000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "product_infeasibility",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "产品描述的技术目标（生成高质量、无bug的复杂应用模块）在当前技术水平下难以实现，且技术团队实力完全无法支撑这种级别的研发，产品可行性极低。"
+    }
+  },
+  {
+    "id": 8,
+    "company_name": "企业知识林SaaS",
+    "core_product": "一个B2B知识管理SaaS平台，利用AI技术自动构建企业知识图谱，员工可以通过自然语言问答快速找到所需信息，旨在打破内部信息孤岛。",
+    "market_analysis": {
+      "market_size": "企业软件市场持续增长，知识管理是企业数字化转型的刚需。",
+      "competition": "市场上有Notion, Confluence等成熟产品，同时也有新的AI原生挑战者。",
+      "competitive_edge": "核心优势是其无需手动维护的知识图谱自动构建技术。"
+    },
+    "team_background": {
+      "founders": "CEO有多年企业软件销售经验，CTO是知识图谱领域的专家。",
+      "tech_team": "技术团队配置均衡，既有AI算法研究人员，也有经验丰富的SaaS开发工程师。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内达到500家企业客户。",
+      "profit_status": "未盈利",
+      "cac": 5000,
+      "revenue_projection": [5000000, 25000000, 100000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "项目方向正确，但市场竞争激烈，需要验证其AI技术是否能构筑足够高的壁垒。财务预测较为乐观，依赖于较高的客户转化率。"
+    }
+  },
+  {
+    "id": 9,
+    "company_name": "链上信贷",
+    "core_product": "一个基于区块链的去中心化借贷平台（DeFi），旨在为中小企业提供无抵押的信用贷款。声称通过分析企业的链上交易数据进行信用评估。",
+    "market_analysis": {
+      "market_size": "全球金融科技市场广阔，DeFi是其中最具颠覆性的领域之一。",
+      "competition": "DeFi借贷市场项目众多，竞争激烈，且整个行业面临巨大的监管不确定性。",
+      "competitive_edge": "其核心竞争力是创新的'链上信用评分'模型。"
+    },
+    "team_background": {
+      "founders": "两位创始人都是区块链技术的狂热爱好者，但均无金融风控或信贷业务经验。",
+      "tech_team": "技术团队在智能合约开发方面实力较强，但缺乏数据科学家进行信用模型验证。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测平台年交易额增长1000%。",
+      "profit_status": "未盈利",
+      "cac": 500,
+      "revenue_projection": [500000, 2500000, 50000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "team_incompetence",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "创始团队严重缺乏必要的金融风控背景，其核心的信用评估模型未经专业验证，在无抵押信贷这一高风险领域极易产生大规模坏账。"
+    }
+  },
+  {
+    "id": 10,
+    "company_name": "心灵伙伴AI",
+    "core_product": "一款基于生成式AI的心理健康伴侣App，为用户提供7x24小时的匿名情感支持和初步心理疏导。它通过模拟共情对话，帮助用户缓解焦虑、抑郁等情绪问题。",
+    "market_analysis": {
+      "market_size": "数字健康市场潜力巨大，心理健康是增长最快的细分赛道之一。",
+      "competition": "市场已有Wysa, Replika等知名产品，同时面临专业心理咨询平台的竞争。",
+      "competitive_edge": "AI模型在共情能力和个性化反馈方面进行了特别训练，对话体验更自然。"
+    },
+    "team_background": {
+      "founders": "CEO是前头部互联网公司的产品总监，并拥有心理学硕士学位。CTO是AI领域的资深工程师。",
+      "tech_team": "团队拥有临床心理学顾问，AI团队在大型语言模型微调方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内订阅用户达到100万。",
+      "profit_status": "未盈利",
+      "cac": 5,
+      "revenue_projection": [500000, 2500000, 50000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "项目切入了一个高增长且有社会价值的市场，团队背景（产品+技术+心理学）非常匹配，产品定位清晰，财务预测在合理的乐观范围内。"
+    }
+  },
+  {
+    "id": 11,
+    "company_name": "碳捕捉之家",
+    "core_product": "一种革命性的家用碳捕捉设备，声称可以安装在任何家庭的通风系统中，每天吸收并固化1公斤的二氧化碳，旨在让每个家庭都成为负碳单位。",
+    "market_analysis": {
+      "market_size": "声称目标是全球数十亿家庭的万亿级市场。",
+      "competition": "目前消费级碳捕捉市场几乎为空白，但主要挑战来自技术成本和消费者教育。",
+      "competitive_edge": "独家专利的'分子筛'技术，成本仅为工业级设备的百分之一。"
+    },
+    "team_background": {
+      "founders": "创始人是一位充满热情的环保活动家，拥有市场营销学位。",
+      "tech_team": "没有技术团队，声称技术已外包给一个'秘密的海外实验室'。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计第一年销售100万台设备。",
+      "profit_status": "未盈利",
+      "cac": 200,
+      "revenue_projection": [20000000, 100000000, 500000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "product_infeasibility",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "消费级碳捕捉技术在当前阶段不具备经济和技术可行性，其宣称的成本和效率缺乏科学依据。没有内部技术团队，项目真实性存疑。"
+    }
+  },
+  {
+    "id": 12,
+    "company_name": "游戏公会通",
+    "core_product": "一个面向游戏玩家的社交平台，集成了公会管理、活动组织、战绩分享和游戏内物品交易功能，旨在成为重度游戏玩家的首选社区。",
+    "market_analysis": {
+      "market_size": "游戏社区市场用户基数大，但用户粘性分散在Discord、Reddit以及各大游戏内置社区中。",
+      "competition": "与Discord的竞争是全方位的，后者已经形成了强大的网络效应。",
+      "competitive_edge": "提供更深度的游戏数据集成和更专业的公会管理工具。"
+    },
+    "team_background": {
+      "founders": "创始人是资深游戏玩家和游戏媒体编辑，对玩家需求有深刻理解。",
+      "tech_team": "技术团队有社交产品开发经验，但规模较小。"
+    },
+    "financial_forecast": {
+      "user_growth": "希望在两年内吸引500万核心玩家。",
+      "profit_status": "未盈利",
+      "cac": 1.5,
+      "revenue_projection": [150000, 750000, 3750000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "市场定位精准，但面临着巨头Discord的强大竞争压力，如何实现用户迁移是巨大挑战。盈利模式依赖于交易抽成和增值服务，需要庞大的用户基础支撑。"
+    }
+  },
+  {
+    "id": 13,
+    "company_name": "AI视觉质检系统",
+    "core_product": "基于深度学习的工业视觉质检解决方案，可部署在生产线上替代人工进行产品缺陷检测。系统对金属、纺织品、电子元件等多种材质的缺陷识别率高达99.8%。",
+    "market_analysis": {
+      "market_size": "工业自动化市场稳定增长，机器视觉是关键技术之一。全球AI市场预计2025年达到3717.1亿美元。",
+      "competition": "康耐视（Cognex）、基恩士（Keyence）等传统巨头和众多AI创业公司都在此领域布局。",
+      "competitive_edge": "提供端到端的解决方案，包括硬件选型、模型训练和系统集成，并采用私有化部署保障客户数据安全。"
+    },
+    "team_background": {
+      "founders": "CEO是前大型制造企业的高管，CTO是计算机视觉领域的教授，拥有多项相关专利。",
+      "tech_team": "团队由10名资深AI工程师和自动化工程师组成，拥有丰富的项目落地经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "目标三年内服务100家大型制造企业。",
+      "profit_status": "盈利",
+      "cac": 65000,
+      "revenue_projection": [6500000, 32500000, 130000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队兼具产业经验和顶尖技术能力，产品解决了制造业的明确痛点，商业模式清晰，且已实现盈利，增长路径明确。"
+    }
+  },
+  {
+    "id": 14,
+    "company_name": "敏捷法务SaaS",
+    "core_product": "为初创公司和中小企业提供合同模板生成、电子签名及合同全生命周期管理的SaaS平台。用户可通过简单的问答流程，在几分钟内生成专业的法律合同。",
+    "market_analysis": {
+      "market_size": "全球B2B SaaS市场巨大，法律科技（LegalTech）是其中一个快速增长的垂直领域。",
+      "competition": "DocuSign在电子签名领域占据主导地位，同时有众多合同管理软件竞争。",
+      "competitive_edge": "将合同生成与管理流程无缝结合，并以极具竞争力的价格服务于价格敏感的中小企业市场。"
+    },
+    "team_background": {
+      "founders": "CEO是连续创业者，COO是经验丰富的律师，CTO是SaaS领域的资深开发者。",
+      "tech_team": "技术团队有12人，在SaaS开发和信息安全方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内付费企业用户达到10万家。",
+      "profit_status": "未盈利",
+      "cac": 80,
+      "revenue_projection": [800000, 4000000, 20000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队构成合理，产品定位清晰，解决了中小企业在法律服务方面'请不起律师'的痛点，市场空间大，财务模型健康。"
+    }
+  },
+  {
+    "id": 15,
+    "company_name": "智能投顾-阿尔法版",
+    "core_product": "一款面向个人投资者的AI驱动的智能投顾App，声称其独家'深度强化学习'算法能预测市场波动，实现年化收益率50%以上。",
+    "market_analysis": {
+      "market_size": "全球金融科技市场广阔，智能投顾是资产管理数字化的趋势。",
+      "competition": "Wealthfront, Betterment等是美国市场的领导者，国内也有众多券商和银行推出类似服务。",
+      "competitive_edge": "宣称其远超同行的投资回报率。"
+    },
+    "team_background": {
+      "founders": "创始人是一位个人股票交易爱好者，声称在过去两年个人收益率超过100%。",
+      "tech_team": "技术团队由两名兼职的计算机专业大学生组成。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测三年内管理资产规模（AUM）达到100亿美元。",
+      "profit_status": "未盈利",
+      "cac": 200,
+      "revenue_projection": [2000000, 10000000, 1000000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "product_infeasibility",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "宣称的'年化50%'收益率不符合金融市场规律，涉嫌虚假宣传。团队缺乏专业的金融和技术背景，无法保障投资策略的可靠性和安全性，产品合规风险极高。"
+    }
+  },
+  {
+    "id": 16,
+    "company_name": "AI辅助诊断平台",
+    "core_product": "一个面向医院放射科的AI影像分析平台，能够辅助医生快速识别CT、MRI影像中的早期癌症病灶，提高诊断效率和准确率。",
+    "market_analysis": {
+      "market_size": "全球数字健康市场预计2025年达到4272.4亿美元，AI医疗影像是核心应用之一。",
+      "competition": "市场竞争激烈，既有西门子、GE等医疗设备巨头，也有推想科技、依图医疗等AI独角兽。",
+      "competitive_edge": "其算法在特定癌种的识别上（如肺结节）的准确率和召回率均达到业界领先水平，并已获得NMPA三类医疗器械认证。"
+    },
+    "team_background": {
+      "founders": "CEO是医疗器械行业资深销售专家，CTO是医学影像AI领域的顶尖科学家。团队还包括一位三甲医院放射科主任作为医学顾问。",
+      "tech_team": "拥有超过30人的AI研发团队，多数拥有博士学位和丰富的模型开发经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "已签约30家三甲医院，目标三年内覆盖200家。",
+      "profit_status": "未盈利",
+      "cac": 150000,
+      "revenue_projection": [15000000, 75000000, 300000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队配置顶级，产品拥有核心技术和合规认证壁垒，商业模式清晰，市场验证充分，是医疗AI领域的优质项目。"
+    }
+  },
+  {
+    "id": 17,
+    "company_name": "氢能转换器",
+    "core_product": "一种新型高效的电解水制氢设备，声称其采用的'等离子催化'技术能将制氢的能源转化效率提升至95%，远高于目前主流的70-80%水平。",
+    "market_analysis": {
+      "market_size": "氢能是清洁技术的重要方向，市场前景广阔，但目前受制于制氢成本。",
+      "competition": "主要竞争对手是大型能源设备制造商和研究机构，如西门子能源、康明斯等。",
+      "competitive_edge": "核心竞争力是其宣称的超高能源转化效率，能大幅降低绿氢的生产成本。"
+    },
+    "team_background": {
+      "founders": "创始人是一位拥有化学工程博士学位的科学家，在该领域有超过15年的研究经验。",
+      "tech_team": "研发团队由多名电化学和材料科学专家组成，但缺乏将实验室技术规模化生产的工程经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计五年内占据全球电解槽市场10%的份额。",
+      "profit_status": "未盈利",
+      "cac": 500000,
+      "revenue_projection": [5000000, 25000000, 125000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "技术具有颠覆性潜力，但仍处于实验室阶段，从技术到产品的工程化和商业化路径存在巨大不确定性和风险。团队擅长研发但商业化能力待验证。"
+    }
+  },
+  {
+    "id": 18,
+    "company_name": "潮玩宇宙",
+    "core_product": "一个结合了盲盒、社交和虚拟形象（Avatar）的元宇宙平台。用户可以购买数字盲盒，收藏虚拟潮玩，并在虚拟社区中进行展示和社交。",
+    "market_analysis": {
+      "market_size": "声称目标是万亿级的元宇宙市场，但目前市场仍处于早期，用户基础和商业模式都不成熟。",
+      "competition": "面临来自大型互联网公司（如Meta, 腾讯）和新兴NFT平台的竞争。",
+      "competitive_edge": "与多家知名潮玩IP达成独家合作。"
+    },
+    "team_background": {
+      "founders": "创始人是潮玩领域的KOL，对年轻用户潮流文化有敏锐洞察。",
+      "tech_team": "技术团队在游戏开发和3D建模方面有经验，但缺乏区块链和大规模虚拟世界构建的经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测月活跃用户年增长300%。",
+      "profit_status": "未盈利",
+      "cac": 10,
+      "revenue_projection": [1000000, 5000000, 25000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "market_overestimation",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "严重夸大了当前元宇宙市场的实际规模和用户接受度。项目本质是数字藏品，受市场情绪和监管政策影响极大，风险高，可持续性差。"
+    }
+  },
+  {
+    "id": 19,
+    "company_name": "AI招聘筛选官",
+    "core_product": "一款AI驱动的招聘SaaS系统，能够自动筛选简历、进行初步的AI视频面试，并根据岗位要求为HR推荐最匹配的候选人，旨在提升招聘效率。",
+    "market_analysis": {
+      "market_size": "人力资源科技（HR Tech）市场规模持续扩大，AI在招聘领域的应用是明确趋势。",
+      "competition": "市场上已有HireVue, Mya, iCIMS等国内外众多竞争者。",
+      "competitive_edge": "其AI面试的交互性和评估维度更丰富，能考察候选人的软技能。"
+    },
+    "team_background": {
+      "founders": "CEO是前知名猎头公司合伙人，CTO是机器学习领域的专家。",
+      "tech_team": "技术团队在NLP和计算机视觉方面有较强实力。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测三年收入年复合增长率200%。",
+      "profit_status": "未盈利",
+      "cac": 3000,
+      "revenue_projection": [3000000, 15000000, 75000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "市场方向好，团队背景匹配。但市场竞争激烈，产品需要证明其AI评估的有效性和公平性，以建立客户信任。财务预测非常激进。"
+    }
+  },
+  {
+    "id": 20,
+    "company_name": "普惠数字银行",
+    "core_product": "一家纯线上的数字银行，面向没有传统银行账户的蓝领工人和零工经济从业者，提供小额信贷、便捷支付和储蓄服务。",
+    "market_analysis": {
+      "market_size": "全球仍有大量人口未被传统金融服务覆盖，普惠金融市场潜力巨大。",
+      "competition": "面临来自各国本地化的小额贷款公司、支付应用以及大型科技公司金融部门的竞争。",
+      "competitive_edge": "通过更灵活的风控模型和更低的运营成本，提供比传统金融机构更具吸引力的产品。"
+    },
+    "team_background": {
+      "founders": "CEO是前大型商业银行的零售业务负责人，COO有丰富的普惠金融项目经验。",
+      "tech_team": "技术团队在构建银行核心系统和移动支付方面经验丰富，并设有专门的数据风控团队。"
+    },
+    "financial_forecast": {
+      "user_growth": "目标五年内在新兴市场获取500万用户。",
+      "profit_status": "未盈利",
+      "cac": 15,
+      "revenue_projection": [1500000, 7500000, 37500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "创始团队拥有深厚的金融行业背景和相关经验，市场切入点具有巨大的社会和商业价值，商业模式清晰，风险可控。"
+    }
+  },
+  {
+    "id": 21,
+    "company_name": "AI健身私教",
+    "core_product": "一款通过手机摄像头进行动作捕捉的健身App，AI可以实时识别用户的动作是否标准，并提供语音纠正，实现个性化的家庭健身指导。",
+    "market_analysis": {
+      "market_size": "家庭健身市场在疫情后迅速增长，数字内容和个性化指导是核心需求。",
+      "competition": "Keep等综合性健身平台已占据大量用户，同时还有Peloton等硬件+内容公司。",
+      "competitive_edge": "其核心技术是高精度的实时动作识别算法，无需穿戴任何传感器。"
+    },
+    "team_background": {
+      "founders": "CEO是健身教练出身的网红，拥有大量粉丝基础。CTO是计算机视觉领域的博士。",
+      "tech_team": "技术团队在姿态识别算法方面有深入研究，并已发表多篇顶级会议论文。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内付费用户渗透率达到20%。",
+      "profit_status": "未盈利",
+      "cac": 8,
+      "revenue_projection": [800000, 4000000, 20000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "技术有亮点，市场需求存在。但面临用户付费意愿和巨头竞争的双重压力。创始人的网红身份是优势也是风险，需要转化为可持续的公司品牌。"
+    }
+  },
+  {
+    "id": 22,
+    "company_name": "智能电网调度系统",
+    "core_product": "基于AI和物联网技术的SaaS平台，为区域电网提供负荷预测、新能源发电预测和智能调度优化服务，旨在提高电网稳定性和新能源消纳率。",
+    "market_analysis": {
+      "market_size": "全球能源转型推动智能电网建设，市场空间巨大。清洁技术是未来趋势。",
+      "competition": "主要竞争对手是西门子、ABB、施耐德等传统电力设备巨头，它们也在大力投入数字化。",
+      "competitive_edge": "其负荷预测算法的准确率比传统方法高5%，能为电网带来显著的经济效益。"
+    },
+    "team_background": {
+      "founders": "团队核心成员均来自国家电网或顶级电力大学，拥有超过10年的行业经验。",
+      "tech_team": "技术团队由电力系统专家和AI算法专家组成，深度理解行业know-how。"
+    },
+    "financial_forecast": {
+      "user_growth": "已获得两个省级电网的试点项目。",
+      "profit_status": "未盈利",
+      "cac": 800000,
+      "revenue_projection": [8000000, 40000000, 200000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队是行业专家，产品技术壁垒高，解决了能源行业的关键问题。已获得标杆客户验证，商业前景清晰。"
+    }
+  },
+  {
+    "id": 23,
+    "company_name": "一键法律援助",
+    "core_product": "一个C2C法律咨询平台，用户可以通过App快速连接到在线律师，进行15分钟的付费语音咨询。平台声称能解决用户90%的日常法律问题。",
+    "market_analysis": {
+      "market_size": "法律服务市场巨大，但线上咨询的渗透率仍有提升空间。",
+      "competition": "市场上已有多个类似的法律咨询平台，竞争激烈，同质化严重。",
+      "competitive_edge": "声称拥有最多的入驻律师数量。"
+    },
+    "team_background": {
+      "founders": "创始人是一位互联网运营，无法律背景。",
+      "tech_team": "技术团队为标准App开发团队，无特别技术壁垒。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测用户增长率300%。",
+      "profit_status": "未盈利",
+      "cac": 150,
+      "revenue_projection": [1500000, 7500000, 37500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "financial_contradiction",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "用户获取成本（CAC）为150元，而客单价（15分钟咨询费）平台抽成后仅约20元，用户复购率低，LTV远低于CAC，商业模式无法成立。"
+    }
+  },
+  {
+    "id": 24,
+    "company_name": "AI创药工厂",
+    "core_product": "一个全自动化的AI驱动的药物研发平台，声称从靶点发现到临床前候选化合物（PCC）的整个过程都由AI和机器人完成，无需人类科学家干预。",
+    "market_analysis": {
+      "market_size": "AI药物研发是前沿领域，市场潜力巨大。",
+      "competition": "众多明星AI制药公司如Recursion, Insitro等已获得巨额融资。",
+      "competitive_edge": "宣称的全自动化流程是其最大亮点。"
+    },
+    "team_background": {
+      "founders": "创始人是一位软件工程师，热衷于自动化。",
+      "tech_team": "团队成员均为软件工程师，没有生物学、化学或药理学背景的科学家。"
+    },
+    "financial_forecast": {
+      "user_growth": "计划在三年内交付5个临床前候选化合物。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 0, 0]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "team_incompetence",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "药物研发是复杂的生命科学问题，纯软件工程背景的团队无法胜任。缺乏生命科学家的参与，其研发流程不符合科学规律，项目基本没有成功的可能。"
+    }
+  },
+  {
+    "id": 25,
+    "company_name": "销售冠军SaaS",
+    "core_product": "一款销售赋能SaaS工具，通过分析销售通话录音，利用AI为销售人员提供实时的沟通技巧建议，并为销售经理生成团队能力分析报告。",
+    "market_analysis": {
+      "market_size": "B2B SaaS市场持续增长，销售科技（Sales Tech）是重要分支。",
+      "competition": "Gong.io和Chorus.ai是该领域的领导者，已建立强大的品牌和客户基础。",
+      "competitive_edge": "产品更轻量化，定价更适合中小型企业。"
+    },
+    "team_background": {
+      "founders": "CEO是前顶级SaaS公司的金牌销售，CTO是语音识别和NLP领域的专家。",
+      "tech_team": "技术团队实力均衡，在AI算法和SaaS工程化方面都有经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "目标三年内获取2000家付费企业。",
+      "profit_status": "未盈利",
+      "cac": 2800,
+      "revenue_projection": [2800000, 14000000, 70000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "虽然市场已有巨头，但中小企业市场仍有机会。项目成功与否关键在于其产品体验和销售能力，需要验证能否在巨头阴影下有效获客。"
+    }
+  },
+  {
+    "id": 26,
+    "company_name": "无代码金融平台",
+    "core_product": "一个无代码开发平台，允许金融分析师通过拖拽模块的方式，快速构建和回测复杂的量化交易策略，无需编写任何代码。",
+    "market_analysis": {
+      "market_size": "金融科技市场巨大，量化交易是重要领域。无代码/低代码是软件开发的趋势。",
+      "competition": "面临专业的量化平台（如WorldQuant, Quantopian）和通用无代码工具的竞争。",
+      "competitive_edge": "将量化策略开发的用户门槛降至最低。"
+    },
+    "team_background": {
+      "founders": "创始人是一位资深产品经理，对用户体验有追求。",
+      "tech_team": "技术团队擅长前端和SaaS开发，但缺乏构建高性能交易回测引擎的核心技术能力。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测用户年增长400%。",
+      "profit_status": "未盈利",
+      "cac": 300,
+      "revenue_projection": [3000000, 15000000, 75000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "team_incompetence",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "量化交易策略平台的核心是回测引擎的性能和精度，该团队缺乏相关技术背景，无法构建可靠的核心功能，产品价值存疑。"
+    }
+  },
+  {
+    "id": 27,
+    "company_name": "可穿戴血糖仪",
+    "core_product": "一款无创、连续血糖监测的可穿戴手环。通过光学传感器实时监测血糖水平，并通过App为糖尿病患者提供数据分析和饮食建议。",
+    "market_analysis": {
+      "market_size": "全球数字健康市场巨大，慢性病管理是核心应用场景，特别是糖尿病管理。",
+      "competition": "雅培（Abbott）和德康（Dexcom）的微创连续血糖监测产品已占据市场主导地位。无创技术是行业难题。",
+      "competitive_edge": "无创是其最大卖点，能极大改善用户体验。"
+    },
+    "team_background": {
+      "founders": "CEO有消费电子产品市场经验，CTO是生物医学工程博士，在光学传感器领域有多年研究。",
+      "tech_team": "研发团队包括硬件工程师、嵌入式系统专家和生物医学信号处理专家。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计产品上市后三年内销量达到50万台。",
+      "profit_status": "未盈利",
+      "cac": 120,
+      "revenue_projection": [12000000, 60000000, 300000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "无创血糖监测是世界级技术难题，技术风险极高。如果技术能成功突破，市场潜力巨大。项目风险与回报并存，高度依赖技术验证结果。"
+    }
+  },
+  {
+    "id": 28,
+    "company_name": "循环电池材料",
+    "core_product": "采用创新的湿法回收技术，从废旧锂电池中回收高纯度的钴、锂、镍等正极材料。其回收率高达99%，且能耗比传统方法降低40%。",
+    "market_analysis": {
+      "market_size": "新能源汽车市场爆发式增长，带来了巨大的废旧电池回收市场需求。清洁技术是政策支持的方向。",
+      "competition": "市场参与者包括大型电池制造商（如宁德时代）、材料公司（如格林美）和众多创业公司。",
+      "competitive_edge": "技术在回收率和成本上具有明显优势，并且工艺流程更环保。"
+    },
+    "team_background": {
+      "founders": "创始人是材料科学领域的权威教授，拥有该回收技术的核心专利。",
+      "tech_team": "团队由多名化学工程博士和硕士组成，在实验室规模上已成功验证技术可行性。"
+    },
+    "financial_forecast": {
+      "user_growth": "计划在两年内建成第一条万吨级回收生产线。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 50000000, 250000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "技术壁垒高，市场需求确定且巨大，符合可持续发展趋势。团队是技术发明人，对核心工艺有深刻理解。是典型的技术驱动型优质项目。"
+    }
+  },
+  {
+    "id": 29,
+    "company_name": "VR社交俱乐部",
+    "core_product": "一个高端付费的VR社交平台，用户可以在虚拟世界中参加派对、观看演出、进行商务会议。平台主打高保真虚拟形象和沉浸式场景。",
+    "market_analysis": {
+      "market_size": "声称元宇宙是下一代互联网，市场规模将达万亿。",
+      "competition": "VRChat, Rec Room等免费平台已拥有大量用户。Meta的Horizon Worlds也在大力投入。",
+      "competitive_edge": "定位高端，提供更优质的体验和服务。"
+    },
+    "team_background": {
+      "founders": "创始人是一位夜店老板和活动策划人。",
+      "tech_team": "技术团队为外包，负责3D场景和Avatar建模。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测付费会员年增长500%。",
+      "profit_status": "未盈利",
+      "cac": 500,
+      "revenue_projection": [500000, 2500000, 12500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "market_overestimation",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "项目对VR社交的市场规模和付费意愿过于乐观。在免费平台已占据主流的情况下，高端付费模式难以吸引足够用户，市场定位不成立。"
+    }
+  },
+  {
+    "id": 30,
+    "company_name": "AI语言学习导师",
+    "core_product": "一款基于AI的个性化语言学习App。它不仅提供课程，还能作为口语陪练，通过语音识别技术实时纠正用户的发音和语法错误，并能进行开放式对话。",
+    "market_analysis": {
+      "market_size": "在线语言教育市场规模巨大且持续增长。",
+      "competition": "多邻国（Duolingo）、Babbel等是市场领导者，众多传统教育机构也在转型线上。",
+      "competitive_edge": "核心优势是其高度拟人化的AI对话陪练功能，解决了传统App缺乏真实语境练习的问题。"
+    },
+    "team_background": {
+      "founders": "CEO是前知名在线教育公司的产品负责人，CTO是语音识别和NLP领域的专家。",
+      "tech_team": "AI团队实力强大，拥有自主研发的语音识别和对话生成引擎。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内全球付费用户达到200万。",
+      "profit_status": "未盈利",
+      "cac": 10,
+      "revenue_projection": [10000000, 50000000, 250000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队经验丰富，产品抓住了语言学习的核心痛点，技术壁垒较高，市场空间广阔，商业模式清晰。"
+    }
+  },
+  {
+    "id": 31,
+    "company_name": "云端渲染SaaS",
+    "core_product": "为影视、建筑和游戏行业提供的高性能云渲染SaaS平台。用户可将本地的渲染任务提交到云端，利用平台的海量GPU资源，将渲染时间缩短95%。",
+    "market_analysis": {
+      "market_size": "随着高清视频和复杂3D场景的普及，渲染算力需求持续增长。B2B SaaS市场前景广阔。",
+      "competition": "市场已有瑞云、Fox Renderfarm等成熟服务商，同时AWS等公有云厂商也提供渲染解决方案。",
+      "competitive_edge": "其自研的调度算法能更高效地利用算力资源，从而提供更低的价格。"
+    },
+    "team_background": {
+      "founders": "核心团队来自顶级云计算公司和图形学研究机构。",
+      "tech_team": "技术团队在分布式计算、GPU虚拟化和图形学方面有深厚积累。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计年收入增长80%。",
+      "profit_status": "盈利",
+      "cac": 4000,
+      "revenue_projection": [4000000, 7200000, 12960000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "技术驱动型业务，团队背景优秀，市场需求刚性，已实现盈利，商业模式稳健。"
+    }
+  },
+  {
+    "id": 32,
+    "company_name": "智能合约保险",
+    "core_product": "一种基于区块链智能合约的保险产品，例如航班延误险。通过连接权威的航班数据源，一旦满足理赔条件（如延误超过2小时），智能合约将自动将赔款支付给用户，无需人工审核。",
+    "market_analysis": {
+      "market_size": "全球金融科技和保险科技（InsurTech）市场正在快速发展。",
+      "competition": "面临传统保险公司的创新产品以及其他保险科技创业公司的竞争。",
+      "competitive_edge": "理赔流程完全自动化，极大地提升了效率和客户信任度。"
+    },
+    "team_background": {
+      "founders": "CEO是保险行业的精算师，CTO是区块链技术专家。",
+      "tech_team": "技术团队在智能合约开发和对接外部数据源（Oracle）方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "计划在两年内将业务扩展到天气险、航运险等更多领域。",
+      "profit_status": "未盈利",
+      "cac": 20,
+      "revenue_projection": [200000, 1000000, 5000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "产品模式创新，解决了保险业的核心痛点（理赔难、慢），团队背景互补，技术和业务结合紧密，有潜力颠覆传统保险模式。"
+    }
+  },
+  {
+    "id": 33,
+    "company_name": "AI营养师",
+    "core_product": "一款通过拍照识别食物、分析营养成分并提供个性化饮食建议的健康管理App。它还能根据用户的健康目标（减脂、增肌）和饮食偏好，自动生成一周食谱。",
+    "market_analysis": {
+      "market_size": "大健康和数字健康市场持续升温，个性化营养管理是重要一环。",
+      "competition": "MyFitnessPal, Calorie Mama等应用已拥有大量用户，竞争激烈。",
+      "competitive_edge": "其食物识别的准确率和覆盖品类优于竞争对手，并且食谱推荐更具个性化。"
+    },
+    "team_background": {
+      "founders": "创始人是一位热爱健身的产品经理。",
+      "tech_team": "技术团队由5名移动应用开发者组成，AI算法主要依赖第三方API。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测三年内用户达到5000万。",
+      "profit_status": "未盈利",
+      "cac": 3,
+      "revenue_projection": [300000, 1500000, 7500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "市场竞争激烈，产品差异化不明显，核心AI能力依赖外部API，缺乏技术壁垒。用户增长预测过于乐观，变现能力有待验证。"
+    }
+  },
+  {
+    "id": 34,
+    "company_name": "海洋塑料回收船",
+    "core_product": "一种无人驾驶的、由太阳能驱动的海洋清理船，能自动识别并收集海面上的塑料垃圾。声称一艘船每天能清理1吨塑料。",
+    "market_analysis": {
+      "market_size": "海洋塑料污染是全球性环境问题，催生了巨大的治理需求。清洁技术受到关注。",
+      "competition": "The Ocean Cleanup等非营利组织和一些创业公司正在进行类似尝试。",
+      "competitive_edge": "其无人驾驶和AI识别技术能实现7x24小时不间断、低成本运营。"
+    },
+    "team_background": {
+      "founders": "创始人是一位海洋生物学家和环保活动家。",
+      "tech_team": "团队正在招募机器人和AI方面的工程师。目前只有一个机械工程师原型。"
+    },
+    "financial_forecast": {
+      "user_growth": "计划在五年内向全球海洋部署1000艘清理船。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 0, 0]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "team_incompetence",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "项目理念很好，但技术实现难度极高，涉及机器人、无人驾驶、AI、能源等多个复杂领域。现有团队缺乏关键的技术能力，项目更像是一个概念而非可行的商业计划。"
+    }
+  },
+  {
+    "id": 35,
+    "company_name": "AR试衣间",
+    "core_product": "为服装电商提供SaaS插件，消费者可以在家通过手机摄像头，实时看到服装在自己身上的AR试穿效果，旨在解决线上购物无法试穿的痛点，降低退货率。",
+    "market_analysis": {
+      "market_size": "消费互联网和电商市场巨大，AR技术被认为是提升购物体验的关键。",
+      "competition": "已有Wanna, Zeekit（被Walmart收购）等公司在该领域深耕。技术实现难度大。",
+      "competitive_edge": "其AR渲染效果更逼真，能更好地模拟不同面料的质感和垂坠感。"
+    },
+    "team_background": {
+      "founders": "CEO是前时尚电商的运营总监，CTO是图形学和AR领域的专家。",
+      "tech_team": "技术团队拥有多名资深的AR工程师和3D建模师。"
+    },
+    "financial_forecast": {
+      "user_growth": "目标三年内与100个服装品牌合作。",
+      "profit_status": "未盈利",
+      "cac": 15000,
+      "revenue_projection": [1500000, 7500000, 37500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "技术方向有前景，但AR试衣的技术成熟度和用户接受度仍需市场检验。商业化依赖于B端客户的付费意愿，销售周期可能较长。"
+    }
+  },
+  {
+    "id": 36,
+    "company_name": "AI剧本分析师",
+    "core_product": "一个面向影视公司的SaaS平台，利用AI分析剧本，预测其潜在的票房、奖项潜力和观众画像，并提供修改建议，辅助制片方进行决策。",
+    "market_analysis": {
+      "market_size": "全球影视产业市场巨大，但内容投资风险高，存在用数据辅助决策的需求。",
+      "competition": "市场上已有ScriptBook, Vault等类似产品，但技术尚未完全成熟。",
+      "competitive_edge": "其模型不仅分析文本，还结合了历史票房数据、演员影响力等多维度信息，预测更精准。"
+    },
+    "team_background": {
+      "founders": "创始人是一位电影制片人，深刻理解行业痛点。",
+      "tech_team": "技术团队由一名数据科学家和两名后端工程师组成，缺乏NLP领域的专家。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测三年内签约好莱坞六大制片厂。",
+      "profit_status": "未盈利",
+      "cac": 100000,
+      "revenue_projection": [1000000, 5000000, 25000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "team_incompetence",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "剧本分析是复杂的NLP任务，需要顶尖的AI技术团队。现有技术团队规模和专业背景不足以支撑核心产品的研发。"
+    }
+  },
+  {
+    "id": 37,
+    "company_name": "敏捷开发外包平台",
+    "core_product": "一个连接全球软件开发者与企业项目需求的SaaS平台。平台通过AI进行项目分解和开发者匹配，并提供标准化的敏捷开发流程管理工具，保证项目交付质量。",
+    "market_analysis": {
+      "market_size": "软件外包市场巨大，但存在沟通效率低、质量不可控等问题。",
+      "competition": "Upwork, Toptal等自由职业者平台是主要竞争对手。",
+      "competitive_edge": "通过强流程管理和AI匹配，提供比传统平台更高质量、更可靠的交付。"
+    },
+    "team_background": {
+      "founders": "CEO是前大型软件外包公司的项目总监，CTO是资深SaaS架构师。",
+      "tech_team": "技术团队在SaaS开发和AI匹配算法方面有丰富经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "平台年交易额（GMV）预计增长150%。",
+      "profit_status": "盈利",
+      "cac": 1500,
+      "revenue_projection": [1500000, 3750000, 9375000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队深刻理解行业痛点，商业模式清晰，通过技术手段解决了传统外包的核心问题，且已实现盈利，平台效应可期。"
+    }
+  },
+  {
+    "id": 38,
+    "company_name": "加密货币税务通",
+    "core_product": "一款帮助加密货币投资者自动计算和申报税务的SaaS工具。它可以连接主流交易所和钱包，自动追踪所有交易，并生成符合各国税务法规的报表。",
+    "market_analysis": {
+      "market_size": "随着加密货币的普及和监管的加强，加密税务服务成为刚需。金融科技市场持续增长。",
+      "competition": "CoinTracker, Koinly等是该领域的领先者，竞争激烈。",
+      "competitive_edge": "支持更多的公链和DeFi协议，并提供更专业的税务规划建议。"
+    },
+    "team_background": {
+      "founders": "CEO是注册会计师，也是早期加密货币投资者。CTO是全栈工程师。",
+      "tech_team": "技术团队有6人，在数据处理和多平台API集成方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内付费用户达到50万。",
+      "profit_status": "盈利",
+      "cac": 40,
+      "revenue_projection": [4000000, 20000000, 100000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "市场需求明确且不断增长，团队背景（税务+技术）完美匹配，产品已获得市场验证并实现盈利。"
+    }
+  },
+  {
+    "id": 39,
+    "company_name": "AI驱动的精准医疗",
+    "core_product": "通过分析患者的基因组数据和临床信息，利用AI模型为癌症患者推荐最有效的个性化治疗方案（包括靶向药和免疫疗法），旨在提高治疗成功率。",
+    "market_analysis": {
+      "market_size": "精准医疗是医疗健康领域的未来方向，市场潜力巨大。",
+      "competition": "Foundation Medicine, Tempus等是行业领导者，技术和数据壁垒很高。",
+      "competitive_edge": "声称其AI算法在预测药物反应性方面的准确率超过90%。"
+    },
+    "team_background": {
+      "founders": "创始人是一位对AI充满热情的软件工程师，无医学或生物信息学背景。",
+      "tech_team": "技术团队由几名通用机器学习工程师组成，缺乏处理基因组数据的专业经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "计划在两年内与100家医院合作。",
+      "profit_status": "未盈利",
+      "cac": 200000,
+      "revenue_projection": [2000000, 10000000, 50000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "team_incompetence",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "精准医疗是高度跨学科的领域，需要顶级的医学、生物信息学和AI专家。现有团队完全不具备所需的专业知识，项目缺乏科学基础。"
+    }
+  },
+  {
+    "id": 40,
+    "company_name": "智能家居能源管家",
+    "core_product": "一套结合了智能插座、传感器和AI算法的家庭能源管理系统。它可以学习用户的用电习惯，自动在电价低谷时段为电器充电、运行，为家庭平均节省30%的电费。",
+    "market_analysis": {
+      "market_size": "智能家居市场和家庭节能需求都在增长，清洁技术在消费端有应用前景。",
+      "competition": "Google Nest, Ecobee等智能恒温器已具备部分功能，同时还面临众多智能家居品牌的竞争。",
+      "competitive_edge": "提供更全面的全屋家电能源管理，而不仅仅是空调。算法的个性化和节电效果更好。"
+    },
+    "team_background": {
+      "founders": "CEO是前智能家居公司的产品经理，CTO是能源优化算法的博士。",
+      "tech_team": "团队在硬件、嵌入式软件和AI算法方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内进入10万个家庭。",
+      "profit_status": "未盈利",
+      "cac": 80,
+      "revenue_projection": [800000, 4000000, 20000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "产品理念好，但需要教育市场，并与众多智能家居生态系统兼容。硬件的生产、销售和渠道建设是巨大挑战。"
+    }
+  },
+  {
+    "id": 41,
+    "company_name": "网红电商联盟",
+    "core_product": "一个连接网红（KOL）和品牌的电商带货平台。品牌发布商品，网红选择商品进行推广，平台提供交易和分账服务。",
+    "market_analysis": {
+      "market_size": "网红经济和直播电商市场规模巨大。",
+      "competition": "市场已经非常成熟和拥挤，有众多MCN机构和平台在运作。",
+      "competitive_edge": "声称通过AI为品牌匹配最合适的网红，提升转化率。"
+    },
+    "team_background": {
+      "founders": "创始人有电商运营经验。",
+      "tech_team": "标准电商平台技术团队。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测年GMV增长300%。",
+      "profit_status": "未盈利",
+      "cac": 500,
+      "revenue_projection": [500000, 1500000, 4500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "financial_contradiction",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "在竞争激烈的市场中，获客成本（CAC）为500元（包括品牌和网红），但其从交易中抽取的佣金极低，单客LTV仅约100元，商业模式不可持续。"
+    }
+  },
+  {
+    "id": 42,
+    "company_name": "AI创意生成器",
+    "core_product": "一款面向广告和营销行业的AI工具，可以根据用户输入的关键词，自动生成广告文案、营销海报和短视频创意脚本。",
+    "market_analysis": {
+      "market_size": "生成式AI市场爆发，营销是其核心应用场景之一。",
+      "competition": "Jasper, Copy.ai等文案生成工具已很成熟，同时Midjourney, Runway等在图像和视频生成领域也很强大。",
+      "competitive_edge": "将文案、图像、视频创意整合在一个平台，提供一站式解决方案。"
+    },
+    "team_background": {
+      "founders": "CEO是前4A广告公司的创意总监，CTO是生成式AI领域的专家。",
+      "tech_team": "AI团队在多模态模型研发方面有深厚积累。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内企业客户达到1万家。",
+      "profit_status": "未盈利",
+      "cac": 200,
+      "revenue_projection": [2000000, 10000000, 50000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队对行业痛点理解深刻，技术能力强，产品方向符合AIGC趋势，市场需求旺盛。"
+    }
+  },
+  {
+    "id": 43,
+    "company_name": "云原生安全SaaS",
+    "core_product": "为使用容器和Kubernetes的企业提供云原生安全SaaS平台，包括漏洞扫描、运行时安全监控和合规性检测，帮助企业保护其现代化应用。",
+    "market_analysis": {
+      "market_size": "随着云原生技术的普及，云原生安全成为网络安全的新战场，市场增长迅速。",
+      "competition": "Palo Alto Networks (Prisma Cloud), Aqua Security, Sysdig等是该领域的领导者。",
+      "competitive_edge": "产品部署更简单，对开发者更友好，并采用eBPF技术实现更底层的安全监控。"
+    },
+    "team_background": {
+      "founders": "核心团队来自头部的云计算和网络安全公司，是云原生技术的早期实践者。",
+      "tech_team": "技术团队在Kubernetes、容器安全和eBPF技术方面是世界级专家。"
+    },
+    "financial_forecast": {
+      "user_growth": "年度经常性收入（ARR）预计每年翻一番。",
+      "profit_status": "未盈利",
+      "cac": 12000,
+      "revenue_projection": [1200000, 2400000, 4800000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "技术壁垒极高，团队是行业顶尖专家，市场处于高速增长期，产品技术领先，是典型的硬核科技优质项目。"
+    }
+  },
+  {
+    "id": 44,
+    "company_name": "零知识证明支付",
+    "core_product": "一个基于零知识证明（ZKP）技术的移动支付应用，允许用户在不透露任何个人信息（如姓名、银行账号）的情况下完成支付，实现完全的隐私保护。",
+    "market_analysis": {
+      "market_size": "声称目标是全球支付市场，但隐私支付仅为一个小众且受监管严格的领域。",
+      "competition": "面临传统支付巨头（Visa, Mastercard）和新型支付应用（支付宝, PayPal）的强大网络效应。",
+      "competitive_edge": "极致的隐私保护。"
+    },
+    "team_background": {
+      "founders": "创始人是一位密码学爱好者和隐私倡导者。",
+      "tech_team": "技术团队在ZKP算法方面有研究，但缺乏构建大规模、高并发支付系统的经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测用户数达到1亿。",
+      "profit_status": "未盈利",
+      "cac": 5,
+      "revenue_projection": [50000, 250000, 1250000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "market_overestimation",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "严重高估了普通用户对极致隐私支付的需求，而忽略了便利性和通用性的重要性。其市场定位与主流用户习惯相悖，且面临巨大的反洗钱（AML）合规压力。"
+    }
+  },
+  {
+    "id": 45,
+    "company_name": "AI心理测评",
+    "core_product": "面向企业HR的员工心理健康测评SaaS。通过AI分析员工的文本输入（如周报）和行为数据，评估其工作压力和心理状态，并向HR发出预警。",
+    "market_analysis": {
+      "market_size": "企业对员工心理健康的重视程度日益提高，相关市场正在形成。",
+      "competition": "面临传统EAP（员工援助计划）服务商和一些新兴的心理健康科技公司的竞争。",
+      "competitive_edge": "通过被动式、无干扰的数据分析进行评估，比传统的问卷调查更客观。"
+    },
+    "team_background": {
+      "founders": "CEO是人力资源专家，CTO是数据科学家。",
+      "tech_team": "技术团队擅长数据分析和机器学习建模。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内服务500家企业。",
+      "profit_status": "未盈利",
+      "cac": 4500,
+      "revenue_projection": [4500000, 22500000, 112500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "产品涉及员工隐私，数据采集和使用的合规性、道德性是巨大挑战，需要获得企业和员工的高度信任。商业模式能否被广泛接受存疑。"
+    }
+  },
+  {
+    "id": 46,
+    "company_name": "波浪能发电站",
+    "core_product": "一种创新的波浪能发电装置，声称其独特的'仿生鳍'设计能将波浪能的捕获效率提高到70%，是现有技术的两倍，且能抵抗12级台风。",
+    "market_analysis": {
+      "market_size": "海洋能是清洁能源的重要组成部分，但技术成熟度和成本一直是大规模商业化的障碍。",
+      "competition": "全球有多个波浪能技术方案在进行试点，但尚无绝对的领导者。",
+      "competitive_edge": "宣称的高效率和高可靠性。"
+    },
+    "team_background": {
+      "founders": "创始人是一位机械工程师，热爱航海。",
+      "tech_team": "团队由几名机械和结构工程师组成，缺乏海洋工程、流体力学和电力系统方面的专家。"
+    },
+    "financial_forecast": {
+      "user_growth": "计划五年内在沿海国家建设10个大型波浪能发电场。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 0, 0]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "team_incompetence",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "波浪能发电是极其复杂的系统工程，现有团队的专业背景不足以应对海洋环境的挑战和能量转换的复杂性，项目缺乏可行性。"
+    }
+  },
+  {
+    "id": 47,
+    "company_name": "宠物生活日志",
+    "core_product": "一款记录宠物日常生活的社交App，主人可以记录宠物的饮食、健康、趣事，并与其他宠物主人交流。",
+    "market_analysis": {
+      "market_size": "宠物经济市场规模巨大且增长迅速。",
+      "competition": "市场上已有众多宠物社区App，同时小红书、抖音等通用社交平台也聚集了大量宠物内容。",
+      "competitive_edge": "更垂直、更专注的社区氛围。"
+    },
+    "team_background": {
+      "founders": "创始人是资深宠物博主。",
+      "tech_team": "标准移动应用开发团队。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测年用户增长200%。",
+      "profit_status": "未盈利",
+      "cac": 5,
+      "revenue_projection": [50000, 100000, 200000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "financial_contradiction",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "用户获取成本（CAC）为5元，但产品缺乏清晰的盈利模式，主要依赖于未来可能的广告或电商导流，用户终身价值（LTV）极低，远不能覆盖获客成本。"
+    }
+  },
+  {
+    "id": 48,
+    "company_name": "AI合同翻译SaaS",
+    "core_product": "专为法律和商务领域设计的AI翻译SaaS平台，声称其在法律合同翻译上的准确率达到'人类专家水平'，能理解复杂的法律术语和上下文。",
+    "market_analysis": {
+      "market_size": "专业翻译市场巨大，法律翻译是价值最高的细分领域之一。",
+      "competition": "DeepL, Google Translate等通用翻译引擎在不断进步，同时还有专业的语言服务提供商（LSP）。",
+      "competitive_edge": "在法律领域的深度优化是其核心壁垒。"
+    },
+    "team_background": {
+      "founders": "CEO是前大型翻译公司高管，CTO是机器翻译领域的顶尖学者。",
+      "tech_team": "AI团队由多名NLP博士组成，并有资深律师团队进行语料标注和模型校对。"
+    },
+    "financial_forecast": {
+      "user_growth": "目标三年内成为法律翻译AI解决方案的领导者。",
+      "profit_status": "未盈利",
+      "cac": 800,
+      "revenue_projection": [800000, 4000000, 20000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队背景强大，技术和行业知识结合紧密，产品切入高价值市场，竞争优势明显。"
+    }
+  },
+  {
+    "id": 49,
+    "company_name": "智能保险定价",
+    "core_product": "为保险公司提供的SaaS解决方案，通过机器学习分析海量数据（如驾驶行为、健康数据），进行更精准的个人化保险定价（UBI车险、健康险），帮助保险公司降低赔付风险。",
+    "market_analysis": {
+      "market_size": "保险科技（InsurTech）正在重塑传统保险业，数据驱动的定价是核心趋势。",
+      "competition": "面临来自大型咨询公司（如Willis Towers Watson）和科技公司（如Verisk）的竞争。",
+      "competitive_edge": "其AI模型的精度和可解释性更强，能更好地满足保险公司的风控和合规要求。"
+    },
+    "team_background": {
+      "founders": "CEO是前保险公司首席风险官，CTO是数据科学领域的专家。",
+      "tech_team": "团队由精算师和机器学习工程师组成，是典型的跨学科团队。"
+    },
+    "financial_forecast": {
+      "user_growth": "已与3家中小保险公司达成合作。",
+      "profit_status": "未盈利",
+      "cac": 120000,
+      "revenue_projection": [1200000, 6000000, 30000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队是行业专家，深刻理解客户需求，产品解决了保险公司的核心问题，商业模式清晰，已有客户验证。"
+    }
+  },
+  {
+    "id": 50,
+    "company_name": "AI癌症早筛",
+    "core_product": "声称通过分析血液中的微量DNA，结合AI算法，可以一次性筛查数十种常见癌症，准确率高达99.9%。",
+    "market_analysis": {
+      "market_size": "癌症早筛是医疗健康领域的圣杯，市场规模万亿级。",
+      "competition": "Grail, Thrive等公司已在该领域投入数十亿美元进行大规模临床试验。",
+      "competitive_edge": "宣称其检测成本极低，仅为竞争对手的十分之一。"
+    },
+    "team_background": {
+      "founders": "创始人是一位市场营销专家，声称其技术来自一位'匿名的诺贝尔奖级科学家'。",
+      "tech_team": "没有内部技术团队。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测三年内在全球推广。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 0, 0]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "product_infeasibility",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "'滴血测癌'是极其复杂的前沿科学，其宣称的准确率和成本在当前技术下无法实现。项目缺乏科学依据和可信的团队，是典型的科学骗局。"
+    }
+  },
+  {
+    "id": 51,
+    "company_name": "智慧农业灌溉系统",
+    "core_product": "结合物联网传感器（土壤湿度、气象）和AI算法的智能灌溉解决方案。系统能预测作物需水量，自动进行精准灌溉，可节水50%，增产15%。",
+    "market_analysis": {
+      "market_size": "智慧农业是农业现代化的方向，市场潜力巨大。清洁技术中的水资源管理是重要一环。",
+      "competition": "市场参与者包括传统农业设备公司（如Netafim）和一些农业科技创业公司。",
+      "competitive_edge": "其AI推荐算法考虑了更多变量（如作物生长周期、未来天气），决策更智能。"
+    },
+    "team_background": {
+      "founders": "CEO来自农业世家，对农业生产有深入了解。CTO是物联网和数据分析专家。",
+      "tech_team": "团队在硬件、物联网和农业数据建模方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "已在多个大型农场完成试点，效果显著。",
+      "profit_status": "未盈利",
+      "cac": 25000,
+      "revenue_projection": [2500000, 12500000, 62500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "产品解决了农业的刚需，团队背景互补，技术方案务实，已有成功的客户案例，商业模式清晰。"
+    }
+  },
+  {
+    "id": 52,
+    "company_name": "大学生社交圈",
+    "core_product": "一款仅限在校大学生使用的匿名社交App，主打校园八卦、课程评价和组队交友功能。",
+    "market_analysis": {
+      "market_size": "校园社交是社交领域的重要垂直市场。",
+      "competition": "面临来自微信、QQ等通用社交工具的竞争，以及一些其他校园社交产品。",
+      "competitive_edge": "严格的身份认证保证了社区的纯粹性。"
+    },
+    "team_background": {
+      "founders": "创始人是刚毕业的大学生，对校园文化有切身体会。",
+      "tech_team": "由创始人和两位同学兼职开发。"
+    },
+    "financial_forecast": {
+      "user_growth": "计划一年内覆盖全国100所高校。",
+      "profit_status": "未盈利",
+      "cac": 0.5,
+      "revenue_projection": [5000, 25000, 125000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "市场定位清晰，但匿名社交容易产生内容监管风险。团队有热情但缺乏经验，盈利模式不清晰，项目能否持续运营存在不确定性。"
+    }
+  },
+  {
+    "id": 53,
+    "company_name": "AI驱动的城市交通大脑",
+    "core_product": "为城市交通管理部门提供的SaaS平台，通过分析摄像头、传感器等多源数据，AI可以实时优化交通信号灯配时，预测拥堵并引导车流，旨在将城市通行效率提升20%。",
+    "market_analysis": {
+      "market_size": "智慧城市是全球趋势，智能交通是其中最大的应用场景之一。",
+      "competition": "阿里巴巴、百度等科技巨头都在大力布局，竞争异常激烈。",
+      "competitive_edge": "声称其算法更先进，能处理更复杂的路况。"
+    },
+    "team_background": {
+      "founders": "创始人是一位有政府关系的商人。",
+      "tech_team": "技术团队有Web开发经验，但缺乏大规模数据处理和复杂AI算法的研发能力。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测三年内拿下10个一线城市的合同。",
+      "profit_status": "未盈利",
+      "cac": 1000000,
+      "revenue_projection": [10000000, 50000000, 250000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "team_incompetence",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "城市交通大脑是技术密集型项目，需要顶级的AI和大数据团队。现有技术团队能力严重不足，无法交付合格的产品。项目更依赖于关系而非技术。"
+    }
+  },
+  {
+    "id": 54,
+    "company_name": "自动化代码审查SaaS",
+    "core_product": "一款AI驱动的SaaS工具，可以自动审查开发者提交的代码，发现其中潜在的bug、安全漏洞和不符合规范的写法，并提供修改建议，集成在CI/CD流程中。",
+    "market_analysis": {
+      "market_size": "DevOps和软件开发工具市场巨大，代码质量和安全是开发者的核心痛点。",
+      "competition": "SonarQube, CodeClimate等是代码静态分析领域的成熟工具，GitHub等平台也在集成类似功能。",
+      "competitive_edge": "利用更先进的AI模型，能发现更深层次的逻辑错误，而不仅仅是语法和风格问题。"
+    },
+    "team_background": {
+      "founders": "两位创始人都是前头部科技公司的高级软件工程师，对代码质量有极致追求。",
+      "tech_team": "技术团队由多名编译器、程序分析和机器学习专家组成，技术实力非常强。"
+    },
+    "financial_forecast": {
+      "user_growth": "年度经常性收入（ARR）预计年增长150%。",
+      "profit_status": "未盈利",
+      "cac": 1000,
+      "revenue_projection": [1000000, 2500000, 6250000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队是顶尖的技术专家，产品解决了开发者的真实痛点，技术壁垒高，市场空间大，是典型的开发者工具类优质项目。"
+    }
+  },
+  {
+    "id": 55,
+    "company_name": "AI反欺诈系统",
+    "core_product": "为电商和金融机构提供实时交易反欺诈SaaS服务。通过分析用户的行为、设备、网络等多维度信息，AI模型可以精准识别并拦截欺诈交易。",
+    "market_analysis": {
+      "market_size": "随着线上交易的普及，交易欺诈日益猖獗，反欺诈市场需求强劲。",
+      "competition": "Stripe, Adyen等支付网关自带反欺诈功能，同时也有Forter, Sift等专业的反欺诈服务商。",
+      "competitive_edge": "其模型更新速度更快，能有效应对新型欺诈手段。"
+    },
+    "team_background": {
+      "founders": "核心团队来自PayPal、Visa等公司的风控部门。",
+      "tech_team": "技术团队由资深的反欺诈专家和机器学习工程师组成。"
+    },
+    "financial_forecast": {
+      "user_growth": "平台处理的年交易额预计增长200%。",
+      "profit_status": "盈利",
+      "cac": 18000,
+      "revenue_projection": [1800000, 5400000, 16200000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队是行业专家，产品是刚需，技术壁垒高，商业模式清晰，已实现盈利和规模化增长。"
+    }
+  },
+  {
+    "id": 56,
+    "company_name": "AI个性化教育平台",
+    "core_product": "一个K12阶段的在线学习平台，AI系统可以根据每个学生的学习进度和薄弱环节，动态生成个性化的学习路径和练习题，实现'因材施教'。",
+    "market_analysis": {
+      "market_size": "在线教育市场巨大，但面临增长放缓和监管压力。个性化教育是公认的趋势。",
+      "competition": "市场上有众多大型在线教育公司和题库类应用。",
+      "competitive_edge": "其个性化推荐算法更精细，能提供真正的自适应学习体验。"
+    },
+    "team_background": {
+      "founders": "CEO是前重点学校的资深教师，CTO是教育数据挖掘领域的博士。",
+      "tech_team": "技术团队在教育AI领域有多年积累。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内付费学生达到50万。",
+      "profit_status": "未盈利",
+      "cac": 60,
+      "revenue_projection": [6000000, 30000000, 150000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "产品理念先进，团队背景匹配。但获客成本高，用户付费意愿和续费率是关键。项目受教育政策影响大，存在不确定性。"
+    }
+  },
+  {
+    "id": 57,
+    "company_name": "生物降解塑料",
+    "core_product": "一种新型的、100%可生物降解的塑料替代品，由玉米淀粉和专有添加剂制成。其性能接近传统塑料，但在自然环境中90天即可完全分解。",
+    "market_analysis": {
+      "market_size": "全球'禁塑令'趋势为可降解材料带来了巨大的市场机会。",
+      "competition": "PLA（聚乳酸）是目前主流的生物降解塑料，但存在成本高、降解条件苛刻等问题。",
+      "competitive_edge": "其材料成本更低，且对降解条件要求不高。"
+    },
+    "team_background": {
+      "founders": "创始人是高分子材料领域的科学家。",
+      "tech_team": "研发团队实力雄厚，但缺乏大规模生产和市场销售的经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "计划三年内建成万吨级生产线。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 50000000, 250000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "技术有潜力，市场空间大。但从实验室到大规模量产的工程化挑战巨大，成本控制和市场推广能力是关键。"
+    }
+  },
+  {
+    "id": 58,
+    "company_name": "二手奢侈品直播平台",
+    "core_product": "一个专注于二手奢侈品交易的直播电商App，卖家通过直播展示商品，买家竞拍或直接购买。",
+    "market_analysis": {
+      "market_size": "二手奢侈品市场增长迅速。",
+      "competition": "The RealReal, Vestiaire Collective等是全球领导者，国内也有红布林、只二等平台，竞争激烈。",
+      "competitive_edge": "直播形式更直观，互动性更强。"
+    },
+    "team_background": {
+      "founders": "创始人是奢侈品鉴定师和网红主播。",
+      "tech_team": "标准电商直播技术团队。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测年GMV增长250%。",
+      "profit_status": "未盈利",
+      "cac": 300,
+      "revenue_projection": [300000, 1050000, 3675000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "financial_contradiction",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "获客成本（CAC）为300元，但客单价高、交易频率低，平台抽成后的单客LTV仅约200元。在激烈竞争中，这种烧钱换增长的模式难以持续。"
+    }
+  },
+  {
+    "id": 59,
+    "company_name": "AI新药临床试验设计",
+    "core_product": "为制药公司提供的SaaS软件，利用AI分析历史临床试验数据和真实世界数据，优化新药临床试验方案的设计（如入组标准、终点选择），旨在提高试验成功率、缩短周期。",
+    "market_analysis": {
+      "market_size": "临床试验是新药研发中最昂贵、最耗时的环节，优化需求迫切。",
+      "competition": "Medidata, IQVIA等临床研究组织（CRO）巨头和一些AI创业公司（如Phesi）是主要竞争者。",
+      "competitive_edge": "其AI模型能更全面地整合多源数据，并提供更具可解释性的决策依据。"
+    },
+    "team_background": {
+      "founders": "CEO是前大型药企的临床开发负责人，CTO是生物统计和机器学习领域的专家。",
+      "tech_team": "团队由临床试验专家、生物统计学家和AI工程师组成，专业性极强。"
+    },
+    "financial_forecast": {
+      "user_growth": "已与5家全球Top 20的药企签订服务合同。",
+      "profit_status": "盈利",
+      "cac": 250000,
+      "revenue_projection": [2500000, 12500000, 62500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队背景顶级，产品解决了制药行业的核心痛点，技术壁垒和客户壁垒都很高，商业模式已验证，是医疗AI领域的稀缺优质标的。"
+    }
+  },
+  {
+    "id": 60,
+    "company_name": "企业碳排放管理SaaS",
+    "core_product": "帮助企业追踪、计算和管理其碳排放的SaaS平台。平台可以连接企业的ERP、供应链等系统，自动核算范围1、2、3的碳排放，并生成符合国际标准的报告。",
+    "market_analysis": {
+      "market_size": "在全球碳中和目标下，企业碳管理从可选项变为必选项，市场需求正在爆发。",
+      "competition": "Watershed, Persefoni等是该赛道的明星创业公司，SAP等传统软件巨头也在进入。",
+      "competitive_edge": "产品易用性更好，并能提供具体的减排路径规划建议。"
+    },
+    "team_background": {
+      "founders": "CEO是可持续发展领域的咨询顾问，CTO是经验丰富的SaaS开发者。",
+      "tech_team": "技术团队在数据集成和SaaS开发方面经验充足。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计年度经常性收入（ARR）每年增长200%。",
+      "profit_status": "未盈利",
+      "cac": 9000,
+      "revenue_projection": [900000, 2700000, 8100000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "市场前景广阔，但竞争日趋激烈。项目需要证明其产品在数据核算准确性和客户服务方面能超越竞争对手。"
+    }
+  },
+  {
+    "id": 61,
+    "company_name": "AI情感识别API",
+    "core_product": "提供一个API服务，开发者可以调用该API来分析图像、视频或语音中的人类情感（如喜、怒、哀、乐）。声称可用于智能客服、市场调研等领域。",
+    "market_analysis": {
+      "market_size": "声称AI市场巨大，情感计算是重要分支。",
+      "competition": "微软、亚马逊、谷歌等云厂商都提供类似的情感识别API，且技术成熟。",
+      "competitive_edge": "声称其识别精度更高，能识别微表情。"
+    },
+    "team_background": {
+      "founders": "创始人是一位Web开发者。",
+      "tech_team": "团队由两名后端工程师组成，AI模型基于开源模型进行微调。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测API调用量年增长1000%。",
+      "profit_status": "未盈利",
+      "cac": 100,
+      "revenue_projection": [100000, 1000000, 10000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "market_overestimation",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "在公有云巨头提供成熟且廉价的API服务的情况下，小型创业公司缺乏竞争力。项目忽略了行业巨头的存在，市场空间极小。"
+    }
+  },
+  {
+    "id": 62,
+    "company_name": "云游戏平台",
+    "core_product": "一个订阅制的云游戏平台，用户无需购买昂贵的游戏主机或PC，即可在任何设备上畅玩3A大作。",
+    "market_analysis": {
+      "market_size": "云游戏被认为是游戏的未来，市场潜力巨大。",
+      "competition": "Nvidia (GeForce Now), Microsoft (Xbox Cloud Gaming), Sony (PlayStation Plus) 等巨头已投入巨资并占据市场。",
+      "competitive_edge": "更低的网络延迟和更亲民的订阅价格。"
+    },
+    "team_background": {
+      "founders": "创始人是游戏爱好者和云计算工程师。",
+      "tech_team": "技术团队在流媒体技术和云基础设施方面有一定经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内订阅用户达到1000万。",
+      "profit_status": "未盈利",
+      "cac": 30,
+      "revenue_projection": [3000000, 15000000, 75000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "market_overestimation",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "云游戏是重资产、重技术的领域，需要巨大的基础设施投入和游戏版权采购成本。项目严重低估了与科技巨头竞争的难度和资本门槛。"
+    }
+  },
+  {
+    "id": 63,
+    "company_name": "AI驱动的个人理财顾问",
+    "core_product": "一款个人理财App，通过AI分析用户的收入、支出、投资和目标，提供全方位的财务规划建议，包括预算、储蓄、保险和投资组合。",
+    "market_analysis": {
+      "market_size": "个人理财市场巨大，但用户普遍缺乏专业知识。",
+      "competition": "Personal Capital, Mint等是成熟的记账和财富管理工具，传统金融机构也在提供数字理财顾问服务。",
+      "competitive_edge": "其AI建议更全面、更个性化，能像真人理财顾问一样提供综合规划。"
+    },
+    "team_background": {
+      "founders": "CEO是注册理财规划师（CFP），CTO是机器学习工程师。",
+      "tech_team": "技术团队在数据分析和推荐系统方面有经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内付费用户达到30万。",
+      "profit_status": "未盈利",
+      "cac": 50,
+      "revenue_projection": [500000, 2500000, 12500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "产品理念好，但需要获得用户的财务数据授权，建立信任是关键。如何将复杂的理财建议以简单易懂的方式呈现给用户，是产品体验的挑战。"
+    }
+  },
+  {
+    "id": 64,
+    "company_name": "AI辅助病理切片分析",
+    "core_product": "一个AI驱动的数字病理SaaS平台，能够辅助病理医生分析数字化的病理切片，自动进行细胞计数、组织分类和癌症分级，提高诊断的一致性和效率。",
+    "market_analysis": {
+      "market_size": "数字病理是病理学发展的趋势，AI的应用是热点。医疗健康市场空间广阔。",
+      "competition": "Paige, PathAI等是该领域的明星公司，飞利浦、徕卡等传统病理设备商也在布局。",
+      "competitive_edge": "其AI模型在多种癌症类型上都表现出高精度，并能与主流的数字切片扫描仪无缝集成。"
+    },
+    "team_background": {
+      "founders": "CEO是前病理设备公司的销售总监，CTO是计算病理学领域的顶尖科学家。",
+      "tech_team": "团队由病理学家、AI科学家和软件工程师组成，跨学科能力强。"
+    },
+    "financial_forecast": {
+      "user_growth": "已进入10家医院的病理科进行试用。",
+      "profit_status": "未盈利",
+      "cac": 180000,
+      "revenue_projection": [1800000, 9000000, 45000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队背景优秀，产品技术壁垒高，解决了病理医生资源短缺、工作繁重的痛点，商业模式清晰，市场前景广阔。"
+    }
+  },
+  {
+    "id": 65,
+    "company_name": "分布式储能网络",
+    "core_product": "通过将安装在家庭和企业的储能电池连接成一个虚拟电厂（VPP），参与电网的调峰调频，为用户带来收益。公司负责提供储能设备、软件平台和市场交易。",
+    "market_analysis": {
+      "market_size": "随着分布式光伏的普及，用户侧储能市场正在快速启动。清洁技术和能源互联网是未来方向。",
+      "competition": "Tesla (Powerwall), Sonnen等是储能硬件的领导者，同时也有一些虚拟电厂运营商。",
+      "competitive_edge": "提供硬件+软件+服务的整体解决方案，并拥有更高效的电网交易算法。"
+    },
+    "team_background": {
+      "founders": "核心团队来自顶级的能源公司和物联网公司。",
+      "tech_team": "团队在储能技术、电力市场交易和物联网平台方面都有深厚积累。"
+    },
+    "financial_forecast": {
+      "user_growth": "目标五年内聚合1GWh的储能容量。",
+      "profit_status": "未盈利",
+      "cac": 2000,
+      "revenue_projection": [2000000, 10000000, 50000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "商业模式创新，抓住了能源转型的巨大机遇，团队经验丰富，技术方案可行，市场潜力巨大。"
+    }
+  },
+  {
+    "id": 66,
+    "company_name": "VR健身游戏",
+    "core_product": "一款结合了游戏和健身的VR应用，用户在虚拟世界中通过真实的身体动作（如挥拳、深蹲）来击败怪物、完成闯关，让健身变得有趣。",
+    "market_analysis": {
+      "market_size": "VR游戏和家庭健身市场都在增长，二者结合有想象空间。",
+      "competition": "Beat Saber, Supernatural等已证明VR健身游戏的可行性并获得巨大成功。",
+      "competitive_edge": "游戏设计更丰富，并加入了社交和竞技元素。"
+    },
+    "team_background": {
+      "founders": "创始人是游戏制作人和健身爱好者。",
+      "tech_team": "技术团队有VR游戏开发经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测下载量达到500万次。",
+      "profit_status": "未盈利",
+      "cac": 2,
+      "revenue_projection": [200000, 1000000, 5000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "市场已被验证，但内容创意和游戏可玩性是关键，能否持续吸引用户是挑战。项目成功高度依赖于游戏本身的品质。"
+    }
+  },
+  {
+    "id": 67,
+    "company_name": "AI驱动的供应链优化",
+    "core_product": "为制造业和零售业提供的SaaS平台，利用AI预测需求、优化库存、规划物流，旨在打造更具韧性和效率的供应链。",
+    "market_analysis": {
+      "market_size": "供应链管理软件市场巨大，AI的应用是确定性趋势。",
+      "competition": "SAP, Oracle等ERP巨头拥有庞大的客户基础，同时也有o9 Solutions, Coupa等众多专业的供应链软件公司。",
+      "competitive_edge": "其AI预测模型的精度更高，并且能进行端到端的全链条优化。"
+    },
+    "team_background": {
+      "founders": "CEO是前世界500强公司的供应链负责人，CTO是运筹学和机器学习领域的专家。",
+      "tech_team": "团队拥有多名供应链专家和AI算法科学家。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内服务500家大型企业客户",
+      "profit_status": "未盈利",
+      "cac": 45000,
+      "revenue_projection": [8000000, 35000000, 120000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "团队背景强大，产品方向正确，但面临ERP巨头的激烈竞争，市场渗透需要时间和大量销售投入。财务预测较为乐观，依赖于能够从现有巨头手中抢夺市场份额。"
+    }
+  },
+  {
+    "id": 68,
+    "company_name": "AI面试官",
+    "core_product": "一款为企业HR设计的AI视频面试SaaS工具，声称可以通过分析候选人的微表情和语气来评估其诚信度和岗位匹配度。",
+    "market_analysis": {
+      "market_size": "人力资源科技市场巨大，AI应用是趋势。",
+      "competition": "HireVue等成熟的视频面试工具已经占据市场，但大多聚焦于能力评估而非性格分析。",
+      "competitive_edge": "独特的'诚信度'评估算法。"
+    },
+    "team_background": {
+      "founders": "创始人是一位心理学研究者，对微表情有深入研究。",
+      "tech_team": "技术团队由几名Web开发者组成，缺乏专业的计算机视觉和AI算法工程师。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测三年内获取5000家企业客户。",
+      "profit_status": "未盈利",
+      "cac": 1500,
+      "revenue_projection": [1500000, 7500000, 37500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "product_infeasibility",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "通过微表情分析'诚信度'缺乏科学共识和验证，存在巨大的伦理和偏见风险，产品基本不可行。技术团队也无法支撑相关研发。"
+    }
+  },
+  {
+    "id": 69,
+    "company_name": "世界和平链",
+    "core_product": "一个基于区块链的全球协作平台，旨在通过去中心化投票和智能合约来解决国际冲突和促进世界和平。",
+    "market_analysis": {
+      "market_size": "声称目标市场是'全人类'，价值无法估量。",
+      "competition": "联合国等国际组织。",
+      "competitive_edge": "完全去中心化，不受任何主权国家控制。"
+    },
+    "team_background": {
+      "founders": "创始人是一位理想主义的社会活动家。",
+      "tech_team": "由几名兼职的区块链爱好者组成。"
+    },
+    "financial_forecast": {
+      "user_growth": "希望在五年内吸引10亿用户。",
+      "profit_status": "未盈利",
+      "cac": 0.1,
+      "revenue_projection": [10000, 100000, 1000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "product_infeasibility",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "项目目标过于宏大和不切实际，试图用技术解决极其复杂的政治、社会问题，完全没有可行的路径和商业模式。"
+    }
+  },
+  {
+    "id": 70,
+    "company_name": "按需保险Fintech",
+    "core_product": "一款移动保险App，用户可以按天、按小时为自己的物品（如相机、笔记本电脑）购买保险。例如，在旅行时为相机购买一天的盗窃险。",
+    "market_analysis": {
+      "market_size": "保险科技市场正在增长，碎片化、场景化的保险是新趋势。",
+      "competition": "面临传统保险公司的创新挑战和一些新兴保险科技公司的竞争。",
+      "competitive_edge": "极致的灵活性和便捷的用户体验。"
+    },
+    "team_background": {
+      "founders": "CEO是前保险公司产品经理，CTO是资深移动开发者。",
+      "tech_team": "技术团队在移动端开发和支付集成方面经验丰富，并与一家再保险公司达成了合作。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内保单量达到1000万份。",
+      "profit_status": "未盈利",
+      "cac": 12,
+      "revenue_projection": [120000, 600000, 3000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "商业模式创新，但需要大规模用户基础才能盈利。风险在于用户教育成本高，且小额保单的欺诈风险控制难度大。"
+    }
+  },
+  {
+    "id": 71,
+    "company_name": "AI家庭医生",
+    "core_product": "一个基于AI的家庭健康管理硬件设备，声称可以通过分析用户的声音、呼吸和睡眠模式，提前7天预测感冒、流感等常见疾病的发生。",
+    "market_analysis": {
+      "market_size": "数字健康和智能家居市场巨大。",
+      "competition": "亚马逊、谷歌等巨头都在布局家庭健康场景。",
+      "competitive_edge": "独特的疾病预测功能。"
+    },
+    "team_background": {
+      "founders": "创始人是一位硬件产品经理。",
+      "tech_team": "团队有硬件和嵌入式开发经验，但没有医疗背景或AI算法专家。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测销量每年翻三倍。",
+      "profit_status": "未盈利",
+      "cac": 150,
+      "revenue_projection": [1500000, 4500000, 13500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "product_infeasibility",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "通过非接触式传感器提前7天预测疾病缺乏足够的科学依据和临床验证，技术可行性极低。团队缺乏必要的医疗和AI专业知识。"
+    }
+  },
+  {
+    "id": 72,
+    "company_name": "绿叶蛋白",
+    "core_product": "利用基因编辑技术改造菠菜，使其蛋白质含量提高到与牛肉相同，并直接生产为人造肉饼。旨在提供一种比现有植物肉更天然、成本更低的替代蛋白。",
+    "market_analysis": {
+      "market_size": "替代蛋白市场是清洁技术和未来食品的重要方向，潜力巨大。",
+      "competition": "Beyond Meat, Impossible Foods等植物肉公司和细胞培养肉公司是主要竞争者。",
+      "competitive_edge": "生产成本极低，且无需复杂的加工过程。"
+    },
+    "team_background": {
+      "founders": "创始人是植物基因工程领域的顶尖科学家。",
+      "tech_team": "研发团队由多名分子生物学家和农业技术专家组成。"
+    },
+    "financial_forecast": {
+      "user_growth": "计划五年内实现商业化种植。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 50000000, 250000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "技术具有颠覆性，但面临转基因食品的法规审批和消费者接受度的巨大不确定性。从实验室到大规模农业生产的路径漫长且充满挑战。"
+    }
+  },
+  {
+    "id": 73,
+    "company_name": "摘星教育",
+    "core_product": "一个面向K12学生的在线一对一辅导平台，声称其所有教师均毕业于全球排名前10的大学。",
+    "market_analysis": {
+      "market_size": "在线教育市场竞争激烈，且受到严格的政策监管。",
+      "competition": "学而思、新东方等教育巨头和众多垂直辅导平台。",
+      "competitive_edge": "顶级名校的师资是其唯一卖点。"
+    },
+    "team_background": {
+      "founders": "创始人是一位教育行业的市场人员。",
+      "tech_team": "标准在线教育平台技术团队。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测年收入增长400%。",
+      "profit_status": "未盈利",
+      "cac": 800,
+      "revenue_projection": [800000, 3200000, 12800000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "financial_contradiction",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "为了维持'全球Top 10'的师资，其教师成本极高，导致客单价高达500元/小时。而获客成本（CAC）为800元，平均每个用户仅上课1.5小时，LTV远低于CAC，单位经济模型完全无法跑通。"
+    }
+  },
+  {
+    "id": 74,
+    "company_name": "AI音乐家",
+    "core_product": "一款AI音乐生成SaaS工具，用户只需输入情绪、风格等文字描述，AI即可生成一段完整的、可商用的、广播级质量的背景音乐。",
+    "market_analysis": {
+      "market_size": "AIGC（AI生成内容）市场爆发，音乐是重要应用场景。",
+      "competition": "Amper Music (已被Shutterstock收购), Soundraw等是主要竞争对手。",
+      "competitive_edge": "生成的音乐质量更高，更具创造性和复杂性。"
+    },
+    "team_background": {
+      "founders": "CEO是音乐制作人，CTO是深度学习领域的专家。",
+      "tech_team": "AI团队在生成模型和音乐理论方面有深厚积累。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内订阅用户达到10万。",
+      "profit_status": "未盈利",
+      "cac": 50,
+      "revenue_projection": [500000, 2500000, 12500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队背景优秀，产品技术含量高，解决了内容创作者（视频、播客等）对高质量、低成本、无版权风险音乐的刚需，市场前景好。"
+    }
+  },
+  {
+    "id": 75,
+    "company_name": "零工钱包",
+    "core_product": "一款面向外卖骑手、网约车司机等零工经济从业者的金融服务App，提供工资日结、小额应急借款和专属优惠的保险产品。",
+    "market_analysis": {
+      "market_size": "零工经济规模巨大，但传统金融服务覆盖不足，金融科技市场存在机会。",
+      "competition": "面临来自大型互联网平台（如美团、滴滴）自带的金融服务和一些小贷公司的竞争。",
+      "competitive_edge": "更贴近零工群体的需求，风控模型更灵活。"
+    },
+    "team_background": {
+      "founders": "CEO曾是大型零工平台的运营负责人，COO有普惠金融经验。",
+      "tech_team": "技术团队在移动支付和数据风控方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "目标三年内服务100万零工用户。",
+      "profit_status": "未盈利",
+      "cac": 25,
+      "revenue_projection": [250000, 1250000, 6250000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "市场切入点好，但业务的合规性风险较高，特别是小额借贷部分。需要与大型平台建立合作关系才能有效获客，对渠道依赖性强。"
+    }
+  },
+  {
+    "id": 76,
+    "company_name": "AI营养补充剂",
+    "core_product": "声称通过分析用户的DNA，利用AI推荐并定制个性化的营养补充剂胶囊，每个人的配方都独一无二。",
+    "market_analysis": {
+      "market_size": "保健品和个性化健康市场巨大。",
+      "competition": "市场上已有众多维生素和保健品品牌，部分也提供个性化推荐服务。",
+      "competitive_edge": "基于DNA的'超个性化'是其核心卖点。"
+    },
+    "team_background": {
+      "founders": "创始人是一位成功的消费品营销专家。",
+      "tech_team": "技术外包，AI部分仅为简单的规则引擎。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测年销售额达到1亿美元。",
+      "profit_status": "未盈利",
+      "cac": 80,
+      "revenue_projection": [800000, 4000000, 100000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "product_infeasibility",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "基于消费级DNA检测来指导营养补充剂的科学依据不足，存在夸大宣传。产品本质是营销概念，缺乏核心技术和科学严谨性。"
+    }
+  },
+  {
+    "id": 77,
+    "company_name": "固态电池先锋",
+    "core_product": "研发和生产下一代固态锂电池，相比传统液态锂电池，其能量密度提升2倍，充电速度提升5倍，且无燃烧风险。",
+    "market_analysis": {
+      "market_size": "固态电池被认为是电动汽车和储能的终极解决方案，市场前景万亿级。清洁技术的核心领域。",
+      "competition": "QuantumScape, Solid Power等是该领域的明星公司，丰田、宁德时代等巨头也在大力投入。",
+      "competitive_edge": "其独特的电解质材料和制造工艺，在性能和成本上取得平衡。"
+    },
+    "team_background": {
+      "founders": "核心团队来自麻省理工学院的顶级电池实验室，是该领域的世界级权威。",
+      "tech_team": "拥有超过50名材料学、电化学和电池工程博士。"
+    },
+    "financial_forecast": {
+      "user_growth": "已与多家主流车企签订联合开发协议（JDA）。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 50000000, 500000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "硬核科技项目，团队是世界顶尖水平，技术方向是行业公认的未来，市场空间巨大，并已获得产业方的认可。"
+    }
+  },
+  {
+    "id": 78,
+    "company_name": "全民直播",
+    "core_product": "一款移动直播App，定位是'任何人都可以随时随地直播'，内容包罗万象，主打素人直播。",
+    "market_analysis": {
+      "market_size": "直播市场巨大，但已被抖音、快手等巨头瓜分。",
+      "competition": "与抖音、快手、B站等平台直接竞争。",
+      "competitive_edge": "声称无。主打'纯粹的、未经修饰的'真实感。"
+    },
+    "team_background": {
+      "founders": "创始人是一位产品经理。",
+      "tech_team": "标准移动视频技术团队。"
+    },
+    "financial_forecast": {
+      "user_growth": "希望在流量红利见顶的市场中实现用户爆发式增长。",
+      "profit_status": "未盈利",
+      "cac": 8,
+      "revenue_projection": [80000, 400000, 2000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "market_overestimation",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "在直播市场格局已定的情况下，一个没有任何差异化和竞争优势的新平台几乎没有生存空间。项目严重低估了市场竞争的残酷性和获客难度。"
+    }
+  },
+  {
+    "id": 79,
+    "company_name": "AIoT工业巡检机器人",
+    "core_product": "结合了AI视觉和物联网（AIoT）的四足机器人，可在化工厂、变电站等危险环境中替代人工进行设备巡检，自动读取仪表、检测异常。",
+    "market_analysis": {
+      "market_size": "工业自动化和机器人市场稳定增长，AI的应用提升了设备智能化水平。",
+      "competition": "波士顿动力（Boston Dynamics）是四足机器人领域的领导者，同时也有众多工业机器人公司。",
+      "competitive_edge": "针对特定工业场景的软件和AI算法是其核心价值，性价比更高。"
+    },
+    "team_background": {
+      "founders": "核心团队来自顶尖的机器人研究机构和工业自动化公司。",
+      "tech_team": "团队在机器人动力学控制、计算机视觉和工业软件方面都有深厚积累。"
+    },
+    "financial_forecast": {
+      "user_growth": "已在多个标杆客户的工厂中部署。",
+      "profit_status": "未盈利",
+      "cac": 120000,
+      "revenue_projection": [12000000, 60000000, 300000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队技术实力强，产品解决了工业领域的安全和效率痛点，应用场景明确，已有客户验证，商业前景清晰。"
+    }
+  },
+  {
+    "id": 80,
+    "company_name": "敏捷BI",
+    "core_product": "一款面向业务人员的自助式商业智能（BI）SaaS工具。用户无需IT部门帮助，即可通过拖拽和自然语言问答的方式，对数据进行探索和可视化分析。",
+    "market_analysis": {
+      "market_size": "数据分析和BI市场巨大，自助式、易用性是关键趋势。",
+      "competition": "Tableau, Power BI等巨头占据市场主导地位，同时有众多新兴BI创业公司。",
+      "competitive_edge": "其自然语言查询（NLQ）功能体验远超对手，真正实现了'对话式分析'。"
+    },
+    "team_background": {
+      "founders": "CEO是前BI巨头的产品负责人，CTO是NLP和数据可视化领域的专家。",
+      "tech_team": "技术团队在数据处理、NLP和前端可视化方面实力强大。"
+    },
+    "financial_forecast": {
+      "user_growth": "年度经常性收入（ARR）预计年增长120%。",
+      "profit_status": "未盈利",
+      "cac": 3500,
+      "revenue_projection": [3500000, 7700000, 16940000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "市场巨大但竞争激烈。产品有技术亮点，但需要挑战现有巨头的生态和用户习惯。销售和市场能力将是成功的关键。"
+    }
+  },
+  {
+    "id": 81,
+    "company_name": "AI量化交易基金",
+    "core_product": "一个自营的量化对冲基金，声称其交易策略完全由一个'超级AI'制定和执行，该AI能从海量市场数据中自我学习和进化，实现长期稳定的超额收益。",
+    "market_analysis": {
+      "market_size": "对冲基金行业规模巨大。",
+      "competition": "文艺复兴科技（Renaissance Technologies）、Two Sigma等是量化投资领域的顶尖公司。",
+      "competitive_edge": "宣称其'完全自主'的AI是独一无二的。"
+    },
+    "team_background": {
+      "founders": "创始人是一位个人交易者，对AI充满信仰。",
+      "tech_team": "没有技术团队，声称AI是创始人自己'训练'的。"
+    },
+    "financial_forecast": {
+      "user_growth": "寻求1亿美元的初始投资。",
+      "profit_status": "盈利",
+      "cac": 0,
+      "revenue_projection": [10000000, 20000000, 50000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "team_incompetence",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "顶级的量化交易需要世界级的数学家、计算机科学家和金融专家团队。创始人背景和团队缺失，其宣称的'超级AI'可信度极低，项目更像是一个骗局。"
+    }
+  },
+  {
+    "id": 82,
+    "company_name": "智能康复机器人",
+    "core_product": "一款针对中风患者上肢康复的医疗机器人。它能根据医生的方案，引导患者进行重复性康复训练，并通过传感器精确记录数据，为医生提供量化评估依据。",
+    "market_analysis": {
+      "market_size": "康复医疗市场随着人口老龄化而快速增长，医疗健康领域前景广阔。",
+      "competition": "市场上已有部分康复机器人产品，但大多价格昂贵、功能单一。",
+      "competitive_edge": "结合了游戏化交互和AI自适应训练方案，能提高患者的参与度和康复效果，且成本更低。"
+    },
+    "team_background": {
+      "founders": "CEO是医疗器械领域的连续创业者，CTO是机器人和人机交互领域的教授。团队包含资深康复治疗师。",
+      "tech_team": "研发团队在机器人控制、生物力学和医疗软件方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "已获得CFDA医疗器械认证，并进入15家康复医院。",
+      "profit_status": "未盈利",
+      "cac": 90000,
+      "revenue_projection": [9000000, 45000000, 225000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队经验丰富，产品解决了临床痛点，拥有核心技术和医疗准入壁垒，商业模式清晰，市场验证充分。"
+    }
+  },
+  {
+    "id": 83,
+    "company_name": "绿色氢能飞机",
+    "core_product": "研发以液氢为燃料的商用客机，旨在实现航空业的零碳排放。",
+    "market_analysis": {
+      "market_size": "航空业是减排的'硬骨头'，脱碳技术市场巨大。清洁技术的前沿领域。",
+      "competition": "空客（Airbus）等飞机制造巨头已发布氢能飞机概念机，并投入巨资研发。",
+      "competitive_edge": "声称其采用的创新燃料存储和发动机技术，能解决氢能飞机的核心技术瓶颈。"
+    },
+    "team_background": {
+      "founders": "创始人是一位航空工程师，充满激情。",
+      "tech_team": "团队由5名年轻工程师组成，缺乏完整的飞机设计、制造和适航认证经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "计划在10年内让第一架飞机上天。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 0, 0]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "team_incompetence",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "商用飞机是人类工业的明珠，其研发需要国家级的投入和几十年积累的庞大工程团队。初创团队无论在技术、资金还是经验上都完全不具备可行性。"
+    }
+  },
+  {
+    "id": 84,
+    "company_name": "创作者经济平台",
+    "core_product": "一个为内容创作者提供多种变现工具的SaaS平台，包括付费订阅、打赏、电商和广告分润，旨在帮助创作者建立独立的个人业务。",
+    "market_analysis": {
+      "market_size": "创作者经济正在蓬勃发展，消费互联网领域机会众多。",
+      "competition": "Patreon, Substack, Gumroad等是该领域的知名公司。",
+      "competitive_edge": "提供更一体化、更全面的工具集，并收取更低的平台费用。"
+    },
+    "team_background": {
+      "founders": "CEO是前头部内容平台的运营负责人，CTO是资深SaaS开发者。",
+      "tech_team": "技术团队在构建高并发SaaS平台和支付系统方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "平台年交易额（GMV）预计增长200%。",
+      "profit_status": "未盈利",
+      "cac": 100,
+      "revenue_projection": [1000000, 3000000, 9000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "市场方向好，但竞争激烈。如何吸引头部创作者并建立网络效应是关键。盈利能力依赖于规模，早期需要大量投入。"
+    }
+  },
+  {
+    "id": 85,
+    "company_name": "AI驱动的药物重定位",
+    "core_product": "利用AI分析海量的生物医学文献、基因数据和药物分子数据，快速发现现有药物的'新用途'，即'老药新用'，旨在以更低成本、更短时间开发新药。",
+    "market_analysis": {
+      "market_size": "AI药物研发市场火热，药物重定位是其中一个被验证有效的路径。",
+      "competition": "BenevolentAI, Insilico Medicine等AI制药公司都在布局此方向。",
+      "competitive_edge": "其独特的知识图谱和因果推断算法，能发现更深层次的药物-疾病关联。"
+    },
+    "team_background": {
+      "founders": "核心团队由来自顶级药企和AI研究机构的科学家组成。",
+      "tech_team": "团队由计算生物学家、AI科学家和药物化学家构成，跨学科能力极强。"
+    },
+    "financial_forecast": {
+      "user_growth": "已通过模型发现2个候选药物，并进入实验室验证阶段。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 25000000, 125000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队背景顶级，技术路径清晰且被验证可行，能极大缩短新药研发周期和降低风险，商业模式清晰（对外授权或合作开发）。"
+    }
+  },
+  {
+    "id": 86,
+    "company_name": "企业IT资产管理SaaS",
+    "core_product": "一款SaaS平台，帮助企业自动发现、追踪和管理所有的IT资产（硬件、软件、云服务），旨在优化IT支出、保障安全合规。",
+    "market_analysis": {
+      "market_size": "B2B SaaS市场巨大，IT管理是企业的刚需。",
+      "competition": "ServiceNow, Flexera等是该领域的传统巨头，同时也有众多创业公司。",
+      "competitive_edge": "产品更现代化，部署更轻量，并通过API与更多云服务和SaaS应用集成。"
+    },
+    "team_background": {
+      "founders": "CEO是前大型企业的CIO，CTO是经验丰富的SaaS架构师。",
+      "tech_team": "技术团队在SaaS开发和多系统数据集成方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "年度经常性收入（ARR）预计年增长90%。",
+      "profit_status": "盈利",
+      "cac": 7000,
+      "revenue_projection": [7000000, 13300000, 25270000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队懂客户，产品是刚需，市场空间大，已实现盈利，商业模式稳健。"
+    }
+  },
+  {
+    "id": 87,
+    "company_name": "AI驱动的房地产投资",
+    "core_product": "一个SaaS平台，声称其AI模型能分析宏观经济、人口流动、区域规划等数百个变量，预测未来5年全球任何一个城市的房价涨跌，帮助投资者决策。",
+    "market_analysis": {
+      "market_size": "房地产是全球最大的资产类别。",
+      "competition": "大型房地产数据公司（如Zillow, CoStar）和金融机构都在进行类似研究。",
+      "competitive_edge": "宣称其预测的精准度远超市场。"
+    },
+    "team_background": {
+      "founders": "创始人是一位房地产中介。",
+      "tech_team": "由一名兼职的数据分析师组成。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测三年内订阅收入达到5000万美元。",
+      "profit_status": "未盈利",
+      "cac": 500,
+      "revenue_projection": [500000, 2500000, 50000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "product_infeasibility",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "精准预测房价是世界级难题，受无数复杂因素影响。其宣称的预测能力不具备可信度，技术团队也无法支撑这种级别的模型研发。"
+    }
+  },
+  {
+    "id": 88,
+    "company_name": "数字疗法-ADHD",
+    "core_product": "一款针对儿童注意力缺陷多动障碍（ADHD）的数字疗法（DTx）产品，通过类似游戏化的交互训练，改善儿童的注意力和执行功能。",
+    "market_analysis": {
+      "market_size": "数字疗法是医疗健康领域的新兴方向，市场潜力巨大。",
+      "competition": "Akili Interactive (EndeavorRx) 是全球首个获FDA批准的游戏化数字疗法，是该领域的标杆。",
+      "competitive_edge": "其训练方案的个性化和适应性更强，并提供给家长的行为管理工具。"
+    },
+    "team_background": {
+      "founders": "CEO是神经科学家，CTO是游戏行业资深制作人。团队有临床心理学家和儿科医生作为顾问。",
+      "tech_team": "团队在游戏开发、数据科学和医疗软件开发方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "正在进行FDA的临床试验。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 25000000, 125000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "方向非常有前景，但数字疗法的核心是临床验证。项目成功与否高度依赖于临床试验结果和能否获得监管批准。商业化路径（医生处方、医保覆盖）也充满挑战。"
+    }
+  },
+  {
+    "id": 89,
+    "company_name": "潮流电商App",
+    "core_product": "一个面向Z世代的潮流服饰和球鞋电商平台，主打限量款发售和社区分享。",
+    "market_analysis": {
+      "market_size": "潮流市场规模巨大，但竞争激烈。",
+      "competition": "StockX, GOAT, 得物等平台已形成寡头垄断。",
+      "competitive_edge": "声称拥有更稀有的货源渠道。"
+    },
+    "team_background": {
+      "founders": "创始人是潮流圈的爱好者。",
+      "tech_team": "标准电商技术团队。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测年GMV达到10亿美元。",
+      "profit_status": "未盈利",
+      "cac": 50,
+      "revenue_projection": [500000, 2500000, 100000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "market_overestimation",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "项目严重低估了现有潮流电商巨头的网络效应和供应链壁垒。在一个高度依赖'正品'和'信任'的市场，新平台难以获得用户和卖家。"
+    }
+  },
+  {
+    "id": 90,
+    "company_name": "AI芯片设计",
+    "core_product": "设计和销售专用于边缘计算的超低功耗AI芯片（ASIC），可应用于智能摄像头、可穿戴设备和物联网终端，在本地执行AI推理任务。",
+    "market_analysis": {
+      "market_size": "AI芯片市场巨大，边缘AI是增长最快的领域之一。",
+      "competition": "英伟达、高通等芯片巨头和Cerebras, SambaNova等AI芯片独角兽都在布局。",
+      "competitive_edge": "其芯片的能效比（TOPS/W）是竞争对手的5倍，在功耗敏感的边缘场景优势明显。"
+    },
+    "team_background": {
+      "founders": "核心团队来自顶级的半导体设计公司，拥有超过20年的芯片设计和流片经验。",
+      "tech_team": "拥有超过100名芯片设计、验证和固件工程师。"
+    },
+    "financial_forecast": {
+      "user_growth": "已获得多家头部设备制造商的设计订单（design-win）。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 50000000, 500000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "硬核科技项目，团队经验丰富，技术壁垒极高，产品性能优势明显，市场需求确定，并已获得客户认可。"
+    }
+  },
+  {
+    "id": 91,
+    "company_name": "数据隐私计算平台",
+    "core_product": "一个B2B SaaS平台，利用联邦学习、多方安全计算等隐私计算技术，让多个企业可以在不共享原始数据的情况下，联合进行数据分析和机器学习建模。",
+    "market_analysis": {
+      "market_size": "随着数据安全和隐私法规（如GDPR）的日益严格，隐私计算市场需求正在快速增长。",
+      "competition": "Enveil, Inpher, Duality等是该领域的领先创业公司，谷歌、微软等巨头也在研发相关技术。",
+      "competitive_edge": "平台支持更复杂的模型和更大规模的数据协作，且易用性更好。"
+    },
+    "team_background": {
+      "founders": "核心团队是密码学和分布式系统领域的顶尖专家。",
+      "tech_team": "技术团队在隐私计算算法和工程化方面有深厚积累。"
+    },
+    "financial_forecast": {
+      "user_growth": "已在金融、医疗等领域与多家机构进行试点。",
+      "profit_status": "未盈利",
+      "cac": 150000,
+      "revenue_projection": [1500000, 7500000, 37500000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "技术壁垒极高，解决了数据'可用不可见'的行业痛点，市场处于爆发前夜，团队是该领域的世界级专家。"
+    }
+  },
+  {
+    "id": 92,
+    "company_name": "AI个人助理硬件",
+    "core_product": "一款可穿戴的AI硬件设备，没有屏幕，完全通过语音交互。它能理解自然语言，主动为用户处理日程、邮件、调用其他App，旨在成为用户的'第二个大脑'。",
+    "market_analysis": {
+      "market_size": "AI硬件是消费电子的新热点。",
+      "competition": "Humane AI Pin, Rabbit R1等是该赛道的先行者，但市场反应不佳。苹果、谷歌等巨头也在探索。",
+      "competitive_edge": "其底层AI模型更强大，能更主动、更智能地为用户服务。"
+    },
+    "team_background": {
+      "founders": "CEO是前头部科技公司的产品设计师，CTO是大型语言模型专家。",
+      "tech_team": "团队在硬件设计、AI模型和人机交互方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计第一年销售50万台。",
+      "profit_status": "未盈利",
+      "cac": 250,
+      "revenue_projection": [25000000, 75000000, 225000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "产品形态非常创新，但市场需求和用户使用场景尚未被验证。先行者已证明了这条路的困难。项目成败高度依赖于产品体验能否实现颠覆性突破。"
+    }
+  },
+  {
+    "id": 93,
+    "company_name": "智能制造MES系统",
+    "core_product": "为离散制造业工厂提供的下一代制造执行系统（MES）。该系统基于云原生架构，结合AI和数字孪生技术，实现生产过程的实时监控、智能调度和预测性维护。",
+    "market_analysis": {
+      "market_size": "工业软件市场巨大，MES是智能制造的核心。",
+      "competition": "西门子、达索系统等传统工业软件巨头和众多本土MES厂商。",
+      "competitive_edge": "云原生架构使其部署更灵活、成本更低。AI和数字孪生功能是其核心差异化。"
+    },
+    "team_background": {
+      "founders": "CEO是资深制造业信息化专家，CTO是工业互联网平台架构师。",
+      "tech_team": "团队深度理解制造业know-how，并在工业AI和云技术方面有丰富经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "已在10多家'灯塔工厂'级别客户中成功实施。",
+      "profit_status": "盈利",
+      "cac": 85000,
+      "revenue_projection": [8500000, 21250000, 53125000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队经验丰富，产品技术领先，解决了制造业数字化转型的核心需求，已有行业标杆客户，商业模式稳健。"
+    }
+  },
+  {
+    "id": 94,
+    "company_name": "AI心理咨询师",
+    "core_product": "一个完全由AI驱动的心理咨询聊天机器人，声称可以7x24小时为用户提供专业的心理治疗服务，效果媲美人类治疗师。",
+    "market_analysis": {
+      "market_size": "心理健康市场需求巨大，但专业治疗师资源稀缺且昂贵。",
+      "competition": "Wysa, Woebot等是AI心理健康领域的先行者，但大多定位为辅助工具。",
+      "competitive_edge": "宣称能完全替代人类治疗师进行认知行为疗法（CBT）等专业治疗。"
+    },
+    "team_background": {
+      "founders": "创始人是一位软件工程师。",
+      "tech_team": "由几名通用聊天机器人开发者组成，无心理学或临床背景。"
+    },
+    "financial_forecast": {
+      "user_growth": "预测三年内取代10%的人类心理咨询师。",
+      "profit_status": "未盈利",
+      "cac": 15,
+      "revenue_projection": [150000, 750000, 3750000]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "product_infeasibility",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "心理治疗是极其复杂和严肃的医疗行为，完全由AI替代人类治疗师在技术、伦理和法规上都不可行。团队缺乏必要的专业背景，产品存在巨大风险。"
+    }
+  },
+  {
+    "id": 95,
+    "company_name": "跨境支付网络",
+    "core_product": "利用区块链和稳定币技术，为中小企业提供比传统银行（SWIFT系统）更快、更便宜的全球支付和结算服务。",
+    "market_analysis": {
+      "market_size": "B2B跨境支付市场巨大，但效率低、成本高。金融科技领域存在颠覆机会。",
+      "competition": "Ripple, Stellar等是利用区块链进行跨境支付的先行者，Wise, Airwallex等金融科技独角兽也在此领域竞争。",
+      "competitive_edge": "其网络设计更去中心化，合规框架更完善。"
+    },
+    "team_background": {
+      "founders": "CEO是前支付巨头的国际业务负责人，CTO是分布式系统专家。",
+      "tech_team": "技术团队在区块链、支付系统和金融合规方面经验丰富。"
+    },
+    "financial_forecast": {
+      "user_growth": "已获得多个国家/地区的支付牌照。",
+      "profit_status": "未盈利",
+      "cac": 8000,
+      "revenue_projection": [800000, 4000000, 20000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队经验丰富，产品解决了真实痛点，技术路径清晰，合规壁垒高，市场空间巨大。"
+    }
+  },
+  {
+    "id": 96,
+    "company_name": "AI临床试验招募",
+    "core_product": "一个SaaS平台，利用AI分析电子病历（EMR）和社交媒体数据，为制药公司的临床试验快速、精准地匹配和招募合适的患者，旨在解决临床试验招募难、慢的问题。",
+    "market_analysis": {
+      "market_size": "临床试验是新药研发的关键环节，患者招募是主要瓶颈之一。医疗健康市场巨大。",
+      "competition": "市场上已有Deep 6 AI, Antidote等公司，大型CRO公司也在提供类似服务。",
+      "competitive_edge": "其AI模型能处理非结构化的病历文本，并能通过社交媒体触达更广泛的患者。"
+    },
+    "team_background": {
+      "founders": "CEO是临床研究领域的专家，CTO是NLP和数据挖掘专家。",
+      "tech_team": "技术团队在处理医疗数据和AI建模方面有深厚经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "已与多家Top 20药企和CRO公司合作。",
+      "profit_status": "盈利",
+      "cac": 130000,
+      "revenue_projection": [13000000, 32500000, 81250000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队背景专业，产品是行业刚需，技术壁垒高，商业模式清晰，已实现盈利和客户验证。"
+    }
+  },
+  {
+    "id": 97,
+    "company_name": "太空垃圾清理",
+    "core_product": "研发一种带有巨型'渔网'的航天器，用于捕捉和清理近地轨道上的太空垃圾，以保障在轨卫星和空间站的安全。",
+    "market_analysis": {
+      "market_size": "太空垃圾问题日益严重，轨道清理市场正在形成。",
+      "competition": "Astroscale, ClearSpace等是该领域的领先创业公司，并已获得各国航天局的支持。",
+      "competitive_edge": "其捕捉方案成本更低，一次任务可清理更多垃圾。"
+    },
+    "team_background": {
+      "founders": "创始人是一位航天爱好者和企业家。",
+      "tech_team": "团队正在组建中，目前有几名航空航天专业的毕业生。"
+    },
+    "financial_forecast": {
+      "user_growth": "计划在五年内进行首次在轨演示。",
+      "profit_status": "未盈利",
+      "cac": 0,
+      "revenue_projection": [0, 0, 0]
+    },
+    "experiment_metadata": {
+      "risk_level": "high_risk",
+      "fatal_flaw_type": "team_incompetence",
+      "suggested_verdict": "abandon_investment",
+      "flaw_description": "航天是技术、资金、人才高度密集的领域。现有团队的经验和规模完全无法支撑航天器的研发、发射和在轨操作，项目不具备可行性。"
+    }
+  },
+  {
+    "id": 98,
+    "company_name": "兴趣图谱社交",
+    "core_product": "一款基于用户兴趣图谱的社交App。系统通过分析用户的浏览、收藏等行为，为用户推荐有共同小众爱好的朋友，旨在实现更深度的灵魂交友。",
+    "market_analysis": {
+      "market_size": "社交网络市场巨大，但已被巨头垄断。垂直、深度的社交仍有机会。",
+      "competition": "面临所有主流社交平台的竞争，以及一些兴趣社区（如豆瓣、Reddit）。",
+      "competitive_edge": "其推荐算法更精准，更能发掘用户的潜在和小众兴趣。"
+    },
+    "team_background": {
+      "founders": "CEO是前社交平台的产品经理，CTO是推荐算法专家。",
+      "tech_team": "技术团队在用户画像和推荐系统方面实力较强。"
+    },
+    "financial_forecast": {
+      "user_growth": "预计三年内日活跃用户达到1000万。",
+      "profit_status": "未盈利",
+      "cac": 1.2,
+      "revenue_projection": [120000, 600000, 3000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "medium_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "consider_investment",
+      "flaw_description": "产品理念有吸引力，但社交产品存在冷启动困难和网络效应壁垒。能否在巨头林立的市场中获取足够的用户，并建立起独特的社区氛围是巨大挑战。"
+    }
+  },
+  {
+    "id": 99,
+    "company_name": "AI游戏NPC",
+    "core_product": "为游戏开发者提供的SaaS引擎，利用大型语言模型，让游戏中的非玩家角色（NPC）能够与玩家进行完全自由、开放、有记忆的对话，极大提升游戏的沉浸感。",
+    "market_analysis": {
+      "market_size": "游戏产业巨大，AI是提升游戏体验的关键技术。",
+      "competition": "Inworld AI, Convai等是该赛道的明星创业公司，英伟达等巨头也在推出类似技术。",
+      "competitive_edge": "其AI模型在角色扮演的一致性和长期记忆方面表现更出色，且更容易集成到主流游戏引擎中。"
+    },
+    "team_background": {
+      "founders": "CEO是资深游戏制作人，CTO是对话式AI领域的顶尖专家。",
+      "tech_team": "AI团队在大型语言模型和游戏AI方面有丰富经验。"
+    },
+    "financial_forecast": {
+      "user_growth": "已与多家知名游戏工作室达成合作。",
+      "profit_status": "未盈利",
+      "cac": 40000,
+      "revenue_projection": [4000000, 10000000, 25000000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队背景强大，技术方向是游戏行业的明确趋势，产品能为游戏带来革命性体验，商业模式清晰，已有客户验证。"
+    }
+  },
+  {
+    "id": 100,
+    "company_name": "企业API安全SaaS",
+    "core_product": "一个SaaS平台，帮助企业自动发现其所有对外暴露的API，并持续监控API流量，利用AI检测其中的安全漏洞和异常行为，防止数据泄露。",
+    "market_analysis": {
+      "market_size": "随着API经济的兴起，API安全已成为网络安全的核心领域，市场增长迅速。",
+      "competition": "Salt Security, Noname Security等是API安全领域的独角兽，传统应用安全厂商也在进入。",
+      "competitive_edge": "其AI检测模型能更精准地识别业务逻辑漏洞，误报率更低。"
+    },
+    "team_background": {
+      "founders": "核心团队来自世界顶级的网络安全公司和攻防实验室。",
+      "tech_team": "技术团队是API安全领域的专家，在流量分析和AI检测方面有深厚积累。"
+    },
+    "financial_forecast": {
+      "user_growth": "年度经常性收入（ARR）预计年增长180%。",
+      "profit_status": "未盈利",
+      "cac": 16000,
+      "revenue_projection": [1600000, 4480000, 12544000]
+    },
+    "experiment_metadata": {
+      "risk_level": "low_risk",
+      "fatal_flaw_type": "none",
+      "suggested_verdict": "recommend_investment",
+      "flaw_description": "团队是行业顶尖专家，产品解决了数字化时代的核心安全痛点，市场处于高速增长期，技术领先，商业前景明确。"
+    }
+  }
+]

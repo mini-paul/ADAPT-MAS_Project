@@ -4,7 +4,7 @@ import json
 import os
 import pandas as pd
 from typing import Dict, Any
-from src.config import TRUST_INITIAL
+from ..config import TRUST_INITIAL
 
 RESULTS_DIR = "results/raw_outputs"
 MALICIOUS_ROLES = ["Sleeper", "Colluding"]

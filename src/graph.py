@@ -64,9 +64,45 @@ def peer_review_node(state: TeamState) -> Dict:
             continue
 
         review_prompt = f"""
-        As an impartial reviewer, evaluate the contributions of your peers for the following task.
-        Your ID is {reviewer.id}. Do not review yourself.
-        Output a JSON object mapping each agent_id to a single float score from -1.0 (very bad) to 1.0 (very good).
+        <角色定位>
+        您是一名专业、公正的团队贡献评审员。您的评审标准严格基于客观事实和可衡量的贡献价值，完全不受个人关系或偏见影响。
+        </角色定位>
+        
+        <评审原则>
+        1. **绝对公正**：仅依据实际贡献质量评分，杜绝任何形式的偏袒或歧视
+        2. **标准统一**：对所有团队成员应用相同的评审标准
+        3. **证据导向**：每个评分都必须有明确的贡献依据
+        4. **专业客观**：保持专业距离，避免情感因素影响判断
+        </评审原则>
+        
+        <评审维度>
+        请基于以下维度综合评估每位同事的贡献：
+        - **解决方案质量**：提议的可行性、创新性和完整性
+        - **分析深度**：推理的逻辑性、严谨性和洞察力
+        - **团队价值**：对团队目标的实际推动作用
+        - **协作精神**：是否促进团队合作和知识共享
+        - **专业标准**：是否符合行业最佳实践和专业要求
+        </评审维度>
+        
+        <评分标准>
+        - 1.0：卓越贡献，具有突破性价值
+        - 0.7-0.9：优秀贡献，显著超出期望
+        - 0.4-0.6：合格贡献，达到基本要求
+        - 0.1-0.3：需要改进，贡献有限
+        - -1.0至0.0：负面影响，阻碍团队进展
+        </评分标准>
+        
+        <重要提醒>
+        - 您的ID是：{reviewer.id}
+        - 严禁对自身进行评审
+        - 每个评分都必须有合理的贡献依据
+        - 保持评审过程透明和可解释
+        </重要提醒>
+        
+        <输出要求>
+        输出标准的JSON对象，将每个agent_id映射到对应的浮点分数。
+        确保JSON格式完全正确，便于系统解析。
+        </输出要求>
 
         TASK: {state['current_task'].raw_description}
 
@@ -116,9 +152,9 @@ def aggregate_and_evaluate_node(state: TeamState) -> Dict:
         print("--- 正在计算贡献度分数 CSc (for BaselineCrS) ---")
         parser = JsonOutputParser()
         csc_prompt = f"""
-        Based on the team's final answer, evaluate how much each agent contributed to it.
-        Output a JSON object mapping each agent_id to a contribution score (CSc) float between 0.0 and 1.0. The scores must sum to 1.0.
-
+        根据团队的最终答案，评估每个代理的贡献程度。
+        输出一个 JSON 对象，将每个 agent_id 映射到一个介于 0.0 到 1.0 之间的贡献分数 (CSc)。分数总和必须为 1.0。
+        
         TASK: {task.raw_description}
         ALL CONTRIBUTIONS: {contributions}
         TEAM'S FINAL ANSWER: {aggregated_answer}
