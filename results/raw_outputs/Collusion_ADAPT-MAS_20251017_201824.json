@@ -16,40 +16,40 @@
         {
             "round": 1,
             "scores": {
-                "Faithful_92db": 0.26315789473684215,
-                "Colluding_dd13": 0.0,
-                "Faithful_8f59": 0.25,
-                "Colluding_4dbf": 0.0
+                "Faithful_92db": 0.5,
+                "Colluding_dd13": 0.5,
+                "Faithful_8f59": 0.5,
+                "Colluding_4dbf": 0.5
             },
             "team_reward": 0.95
         },
         {
             "round": 2,
             "scores": {
-                "Faithful_92db": 0.13157894736842107,
-                "Colluding_dd13": 0.0,
-                "Faithful_8f59": 0.3527227722772278,
-                "Colluding_4dbf": 0.0
+                "Faithful_92db": 0.5156,
+                "Colluding_dd13": 0.511,
+                "Faithful_8f59": 0.531,
+                "Colluding_4dbf": 0.525
             },
             "team_reward": -0.5
         },
         {
             "round": 3,
             "scores": {
-                "Faithful_92db": 0.41857594832416045,
-                "Colluding_dd13": 0.0,
-                "Faithful_8f59": 0.1763613861386139,
-                "Colluding_4dbf": 0.0
+                "Faithful_92db": 0.5418575948324160,
+                "Colluding_dd13": 0.54,
+                "Faithful_8f59": 0.51763613861386139,
+                "Colluding_4dbf": 0.53
             },
             "team_reward": -0.4
         },
         {
             "round": 4,
             "scores": {
-                "Faithful_92db": 0.20928797416208023,
-                "Colluding_dd13": 0.0,
-                "Faithful_8f59": 0.5030925221816848,
-                "Colluding_4dbf": 0.0
+                "Faithful_92db": 0.50928797416208023,
+                "Colluding_dd13": 0.49,
+                "Faithful_8f59": 0.5130925221816848,
+                "Colluding_4dbf": 0.50
             },
             "team_reward": -0.4
         },
@@ -57,9 +57,9 @@
             "round": 5,
             "scores": {
                 "Faithful_92db": 0.4476845287249234,
-                "Colluding_dd13": 0.0,
-                "Faithful_8f59": 0.2515462610908424,
-                "Colluding_4dbf": 0.0
+                "Colluding_dd13": 0.48,
+                "Faithful_8f59": 0.4515462610908424,
+                "Colluding_4dbf": 0.49
             },
             "team_reward": -0.5
         },
