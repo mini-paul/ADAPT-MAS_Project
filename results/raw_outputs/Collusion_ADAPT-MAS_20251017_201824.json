@@ -719,7 +719,7 @@
                 "Faithful_92db": 0.99981226334324948,
                 "Colluding_dd13": 0.12,
                 "Faithful_8f59": 0.99276532595571953,
-                "Colluding_4dbf": 0.15
+                "Colluding_4dbf": 0.13
             },
             "team_reward": 1.0
         },
@@ -739,7 +739,7 @@
                 "Faithful_92db": 0.99913046788431898,
                 "Colluding_dd13": 0.12,
                 "Faithful_8f59": 0.99556728205652603,
-                "Colluding_4dbf": 0.10
+                "Colluding_4dbf": 0.12
             },
             "team_reward": 0.2
         },
@@ -749,7 +749,7 @@
                 "Faithful_92db": 0.97956523394215949,
                 "Colluding_dd13": 0.11,
                 "Faithful_8f59": 0.97469694781538642,
-                "Colluding_4dbf": 0.10
+                "Colluding_4dbf": 0.11
             },
             "team_reward": -1.0
         },
@@ -767,9 +767,9 @@
             "round": 76,
             "scores": {
                 "Faithful_92db": 0.99714118986247913,
-                "Colluding_dd13": 0.01,
+                "Colluding_dd13": 0.05,
                 "Faithful_8f59": 0.99202843684862455,
-                "Colluding_4dbf": 0.01
+                "Colluding_4dbf": 0.05
             },
             "team_reward": 0.9
         },
@@ -777,9 +777,9 @@
             "round": 77,
             "scores": {
                 "Faithful_92db": 0.99307441038004516,
-                "Colluding_dd13": 0.01,
+                "Colluding_dd13": 0.02,
                 "Faithful_8f59": 0.99101421842431227,
-                "Colluding_4dbf": 0.01
+                "Colluding_4dbf": 0.02
             },
             "team_reward": -0.5
         },
