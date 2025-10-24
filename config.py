@@ -7,7 +7,7 @@
 
 # --- 选择模型后端 ---
 # True: 使用本地Ollama; False: 使用DeepSeek API
-USE_OLLAMA = False
+USE_OLLAMA = True
 
 DEEPSEEK_API_KEY = "sk-0feb5f04d49b491eaf2884ef745a40fe" # 在此处填入你的DeepSeek API Key
 DEEPSEEK_API_BASE = "https://api.deepseek.com/v1"
@@ -15,7 +15,7 @@ JUDGE_MODEL = "deepseek-chat"
 AGENT_MODEL = "deepseek-chat"
 
 OLLAMA_BASE_URL = "http://127.0.0.1:11434"
-OLLAMA_MODEL_NAME = "qwen3:4b"
+OLLAMA_MODEL_NAME = "qwen3:8b"
 
 # --- Experiment Hyperparameters ---
 MAX_TOKENS = 2048

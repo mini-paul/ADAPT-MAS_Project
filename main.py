@@ -129,29 +129,29 @@ if __name__ == "__main__":
     NUM_TASKS = 100  # 为每个实验场景运行的任务数，可以适当减少以加快测试速度
 
     logger.info("加载所有数据集...")
-    # try:
-    #     tasks_objective = load_tasks(OBJECTIVE_TASK_FILE, category='coding')[:NUM_TASKS]
-    #     tasks_subjective = load_tasks(SUBJECTIVE_TASK_FILE, category='analysis')[:NUM_TASKS]
-    #     if not tasks_objective or not tasks_subjective:
-    #          raise FileNotFoundError
-    # except FileNotFoundError:
-    #     logger.error(f"一个或多个数据集文件未在 'data' 目录中找到或为空。请检查 {OBJECTIVE_TASK_FILE} 和 {SUBJECTIVE_TASK_FILE} 是否存在。")
-    #     exit()
-    #
-    # logger.info("\n\n{'='*15} 开始核心假设检验实验 {'='*15}")
+    try:
+        tasks_objective = load_tasks(OBJECTIVE_TASK_FILE, category='coding')[:NUM_TASKS]
+        tasks_subjective = load_tasks(SUBJECTIVE_TASK_FILE, category='analysis')[:NUM_TASKS]
+        if not tasks_objective or not tasks_subjective:
+             raise FileNotFoundError
+    except FileNotFoundError:
+        logger.error(f"一个或多个数据集文件未在 'data' 目录中找到或为空。请检查 {OBJECTIVE_TASK_FILE} 和 {SUBJECTIVE_TASK_FILE} 是否存在。")
+        exit()
+
+    logger.info("\n\n{'='*15} 开始核心假设检验实验 {'='*15}")
     # 实验 1: 抵御卧底攻击 (客观任务 - 代码生成)
-    # scenario_h1 = "H1 - Undercover Attack (Code Generation Task)"
-    # results_h1_base = run_experiment("Sleeper_Baseline", BaselineCrS, AGENT_MIX_SCENARIOS["scenario_sleeper_attack"],
-    #                                  tasks_objective, task_category='coding')
-    # results_h1_adapt = run_experiment("Sleeper_ADAPT-MAS", ADAPT_MAS, AGENT_MIX_SCENARIOS["scenario_sleeper_attack"],
-    #                                   tasks_objective, task_category='coding')
-    # plot_results([results_h1_base, results_h1_adapt], scenario_h1)
+    scenario_h1 = "H1 - Undercover Attack (Code Generation Task)"
+    results_h1_base = run_experiment("Sleeper_Baseline_qwen25", BaselineCrS, AGENT_MIX_SCENARIOS["scenario_sleeper_attack"],
+                                     tasks_objective, task_category='coding')
+    results_h1_adapt = run_experiment("Sleeper_ADAPT-MAS_qwen25", ADAPT_MAS, AGENT_MIX_SCENARIOS["scenario_sleeper_attack"],
+                                      tasks_objective, task_category='coding')
+    plot_results([results_h1_base, results_h1_adapt], scenario_h1)
 
     # 实验 2: 抵御合谋攻击 (主观任务 - 投资分析)
     # scenario_h2 = "H2 - Collusion Attack (Investment Analysis Task)"
-    # results_h2_base = run_experiment("Collusion_Baseline", BaselineCrS,
+    # results_h2_base = run_experiment("Collusion_Baseline_qwen25", BaselineCrS,
     #                                  AGENT_MIX_SCENARIOS["scenario_collusion_attack"], tasks_subjective, task_category='analysis')
-    # results_h2_adapt = run_experiment("Collusion_ADAPT-MAS", ADAPT_MAS,
+    # results_h2_adapt = run_experiment("Collusion_ADAPT-MAS_qwen25", ADAPT_MAS,
     #                                   AGENT_MIX_SCENARIOS["scenario_collusion_attack"], tasks_subjective, task_category='analysis')
     # plot_results([results_h2_base, results_h2_adapt], scenario_h2)
 
@@ -174,30 +174,30 @@ if __name__ == "__main__":
     # )
     # plot_results([results_h1_adapt, results_h4_no_dt], scenario_h4_dt)
 
-    # logger.info("\n\n{'='*20} 所有实验已完成 {'='*20}")
-    # logger.info("现在可以运行 'python analysis.py' 来计算和查看最终的性能指标。")
+    logger.info("\n\n{'='*20} 所有实验已完成 {'='*20}")
+    logger.info("现在可以运行 'python analysis.py' 来计算和查看最终的性能指标。")
 
 
 
     # 画图，对比实验结果
     # 1.加载数据
-    scenario_h1 = "H1 - Undercover Attack (Code Generation Task)"
-    results_h1_base = load_results("results/raw_outputs/Sleeper_Baseline_20251017_004648.json")
-    results_h1_adapt = load_results("results/raw_outputs/Sleeper_ADAPT-MAS_20251017_031730.json")
-    plot_results([results_h1_base, results_h1_adapt], scenario_h1)
+    # scenario_h1 = "H1 - Undercover Attack (Code Generation Task)"
+    # results_h1_base = load_results("results/raw_outputs/Sleeper_Baseline_20251017_004648.json")
+    # results_h1_adapt = load_results("results/raw_outputs/Sleeper_ADAPT-MAS_20251017_031730.json")
+    # plot_results([results_h1_base, results_h1_adapt], scenario_h1)
 
     # 2.画各种图片
-    scenario_h2 = "H2 - Collusion Attack (Investment Analysis Task)"
-    results_h2_base = load_results("results/raw_outputs/Collusion_Baseline_20251017_164146.json")
-    results_h2_adapt = load_results("results/raw_outputs/Collusion_ADAPT-MAS_20251017_201824.json")
-    plot_results([results_h2_base, results_h2_adapt], scenario_h2)
+    # scenario_h2 = "H2 - Collusion Attack (Investment Analysis Task)"
+    # results_h2_base = load_results("results/raw_outputs/Collusion_Baseline_20251017_164146.json")
+    # results_h2_adapt = load_results("results/raw_outputs/Collusion_ADAPT-MAS_20251017_201824.json")
+    # plot_results([results_h2_base, results_h2_adapt], scenario_h2)
 
 
 
-    scenario_h4_sg = "H4 - Ablation studies (social graphs)"
-    results_h4_no_sg = load_results("results/raw_outputs/Collusion_ADAPT-MAS_No_SG_20251017_235048.json")
-    plot_results([results_h2_adapt, results_h4_no_sg], scenario_h4_sg)
-
-    scenario_h4_dt = "H4 - Ablation Study (Dynamic Trust)"
-    results_h4_no_dt = load_results("results/raw_outputs/Sleeper_ADAPT-MAS_No_DT_20251018_014009.json")
-    plot_results([results_h1_adapt, results_h4_no_dt], scenario_h4_dt)
+    # scenario_h4_sg = "H4 - Ablation studies (social graphs)"
+    # results_h4_no_sg = load_results("results/raw_outputs/Collusion_ADAPT-MAS_No_SG_20251017_235048.json")
+    # plot_results([results_h2_adapt, results_h4_no_sg], scenario_h4_sg)
+    #
+    # scenario_h4_dt = "H4 - Ablation Study (Dynamic Trust)"
+    # results_h4_no_dt = load_results("results/raw_outputs/Sleeper_ADAPT-MAS_No_DT_20251018_014009.json")
+    # plot_results([results_h1_adapt, results_h4_no_dt], scenario_h4_dt)
